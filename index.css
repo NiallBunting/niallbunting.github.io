@@ -1,0 +1,155 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2{
+    color:#444444;
+    padding: 0px;
+    margin: 0px;
+}
+
+a:link{color:#0099ff;}
+a:visited{color:#0099ff;}
+a:hover{ color:#0099ff;}
+a:active{ color:#0099ff;}
+
+/*http://bavotasan.com/2011/circular-images-with-css3/*/
+.circular {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(Me.png) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	background-size: 280px 310px;
+	}
+
+.circular img {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	}
+img{
+    width:100%;
+}
+
+
+.ul_recentprojects{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+ -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+position:relative;
+}
+
+
+.bottomimg{
+ background-color:#bbbbbb;
+position:absolute;
+top:0px;
+left:0px;
+height:100%;
+width:80%;
+opacity: 0.8;
+filter: alpha(opacity=80);
+    overflow: auto;
+visibility: hidden;
+ text-decoration: none;
+color:#000000;
+}
+
+.smaller{
+margin:3%;
+position:relative;
+height:150px;
+}
+
+.pimg{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+}
+
+@media screen and (min-width: 1024px) {
+#left{
+   float:left;;
+   width:300px;
+   padding:20px;
+}
+#right{
+   height:300px;
+   float:left;
+   width: 600px;
+   padding:20px;
+   margin-top:50px;
+   text-align:left;
+}
+.wrapper{
+   text-align:center;
+   width: 1024px;
+   margin:auto; 
+   clear:both;
+}
+.content{
+   padding:20px;
+   text-align:left;
+}
+
+.li_recentprojects{
+    float: left;
+    width:24%;
+    position:relative;
+}
+}
+
+@media screen and (max-width: 1023px) {
+#left{
+   width:300px;
+   padding-bottom:2%;
+   padding-top:1%;
+   margin:auto; 
+}
+#right{
+   width:90%;
+   padding-top:4%;
+   padding-left:4%;
+   padding-right:4%;
+   text-align:left;
+   margin-left:auto; 
+   margin-right:auto; 
+}
+.wrapper{
+   width: 100%;
+   clear:both;
+}
+.content{
+   padding-top:4%;
+   padding-left:4%;
+   padding-right:4%;
+   text-align:left;
+}
+
+.li_recentprojects{
+    float: left;
+    width:45%;
+    position:relative;
+}
+}
