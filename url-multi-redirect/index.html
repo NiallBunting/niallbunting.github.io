@@ -5,16 +5,19 @@
 </head>
 <body>
 <script>
+// Takes the data from the textbox and formats it.
 function clickbox(){
  var urls = document.getElementById("textarea").value.split("\n").join(",");
  document.getElementById("output").innerHTML = window.location.hostname + window.location.pathname + "?a=" + urls;
 }
 
+// Forwards to the locations given.
 function forward(){
  var search = window.location.search.slice(3).split(",");
  window.location.href = search[Math.floor(search.length * Math.random())];
 }
 
+// Checks for the prameters so to forward.
 if(window.location.search != ""){
  forward();
 }
@@ -25,12 +28,12 @@ This page aims to create URLs that will direct to multiple pages. This is just d
 </p><p>
 You will probably want to put the URL in a shortener such as bit.ly.
 </p>
-<br>
-
+<p>
 <span id="output" style="color:#ff00ff">This is where the URL will appear.</span>
-<br>
-<textarea id="textarea">Add url on each line.</textarea>
+</p><p>
+<textarea id="textarea" placeholder="Add url on each line."></textarea>
 <br>
 <button onclick="clickbox()">Create link</button>
+</p>
 </body>
 </html>
