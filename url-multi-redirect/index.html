@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>URL Multiple Location Redirector</title>
+  <title>Free URL Multiple Location Redirector</title>
   <meta name="description" content="A url rotator. Rotates though the provided URLs.">
   <script type="text/javascript" src="../scripts/google.js">//Google Analytics</script>
 </head>
@@ -24,9 +24,11 @@ if(window.location.search != ""){
  forward();
 }
 </script>
-<h3>URL Multiple Location Redirector</h3>
+<h3>Free URL Random Location Redirector</h3>
 <p>
-This page aims to create URLs that will direct to multiple pages. This is just done randomly, and does not use a system such as round robin. All implemented in very basic JS.
+This page aims to create URLs that will direct to multiple pages. This is just done randomly. This means with one link a visitor could end up on different pages.
+
+This can be used for redirection for your users to multiple pages. Such as including a random button on your site.
 </p><p>
 You will probably want to put the URL in a shortener such as bit.ly.
 </p>
@@ -40,10 +42,33 @@ Note: Please include the 'http(s)://' part of the url.
 <br>
 <button onclick="clickbox()">Create link</button>
 </p>
+<p>
+To try to buy a beer from this sometime in the future. For every 5th visitor they will see adverts for 5 seconds.
+</p>
 <div>
-<!-- Begin BidVertiser code -->
-<SCRIPT data-cfasync="false" SRC="//bdv.bidvertiser.com/BidVertiser.dbm?pid=828734&bid=1973480" TYPE="text/javascript"></SCRIPT>
-<!-- End BidVertiser code -->
+<div id="ntv_1973480"></div>
+<script type="text/javascript">
+(function(d) {
+  var params =
+  {
+    bvwidgetid: "ntv_1973480",
+    bvlinksownid: 1973480,
+    rows: 2,
+    cols: 4,
+    textpos: "below",
+    imagewidth: 150,
+    mobilecols: 2,
+    cb: (new Date()).getTime()
+  };
+  params.bvwidgetid = "ntv_1973480" + params.cb;
+  d.getElementById("ntv_1973480").id = params.bvwidgetid;
+  var qs = Object.keys(params).reduce(function(a, k){ a.push(k + '=' + encodeURIComponent(params[k])); return a},[]).join(String.fromCharCode(38));
+  var s = d.createElement('script'); s.type='text/javascript';s.async=true;
+  var p = 'https:' == document.location.protocol ? 'https' : 'http';
+  s.src = p + "://bvadtgs.scdn1.secure.raxcdn.com/bidvertiser/tags/active/bdvws.js?" + qs;
+  d.getElementById(params.bvwidgetid).appendChild(s);
+})(document);
+</script>
 </div>
 </body>
 </html>
