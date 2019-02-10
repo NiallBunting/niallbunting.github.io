@@ -55,5 +55,11 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
+
+
+		{{content}}
+	</div>
 </body>
 </html>
