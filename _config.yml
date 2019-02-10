@@ -1,16 +1,16 @@
 name: Niall Bunting
-description: Niall Bunting's Personal Website
+description: Personal Website
 meta_description: "Niall Bunting's Personal Website. Which contains various information about him."
 
 markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /test/
+baseurl: /
 domain_name: 'https://www.niallbunting.com'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'https://www.niallbunting.com/'
+url:            'https://www.niallbunting.com'
 author:         'Niall Bunting'
