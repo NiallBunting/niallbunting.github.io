@@ -5,7 +5,7 @@ meta_description: "Niall Bunting's Personal Website. Which contains various info
 markdown: kramdown
 highlighter: rouge
 logo: false
-paginate: 1
+paginate: 15
 baseurl: /
 domain_name: 'https://www.niallbunting.com'
 google_analytics: 'UA-XXXXXXXX-X'
