@@ -1,4 +1,5 @@
 name: Niall Bunting
+bio: "Software Engineer"
 description: Personal Website
 meta_description: "Niall Bunting's Personal Website. Which contains various information about him."
 
@@ -6,11 +7,11 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /
+baseurl: ""
 domain_name: 'http://www.niallbunting.com'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'https://www.niallbunting.com'
+url:            'https://www.niallbunting.com/'
 author: 'Niall Bunting'

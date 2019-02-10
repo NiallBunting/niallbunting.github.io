@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title>{{ site.name }} - {{ site.description }}</title>
 	<meta name="description" content="{{ site.meta_description}}" />
-	<link href="index.css" rel="stylesheet" media="screen" type="text/css">
 	<script type="text/javascript" src="./scripts/google.js">//Google Analytics</script>
 	<script src="./scripts/index.js">//The index javascript</script>
+	<link href="index.css" rel="stylesheet" media="screen" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 </head>
 <body>
@@ -14,7 +15,7 @@
 		<div id="left">
 			<p>
 				<div class="circular">
-					<img src="Me.png" alt="A Black and white picture of Niall." />
+					<img src="{{ "assets/images/profile.png" | relative_url }}" alt="A Black and white picture of Niall." />
 				</div>
 			</p>
 		</div>
@@ -39,13 +40,14 @@
 				<ul>
 					<li><a href="https://rawgit.com/NiallBunting/Password-Generator/v0.1/index.html">Data Derived Password Generator.</a></li>
 					<li><a href="url-multi-redirect">Multiple URL Forwarder.</a></li>
-					<li><a href="ukdvorak">Microsoft UK Dvorak Keyboard Layout</a></li>
 				</ul>
 		</div>
 	</div>
 	<div class="wrapper">
+		<hr>
+	</div>
+	<div class="wrapper">
 		<div class="content">
-			<hr>
 			<p>
 				<h2>Places To Find Me:</h2>
 				<ul>
@@ -55,10 +57,11 @@
 			</p>
 		</div>
 	</div>
-
+	<div class="wrapper">
+		<hr>
+	</div>
 	<div class="wrapper">
 		<div class="content">
-			<hr>
 			<h2>Blog</h2>
 			{{content}}
 		</div>
