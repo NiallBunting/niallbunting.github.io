@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Niall Bunting</title>
+	<title>{{ site.name }} - {{ site.description }}</title>
+	<meta name="description" content="{{ site.meta_description}}" />
 	<link href="index.css" rel="stylesheet" media="screen" type="text/css">
-	<meta name="description" content="Niall Bunting's Personal Website. Which contains various information about him.">
+	<script type="text/javascript" src="./scripts/google.js">//Google Analytics</script>
 	<script src="./scripts/index.js">//The index javascript</script>
-        <script type="text/javascript" src="./scripts/google.js">//Google Analytics</script>
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 </head>
 <body>
 	<div class="wrapper">
@@ -56,10 +57,10 @@
 		</div>
 	</div>
 
-	<div class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
-
-
-		{{content}}
+	<div class="wrapper">
+		<div class="content">
+			{{content}}
+		</div>
 	</div>
 </body>
 </html>
