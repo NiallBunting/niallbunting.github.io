@@ -1,59 +1,64 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Niall Bunting</title>
-	<link href="index.css" rel="stylesheet" media="screen" type="text/css">
-	<meta name="description" content="Niall Bunting's Personal Website. Which contains various information about him.">
-	<script src="./scripts/index.js">//The index javascript</script>
-        <script type="text/javascript" src="./scripts/google.js">//Google Analytics</script>
-</head>
-<body>
-	<div class="wrapper">
-		<div id="left">
-			<p>
-				<div class="circular">
-					<img src="Me.png" alt="A Black and white picture of Niall." />
-				</div>
-			</p>
-		</div>
-		<div id="right">
+---
+layout: default
+title: Home
+cover: false
+about: 'about.html'
+---
 
-			<h1>Hi, I'm Niall Bunting</h1>
-			<p>
-				I'm a former student of <a href="http://aber.ac.uk">Aberystwyth University</a>, having studied computer science. I'm now working as a software developer.
-			</p>
-			<p>
-				I enjoy setting myself projects normally involving technology. One area I think particularly interesting is virtual reality (VR).
-			</p>
-			<p>
-				Outside of technology I like playing the game of Go and have competed in <a href="http://www.europeangodatabase.eu/EGD/Player_Card.php?key=18650280">tournaments</a>.
-			</p>
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+            {% if page.logo %}
+                <a class="blog-logo" href="{{ site.baseurl }}">
+                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                </a>
+            {% endif %}
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">
+                {% if site.description %} {{ site.description }}. {% endif %}
+                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
+            </h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
 
-		</div>
-	</div>
-	<div class="wrapper">
-		<div class="content">
-			<h2>Project Links</h2>
-				<ul>
-					<li><a href="https://rawgit.com/NiallBunting/Password-Generator/v0.1/index.html">Data Derived Password Generator.</a></li>
-					<li><a href="url-multi-redirect">Multiple URL Forwarder.</a></li>
-					<li><a href="ukdvorak">Microsoft UK Dvorak Keyboard Layout</a></li>
-				</ul>
-		</div>
-	</div>
-	<div class="wrapper">
-		<div class="content">
-			<hr>
 
-			<p>
-				<h2>Places To Find Me:</h2>
-				<ul>
-					<li><a href="http://linkedin.com/in/niallbunting">LinkedIn</a></li>
-					<li><a href="http://github.com/NiallBunting/">GitHub</a></li>
-				</ul>
-			</p>
-		</div>
-	</div>
-</body>
-</html>
+<main id="content" class="content" role="main">
+
+
+    <div class="extra-pagination inner">
+        {% include pagination.html %}
+    </div>
+
+    {% for post in paginator.posts %}
+
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="post-excerpt">
+            {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
+        </section>
+        <footer class="post-meta">
+            {% if site.author %}
+                <img class="author-thumb" src="{{ site.baseurl }}/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
+                {{ site.author }}
+            {% endif %}
+            {% if post.categories.size > 0 %} 
+                {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
+            {% endif %}
+            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
+                {{ post.date | date_to_string }}
+            </time> 
+        </footer>
+    </article>
+
+    {% endfor %}
+
+    {% include pagination.html %}
+
+</main>
