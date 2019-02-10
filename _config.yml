@@ -6,11 +6,11 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: '/'
-domain_name: 'https://www.niallbunting.com'
+baseurl: /
+domain_name: 'http://www.niallbunting.com'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url:            'https://www.niallbunting.com'
-author:         'Niall Bunting'
+author: 'Niall Bunting'
