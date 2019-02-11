@@ -745,6 +745,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 body:not(.post-template) .post-title {
+    margin-bottom: 0;
     font-size: 3.6rem;
 }
 
@@ -764,7 +765,7 @@ body:not(.post-template) .post-title {
 
 .post-meta {
     display: block;
-    margin: 1.75rem 0 0 0;
+    margin: 1.75rem 0 1.75rem 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
@@ -1377,6 +1378,7 @@ body:not(.post-template) .post-title {
     }
 
     body:not(.post-template) .post-title {
+        margin-bottom: 0;
         font-size: 3.2rem;
     }
 
@@ -1612,6 +1614,7 @@ body:not(.post-template) .post-title {
     }
 
     body:not(.post-template) .post-title {
+        margin-bottom: 0;
         font-size: 2.5rem;
     }
 
