@@ -1,0 +1,55 @@
+Basics of EBCDIC
+
+* That it's a character encoding
+* There are different layouts
+* Fixed width columns what it is and what it means
+
+
+Packing
+
+* What packing is
+  * For signing items
+* The table of packed values
+* Filler
+
+```
+Value | Sign | Last Value
+{     | +    | 0
+A     | +    | 1
+B     | +    | 2
+C     | +    | 3
+D     | +    | 4
+E     | +    | 5
+F     | +    | 6
+G     | +    | 7
+H     | +    | 8
+I     | +    | 9
+}     | -    | 0
+J     | -    | 1
+K     | -    | 2
+L     | -    | 3
+M     | -    | 4
+N     | -    | 5
+O     | -    | 6
+P     | -    | 7
+Q     | -    | 8
+R     | -    | 9
+```
+
+Copybooks
+
+```
+      ****************************************************************************
+      * Nialls shitty record
+      ****************************************************************************
+
+        01  RECORD.
+          10  ID                   PIC X(1)  BINARY.
+          10  DATA                 PIC X(26).
+          10  DECIMAL              PIC 99V99.
+          10  IGNORE               PIC X(4).
+          10  NUMBER-1             PIC S999.
+          10  COMMA                PIC X(1).
+          10  NUMBER-2             PIC S999.
+          10  NEWLINE              PIC X(1).
+```
