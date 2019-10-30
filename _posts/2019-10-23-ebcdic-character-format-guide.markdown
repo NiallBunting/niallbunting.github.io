@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "EBCDIC Format - How it works"
+title:  "EBCDIC Character Format - A Guide"
 date:   2019-10-23 18:00:00
 categories: EBCDIC Cobol packing cobybooks
 ---
@@ -27,7 +27,7 @@ This post is mainly going to deal with fixed width EBCDIC records.
 ![](/assets/images/ebcdicusage.jpg)
 *"If we use EBCDIC, does that count as encryption? No one can read that format."*
 
-## EBCDIC Basics
+### EBCDIC Basics
 
 At it's heart EBCDIC is just a character encoding, in simple terms that is how we map a number onto character as computers only store numbers i.e. 61:a, 62:b, 63:c.
 
@@ -41,7 +41,7 @@ PICTURE HERE OF A FIXED WIDTH.?
 
 NUMBERS ARE STORED AS CHARs?
 
-### EBCDIC Packing
+#### EBCDIC Packing
 
 This is a method that EBCDIC uses to store the sign of a given number (if it's positive or negative).
 
@@ -78,7 +78,7 @@ R     | -    | 9
 ```
 
 
-## EBCDIC Copybooks
+### EBCDIC Copybooks
 
 Let's start off showing a fictional fixed width copybook.
 
@@ -114,7 +114,7 @@ There are also some special type information:
 * (n) : for this length.
 * V : A decimal
 
-## Convert ASCII to EBCDIC
+### Convert ASCII to EBCDIC
 
 The Unix command:
 {% highlight bash %}
@@ -152,7 +152,7 @@ As you can see below the data has been turned into this:
 <PASTE THE OUTPUT HERE>
 {% endhighlight %}
 
-## Reading EBCDIC with a Spark Cluster
+### Reading EBCDIC with a Spark Cluster
 
 Due to the complexities mentioned above I would recommend using the [Cobrix library][cobrix]. This has been developed and made open source by [Absa][absa] which is a South African financial services group.
 
