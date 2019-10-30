@@ -2,7 +2,7 @@
 layout: post
 title:  "EBCDIC Character Format - A Guide"
 date:   2019-10-23 18:00:00
-categories: EBCDIC Cobol packing cobybooks
+categories: EBCDIC Cobol packing copybooks
 ---
 
 This aims to explain what EBCDIC is and how to use it. If you want to read about it's history have a look at the [wiki page][wikipage] (also take a look at the joke section).
