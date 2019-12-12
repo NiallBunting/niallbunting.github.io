@@ -5,9 +5,9 @@ date:   2019-10-23 18:00:00
 categories: EBCDIC Cobol packing copybooks
 ---
 
-This aims to explain what EBCDIC is and give an overview how to use it. If you want to read about it's history have a look at the [wiki page][wikipage] (also take a look at the joke section).
+This aims to explain what EBCDIC is and give an overview how to use it. If you want to read about its history, have a look at the [wiki page][wikipage] (also take a look at the joke section).
 
-This post is mainly going to deal with fixed width EBCDIC records.
+This post is mainly going to deal with fixed width EBCDIC records. We will also briefly cover reading EBCDIC into a Apache Spark cluster using the Cobrix library.
 
 ### Contents
 1. [EBCDIC in five bullet points](#ebcdic-in-five-bullet-points)
@@ -29,9 +29,11 @@ This post is mainly going to deal with fixed width EBCDIC records.
 
 ### EBCDIC Basics
 
-At it's heart EBCDIC is just a character encoding, in simple terms that is how we map a number onto character as computers only store numbers i.e. 61:a, 62:b, 63:c.
+At its heart, both EBCDIC (Extended Binary Coded Decimal Interchange Code) and ASCII (American Standard Code for Information Interchange) are methods of character encoding. In simple terms, they are a way of translating a binary number sequence into letters and numbers: ie 61 = a, 62 = b, 63 = c.
 
-There are multiple different versions of EBCDIC that are inoperable with each other, the different formats are defined by their code pages, and they are all different so you should check which one your project uses.
+EBCDIC uses an 8-bit (one byte) character encoding, this is different from ASCII that uses a 7-bit encoding.
+
+EBCDIC is used to encode the Latin character set. However, there are multiple different versions of EBCDIC that are inoperable with each other, the different formats are defined by their code pages, and they are different. I recommend checking which one your project uses.
 
 Here is an example of a fixed width record (in ASCII for readability).
 
@@ -42,7 +44,7 @@ Here is an example of a fixed width record (in ASCII for readability).
 
 As you can see in the data, there is no schema baked into this record, so if you received this file you would not know how to parse it. 
 
-The schemas are stored in separate files called copybooks, there are two main ways these records can be composed, either fixed or variable width records. The difference between these is how a record is formatted. A fixed width record will always have the exact same length e.g. fixed width of 512 bytes, means each record would be that length even if it was just a name. 
+The schemas are stored in separate files called copybooks, there are two main ways these records can be composed, either fixed or variable width records. The difference between these is how a record is formatted. A fixed width record will always have the exact same length e.g. fixed width of 512 characters, means each record would be that length even if it was just a name. 
 
 Another thing to highlight, if you convert to ASCII the numbers just look like strings, rather than in a specific number format.
 
@@ -99,9 +101,11 @@ There are two main types:
 These fields then are specific modifiers for specific behaviour.
 
 There are also some special type information:
-* S : The field is packed
-* (n) : for this length.
-* V : A decimal
+* S : Signed field. This field will be packed.
+* (n) : Symbolises multiple instances of the character that precedes it. For example 9(2) will become 99.
+* V : A virtual decimal. The parser will add a decimal at this point.
+
+Note: About decimals. Either the virtual decimal can be used which will be inserted by the parser. Or you can just use a regular decimal number. Both are supported by the specification.
 
 That contains most of the info for most of the records, however sometimes there are additional fields such as `BINARY` in this example. There are many different format for more specific use cases.
 
@@ -132,8 +136,8 @@ This is our COBOL EBCDIC definition.
 Here is our data.
 
 {% highlight text %}
-00000001Niall     2
-00000002Martin    9
+00000001Niall     2A
+00000002Martin    0I
 {% endhighlight %}
 
 To convert the following to file use the following command. If you are following this guide to parse the EBCDIC using Spark, you don't need to worry about the spaces as they will be stripped by the library.
