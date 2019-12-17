@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "EBCDIC Character Format - A Guide"
-date:   2019-10-23 18:00:00
+date:   2019-12-09 18:00:00
 categories: EBCDIC Cobol packing copybooks
 ---
 
