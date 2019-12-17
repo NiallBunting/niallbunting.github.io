@@ -46,13 +46,11 @@ As you can see in the data, there is no schema baked into this record, so if you
 
 The schemas are stored in separate files called copybooks, there are two main ways these records can be composed, either fixed or variable width records. The difference between these is how a record is formatted. A fixed width record will always have the exact same length e.g. fixed width of 512 characters, means each record would be that length even if it was just a name. 
 
-Another thing to highlight, if you convert to ASCII the numbers just look like strings, rather than in a specific number format.
+Another thing to highlight, if you convert EBCDIC to ASCII encoding the numbers are just characters, rather than using a number format for representation by default. This causes numbers to take up lots of space as each number character is stored independently.
 
 #### EBCDIC Packing
 
-EBCDIC may store the numbers as strings, however sometimes it uses different characters than 0-9. These values are called packed and is how EBCDIC encodes a positive or negative number, if the schema defines the number to be packed. 
-
-This allows us to set the sign and the value that the number should be. This is clever as it allows us to both store a number and sign in one byte, rather than taking two bytes to do the same operation.
+EBCDIC uses an 8 bit character set, meaning that every row of an EBCDIC file can be read as a string. With a strong focus on minimizing field widths, one trick that this format employs when encoding numbers is to have the sign (whether it's positive or negative) encoded as part of the string changing the least significant digit from a number to a non numeric character. This saves a character by turning the four character "-100" to the three character "10}"
 
 Packing uses nibbles (4 bits) of a byte rather than using the full byte. To store the information about a given number. 
 
@@ -61,7 +59,33 @@ With the values:
   * C - positive
   * D - negative
 
-I recommend looking at this [simotime.com][simotime] page if you want to find out more about packing.
+This can also be viewed from the 8 bit perspective, giving you the following table:
+
+```
+Value | Sign | Last Value
+{     | +    | 0
+A     | +    | 1
+B     | +    | 2
+C     | +    | 3
+D     | +    | 4
+E     | +    | 5
+F     | +    | 6
+G     | +    | 7
+H     | +    | 8
+I     | +    | 9
+}     | -    | 0
+J     | -    | 1
+K     | -    | 2
+L     | -    | 3
+M     | -    | 4
+N     | -    | 5
+O     | -    | 6
+P     | -    | 7
+Q     | -    | 8
+R     | -    | 9
+```
+
+[simotime.com][simotime] is a good reference to find out more about packing.
 
 ### EBCDIC Copybooks
 
@@ -72,21 +96,29 @@ Let's start off showing a fictional fixed width copybook.
       * An Example Copybook
       ********************************************
 
-        01  RECORD.
-          10  ID                   PIC X BINARY.
-          10  INTEGER              PIC 9.
-          10  DECIMAL              PIC 99V99.
-          10  FOURCHAR             PIC X(4).
-          10  PACKEDNUMBER         PIC S999.
-          10  COMPLEXNUMBER        PIC S9V9.
-          10  FILLER               PIC X(50).
+       01  RECORD.
+         10  ID                   PIC X BINARY.
+         10  INTEGER              PIC 9.
+         10  DECIMAL              PIC 99V99.
+         10  FOURCHAR             PIC X(4).
+         10  PACKEDNUMBER         PIC S999.
+         10  COMPLEXNUMBER        PIC S9V9.
+         10  FILLER               PIC X(50).
 ```
 
-The spaces are important as that is a different section that is reserved for things such as comments.
+The layout of a copybook follows the file layout of Cobol. This means that columns have specific uses and this also needs to be followed in the Copybook.
 
-Next thing are the numbers these define the hierarchy of the copybook. In this example you have the top-level record and then all the fields contained with in it. Other uses could be and Address field that splits the Line 1, Line 2, and Country. Into sub sections. The numbers themselves don't actually matter, just needs to be larger than the parent.
+Columns 1-6 are left empty and are where the line numbers were stored on cards. This area is called the Sequence number area and is ignored by the compiler.
 
-The next line is the name of the field.
+Next we have the indicator area which is a single column (7). This column is mainly used to indicate if that line is a comment. As seen above. However it also has a few other characters such as `/`, `-`, and `D`. They have the following effects: a comment that w will be printed, the line continues from the previous one, and enables that line in debugging mode.
+
+Area A (8-11) contains the level numbers such as 01 and 10 in our example. After 01 it does not matter the exact numbers used for ordering. However, the level numbers do need to be larger than any sections below.
+
+Columns 12-72 are called Area B and that contains any other code not allowed in Area A. This contains the name of the field in the above example that continues to around column 25. Next is the definition of the datatype. Described in the next section.
+
+73+ is the program name area. Historically the max was 80 due to punch cards. It is used to identify the sequence of the card.
+
+Lines must end with a full stop, this is a gotcha, so be careful to add it.
 
 ### PIC
 
@@ -97,6 +129,7 @@ The basic types are the following:
 There are two main types:
 * X : Any character
 * 9 : An integer
+* A : A alphabetic character (A-Z with blank)
 
 These fields then are specific modifiers for specific behaviour.
 
@@ -107,7 +140,15 @@ There are also some special type information:
 
 Note: About decimals. Either the virtual decimal can be used which will be inserted by the parser. Or you can just use a regular decimal number. Both are supported by the specification.
 
-That contains most of the info for most of the records, however sometimes there are additional fields such as `BINARY` in this example. There are many different format for more specific use cases.
+That contains most of the info for most of the records, however sometimes there are additional fields such as `BINARY` above. This tells cobol how to store the data internally, usually there are just two `COMPUTATIONAL` and `DISPLAY` (default). Also included in this list are other keywords which may be useful:
+ * `DISPLAY` - Stored as ASCII takes 1 BYTE.
+ * `BINARY` - Stored in binary.
+ * `COMP-<number>` - COMP stands for "USAGE IS COMPUTATIONAL". The number changes the space required to store a value and how it's stored within that space. Some examples are below.
+   * `COMP-1` - Similar to real or float.
+   * `COMP-2` - Similar to long or double.
+   * `COMP-3` - Reduces storage space by using a nibble for storage.
+   * `COMP-3+` - Various internal formats.
+ * `VALUE` - Sets a default value.
 
 #### Filler
 
@@ -169,9 +210,18 @@ spark
   .load("data/testdata")
 ```
 
+### Acknowledgements/Further Reading
+
+I would like to thank Oliver Hathaway for copy editing.
+
+A thread which I heavily used to refresh my knowledge is [here][copybook].
+
+For further reading [this university of Limerick][resource] is a great resource about Cobol.
 
 
 [wikipage]: https://en.wikipedia.org/wiki/EBCDIC
 [cobrix]: https://github.com/AbsaOSS/cobrix
 [absa]: https://www.absa.co.za/
 [simotime]: http://simotime.com/datapk01.htm
+[copybook]: https://www.tek-tips.com/viewthread.cfm?qid=44991
+[resource]: http://www.csis.ul.ie/cobol/
