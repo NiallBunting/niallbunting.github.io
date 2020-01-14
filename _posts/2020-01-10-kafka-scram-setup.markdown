@@ -18,15 +18,15 @@ A few different mechanisms are available for authentication including GSSAPI(def
 * PLAIN is just a clear text password mechanism.
 * SCRAM is a password based challenge response mechanism.
 
-In Java this is managed by the [JAAS(Java Authentication and Authorization Service)][jaas] which manages the authentication on your behalf. This is often a configuration file such as `jaas.config` however in the example is is specified within the `application.yml` on line 10. This can be replaced with a directory where the `jaas.config` can be found. This is also where the class needs to be defined which will be handling the Logging in, if this is not specified it will default to the Kerberos login module.
+In Java this is managed by the [JAAS(Java Authentication and Authorization Service)][jaas] which manages the authentication on your behalf. This is often a configuration file such as `jaas.config` however in the example it is specified within the `application.yml` on line 10. This can be replaced with a directory where the `jaas.config` is located. This also contains the classpath of the class handling Logging in, if this is not specified it will default to the Kerberos login module.
 
-By default Kafka communicates in plain text which is why lines 16-21 specify the SSL configuration, this allows the Kafka streams to be encrypted between Kafka and the clients.
+By default Kafka communicates in plain text this can be changed by specifying SSL (lines 16-21) configuration, this allows the Kafka streams to be encrypted between Kafka and the clients.
 
 ### The Code
 
-This is rather easy to setup using spring-kafka which can be imported via Gradle or Maven.
+Spring-kafka can be imported via Gradle or Maven (the following examples use: 2.1.6).
 
-The `application.yml` is the most important step as it defines the configuration to spring, such as were to connect. The rest is just the code to actually listen to the events.
+The `application.yml` is the most important step as it defines the configuration to spring, such as were to connect. The rest is the boilerplate code that listens to the events.
 
 #### application.yml
 
