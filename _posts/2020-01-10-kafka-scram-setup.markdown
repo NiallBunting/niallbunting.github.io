@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring Kafka with SSL and SCRAM"
-date:   2019-12-14 18:30:00
+date:   2020-01-10 18:30:00
 categories: Spring Kafka SSL SCRAM
 ---
 
