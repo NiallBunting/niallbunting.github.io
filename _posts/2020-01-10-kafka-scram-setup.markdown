@@ -20,7 +20,9 @@ A few different mechanisms are available for authentication including GSSAPI(def
 
 In Java this is managed by the [JAAS(Java Authentication and Authorization Service)][jaas] which manages the authentication on your behalf. This is often a configuration file such as `jaas.config` however in the example it is specified within the `application.yml` on line 10. This can be replaced with a directory where the `jaas.config` is located. This also contains the classpath of the class handling Logging in, if this is not specified it will default to the Kerberos login module.
 
-By default Kafka communicates in plain text this can be changed by specifying SSL (lines 16-21) configuration, this allows the Kafka streams to be encrypted between Kafka and the clients.
+In the example config sets the JAAS config within the `application.yml`. If you want to use a file for this remove lines 9 and 10 and specify `-Djava.security.auth.login.config=<location>`.
+
+By default Kafka communicates in plain text this can be changed by specifying SSL (lines 14-19) configuration, this allows the Kafka streams to be encrypted between Kafka and the clients.
 
 ### The Code
 
@@ -37,21 +39,19 @@ The `application.yml` is the most important step as it defines the configuration
 4 :     consumer:
 5 :       group-id: <your group-ids>
 6 :       auto-offset-reset: earliest
-7 :       properties:
-8 :         sasl:
-9 :           jaas:
-10:             config: org.apache.kafka.common.security.scram.ScramLoginModule required username=<scram user> password=<scram password>;
-11:           mechanism: SCRAM-SHA-512
-12:         security:
-13:           protocol: SASL_SSL
-14:     jaas:
-15:       enabled: true
-16:     ssl:
-17:       truststore-location: <truststore location>
-18:       truststore-password: <truststore password>
-19:       keystore-location: <keystore location>
-20:       keystore-password: <keystore password>
-21:       key-password: <key password>
+7 :     properties:
+8 :       sasl:
+9 :         jaas:
+10:           config: org.apache.kafka.common.security.scram.ScramLoginModule required username=<scram user> password=<scram password>;
+11:         mechanism: SCRAM-SHA-512
+12:       security:
+13:         protocol: SASL_SSL
+14:     ssl:
+15:       truststore-location: <truststore location>
+16:       truststore-password: <truststore password>
+17:       keystore-location: <keystore location>
+18:       keystore-password: <keystore password>
+19:       key-password: <key password>
 {% endhighlight %}
 
 #### Root project
