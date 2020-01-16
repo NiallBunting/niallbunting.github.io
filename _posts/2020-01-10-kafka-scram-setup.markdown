@@ -22,7 +22,9 @@ In Java this is managed by the [JAAS(Java Authentication and Authorization Servi
 
 In the example config sets the JAAS config within the `application.yml`. If you want to use a file for this remove lines 9 and 10 and specify `-Djava.security.auth.login.config=<location>`.
 
-By default Kafka communicates in plain text this can be changed by specifying SSL (lines 14-19) configuration, this allows the Kafka streams to be encrypted between Kafka and the clients.
+By default Kafka communicates in plain text this can be changed by specifying SSL (lines 14-19) configuration, this allows the Kafka streams to be encrypted between Kafka and the clients. The `file:` option is optional if the file does not exist on the class path, as by default it is assumed to be `classpath:`.
+
+For the reference of options search kafka in the [spring reference][springref].
 
 ### The Code
 
@@ -47,8 +49,8 @@ The `application.yml` is the most important step as it defines the configuration
 12:       security:
 13:         protocol: SASL_SSL
 14:     ssl:
-15:       truststore-location: <truststore location>
-16:       truststore-password: <truststore password>
+15:       truststore-location: [file:]<truststore location>
+16:       truststore-password: [file:]<truststore password>
 17:       keystore-location: <keystore location>
 18:       keystore-password: <keystore password>
 19:       key-password: <key password>
@@ -83,3 +85,4 @@ public class MyEventListener {
 [kafka]: https://kafka.apache.org/
 [sasl]: https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
 [jaas]: https://en.wikipedia.org/wiki/Java_Authentication_and_Authorization_Service
+[springref]: https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
