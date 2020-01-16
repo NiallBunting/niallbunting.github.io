@@ -34,31 +34,31 @@ The `application.yml` is the most important step as it defines the configuration
 
 #### application.yml
 
-{% highlight java %}
-1 : spring:
-2 :   kafka:
-3 :     bootstrap-servers: <your brokers>
-4 :     consumer:
-5 :       group-id: <your group-ids>
-6 :       auto-offset-reset: earliest
-7 :     properties:
-8 :       sasl:
-9 :         jaas:
-10:           config: org.apache.kafka.common.security.scram.ScramLoginModule required username=<scram user> password=<scram password>;
-11:         mechanism: SCRAM-SHA-512
-12:       security:
-13:         protocol: SASL_SSL
-14:     ssl:
-15:       truststore-location: [file:]<truststore location>
-16:       truststore-password: [file:]<truststore password>
-17:       keystore-location: <keystore location>
-18:       keystore-password: <keystore password>
-19:       key-password: <key password>
+{% highlight java linenos=table %}
+spring:
+  kafka:
+    bootstrap-servers: <your brokers>
+    consumer:
+      group-id: <your group-ids>
+      auto-offset-reset: earliest
+    properties:
+      sasl:
+        jaas:
+          config: org.apache.kafka.common.security.scram.ScramLoginModule required username=<scram user> password=<scram password>;
+        mechanism: SCRAM-SHA-512
+      security:
+        protocol: SASL_SSL
+    ssl:
+      truststore-location: [file:]<truststore location>
+      truststore-password: [file:]<truststore password>
+      keystore-location: <keystore location>
+      keystore-password: <keystore password>
+      key-password: <key password>
 {% endhighlight %}
 
 #### Root project
 
-{% highlight java %}
+{% highlight java linenos=table %}
 @EnableKafka
 public class MyApplication {
   public static void main(String[] args) {
@@ -69,7 +69,7 @@ public class MyApplication {
 
 #### Listener
 
-{% highlight java %}
+{% highlight java linenos=table %}
 @Service
 @ConditionalOnProperty(value = "feature-flags.kafka", havingValue = "true")
 public class MyEventListener {
