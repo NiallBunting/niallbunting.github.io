@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "The costs of releasing software"
+title:  "The Costs of Releasing Software"
 date:   2020-02-24 14:30:00
 categories: costs releasing software fixed variable
 ---
 
-Many teams wish to get to a state where there version of 'done' on a item of work, is it being in production. This has the secondary effect of teams wanting to release more frequently, this can be a static amount of time or per number of items of work.
 
+Impactful first sentance.
+
+Many teams wish to get to a state where there version of 'done' on a item of work, is it being in production. This has the secondary effect of teams wanting to release more frequently, this can be a static amount of time or per number of items of work.
 
 I've been in many meetings where the team is in agreement that this is something they would like to persue. What I hope to provide is a model to use to see if this is possible and the areas that could be focused on to get the best rate of return.
 
