@@ -6,7 +6,7 @@ categories: costs releasing software fixed variable
 ---
 
 
-Impactful first sentance.
+Releasing software has often hidden costs, this can hinder your ability to release frequently.
 
 Many teams wish to get to a state where there version of 'done' on a item of work, is it being in production. This has the secondary effect of teams wanting to release more frequently, this can be a static amount of time or per number of items of work.
 
@@ -59,6 +59,35 @@ During
 After
 * Deeper testing on specific features.
 * Fixing any bugs that may have occured
+
+# Revenue
+
+
+
+Releases do have a form of revenue in this model and this is hard to quantify however it is the benefit it brings to your customers, this may be able to be talked about in money terms with some features. However sometimes it's a non-tangable value.
+
+
+# Profit
+
+
+
+
+
+You have to think of each release having a certain about of value. You really want to make sure that you are breaking even even better 
+
+
+Since the variable costs diminish on the amount of work in each release, if you make your releases small they basicly vanisheh themselves. That's why it's important to focus on the fixed costs to begin with. If you don't have control over your fixed costs then you are going to find it difficult to release in a manner that enables you to do small releases. Your balance may be better off not aiming for such small releases as the fixed costs overhead of doing the releases will far outweigh t.
+
+
+
+
+
+# Margins
+
+How big do you want you margin
+
+
+
 
 # Something something
 
