@@ -5,7 +5,7 @@ date:   2020-03-27 14:30:00
 categories: costs releasing software fixed variable
 ---
 
-![](/assets/images/posts/costs-of-software/header.png)
+![](/assets/images/costs-of-software/header.png)
 
 Releasing software has often hidden costs, these costs can hinder your ability to release frequently.
 
@@ -35,7 +35,7 @@ There are two types of costs for releases. Fixed costs are independent of the am
 
 Your total cost is both the fixed costs + the variable costs, as can be seen on the diagram below. This is the total cost of doing a release.
 
-![](/assets/images/posts/costs-of-software/costs.png)
+![](/assets/images/costs-of-software/costs.png)
 
 ## Fixed Costs Per Release
 
@@ -105,7 +105,7 @@ For smaller releases:
 
 A clear example of how these costs build up for more frequent releases are shown in this comic, as the amount time worth fixing the process grows below.
 
-![](/assets/images/posts/costs-of-software/xkcd-1205.png)
+![](/assets/images/costs-of-software/xkcd-1205.png)
 *Reference: [XKCD 1205][xkcd1205]*
 
 # Outcome
