@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "The Costs of Releasing Software - Why frequent releases may not be a good idea."
+title:  "Are frequent releases a good idea? - The Costs of Releasing Software"
 date:   2020-03-27 14:30:00
-categories: costs releasing software fixed variable
+categories: frequent releases costs software
 ---
 
 ![](/assets/images/costs-of-software/header.png)
@@ -11,7 +11,7 @@ Releasing software has often hidden costs, these costs can hinder your ability t
 
 Many teams have an ideal where their version of 'done' for an item of work is having it in production. This has the secondary effect of teams wanting to release more frequently, ether every static amount of time or per number of items of work.
 
-I've been in many meetings where the team is in agreement that this is something they would like to pursue. This posts aims to provide is a model to evaluate that goal against and the areas to focus on to help you achieve this goal.
+I've been in many meetings where the team is in agreement that this is something they would like to pursue. This posts aims to provide is a model to evaluate if that goal is suitable or if batch releasing should be preferred.
 
 ## Accounting Model
 
@@ -113,6 +113,8 @@ A clear example of how these costs build up for more frequent releases are shown
 This means that the best way to work out if it is possible for your team to release more frequently is to decide if as a team if its possible to reduce the fixed costs down to a minimal value. If you have aspects of the fixed costs you cannot change this goal may not make sense for your team. This often is organisational and these decisions and processes are made outside the team.
 
 If the team can't change these processes, then it may be more profitable to have more value in each release (higher revenue) for each time you need to pay the costs. The goal of smaller releases may not be the best option and it may be better to choose a larger release cycle.
+
+To sum up, this very much depends on your organisation and how much freedom your team has. High dependencies mean that you should probably aim for infrequent batched releases and vice versa for low dependencies.
 
 # Footnote
 
