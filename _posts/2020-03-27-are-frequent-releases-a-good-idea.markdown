@@ -5,13 +5,13 @@ date:   2020-03-27 14:30:00
 categories: frequent releases costs software
 ---
 
-![](/assets/images/costs-of-software/header.png)
-
 Releasing software often has costs which can hinder your ability to release frequently.
 
 Many teams have an ideal where their version of 'done' for an item of work is having it in production. This has the secondary effect of teams wanting to release more frequently, either every static amount of time or per number of items of work.
 
 I've been in many meetings where the team is in agreement that this is something they would like to pursue. This post aims to provide a model to evaluate if that goal is suitable or if batch releasing should be preferred.
+
+![](/assets/images/costs-of-software/header.png)
 
 ## Accounting Model
 
