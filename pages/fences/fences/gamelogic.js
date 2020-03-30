@@ -1,0 +1,4 @@
+class GameLogic {
+  constructor() {
+  }
+}
