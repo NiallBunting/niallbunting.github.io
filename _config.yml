@@ -1,7 +1,7 @@
 name: Niall Bunting
 bio: "Software Engineer"
 description: Personal Website
-meta_description: "Niall Bunting's Personal Website. Which contains various information about him."
+meta_description: "Niall Bunting's Website. Containing info, various projects, and blog posts."
 
 markdown: kramdown
 highlighter: rouge
