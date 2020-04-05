@@ -13,5 +13,5 @@ google_analytics: 'UA-56330367-1'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'https://www.niallbunting.com/'
+url: 'https://www.niallbunting.com/'
 author: 'Niall Bunting'
