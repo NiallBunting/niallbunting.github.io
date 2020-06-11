@@ -42,12 +42,12 @@ Liberating structures are 33 alternatives to the conventional structures noted a
 
 The 33 have different use cases and often have different outcomes, so you picking the right tool for the job is required here. Many of them leverage the '1-2-4-All' structure, where you think alone, in pairs, in quads and then share back with the rest of the group.
 
-![](http://static1.1.sqspcdn.com/static/f/1272828/22496976/1366390480267/LS+Menu+2.2+xwide+4-19-13.jpg?token=Icyo83%2BT6BydlgmnVBgW5PJ0Ah8%3D)
+![](/assets/images/liberating-structures.png)
 *List of the structures taken from - [Liberating Structures][liberatingstructures]*
 
 ## The Experiences
 
-This post will be updated as I use more of the structures, and if my views of the structures significantly change as I use them more.
+This post will be updated as I use more of the structures, and if my views of the structures significantly change as I have more experince with them.
 
 I have split them into two groups, one when I facilitated the meeting and another when I was a participant.
 
@@ -62,21 +62,33 @@ I have split them into two groups, one when I facilitated the meeting and anothe
 -->
 
 
-### <a name="f"/>Acted as Facilitator
+#### <a name="f"/>Acted as Facilitator
 
 <ul>
   <details>
   <summary><a name="f-wicked-questions"/><li><strong>Wicked Questions</strong> - Used to find the opposing strategies that both need to be pursued to be successful.</li></summary>
     
-  These are my thoughts about this.
-
-  Etc. 
+  <div class="details-inner">
+   <p>
+   I enjoyed using this structure and I think the team enjoyed the task as they had not tried anything similar before.
+   </p> <p>
+   The rules for this structure were easy to follow and not overly perscriptive in it's method.
+   </p> <p>
+   It was good to put down in words, some of these paradoxical challenges the team faces, even though some of them are obvious to many members of the team. None of the generated questions particually stuck out, as ground breaking. A couple being a little one sided - but overall it was a good mix.
+   </p> <p>
+   I found it difficult to bulid upon the the wicked questions proposed back to the entire group, however, we came together to find an overall wicked question that covered the major aspects of other questions that were proposed.
+   </p> <p>
+   Once the questions were listed, I felt the group didn't really know how to proceed, as we had identified problems without obvious solutions. As by the very nature of wicked questions they are not easily fixable. It will be interesting to see if over time this leads the team to reduce the friction between the two sides of the major dichotomy.
+   </p> <p>
+   I would recommend trying it out with your team.
+   </p>
+  </div>
   </details>
 </ul>
 
-### <a name="p"/>Acted as Participant
+#### <a name="p"/>Acted as Participant
 
-Coming Soon
+More Coming Soon.
 
 <!---
 <ul>
