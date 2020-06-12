@@ -1,15 +1,13 @@
 ---
 layout: post
-title:  "Experiences of using liberating structures"
+title:  "Experiences using liberating structures"
 date:   2020-06-10 13:20:00
 categories: liberating structures experiences
 ---
 
-
 Liberating structures promise to unleash innovation, creativity and great ideas. Here I capture my thoughts and feelings, from my experiences with liberating  microstructures. 
 
 As part of this post I will include a brief overview of what these microstructures are, for more information about specific structures see the [liberating structure website][liberatingstructures].
-
 
 [liberatingstructures]: http://www.liberatingstructures.com/
 
