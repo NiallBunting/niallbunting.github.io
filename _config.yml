@@ -4,13 +4,16 @@ description: Personal Website
 meta_description: "Niall Bunting's Website. Containing info, various projects, and blog posts."
 
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 highlighter: rouge
 logo: false
 paginate: 15
 baseurl: ""
-domain_name: 'http://www.niallbunting.com'
+domain_name: 'https://www.niallbunting.com'
 google_analytics: 'UA-56330367-1'
 gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url: 'https://www.niallbunting.com/'
