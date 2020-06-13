@@ -13,13 +13,13 @@ As part of this post I will include a brief overview of what these microstructur
 
 ## What are Structures
 
-Structures are the various parts that come together to make a workplace/enterprise. These are split into both 'Macrostructures', 'Microstructures' and 'Structural elements'.
+Structures are the various parts that come together to make a workplace/enterprise. These are split into 'Macrostructures', 'Microstructures' and 'Structural elements'.
 * Macrostructures are the larger and slower moving items such as the core operating model, buildings and strategy.
 * Microstructures are the smaller parts such as; meeting rooms, brainstorm and discussions. This is where and how discussions take place.
 * Structural elements facilitate the microstructures. For example, whiteboards, time allocations and agendas.
 
 
-All the structures play an important role, as each builds upon the smaller elements. Small changes on the lower levels over time can significantly effect the bigger structures. I have noticed for example, that virtual meetings seem to have a smaller pool of ideas and converge to a single idea much faster compared to in person meetings. Possibly, due to the fact virtual meetings only have one person speaking and it can be difficult to edge in. This reduces the pool of ideas and the best idea may not be chosen.
+All the structures play an important role, as each builds upon the other. Small changes on the lower levels over time can significantly effect the bigger structures. I have noticed for example, that virtual meetings seem to have a smaller pool of ideas and converge to a single idea much faster compared to in person meetings. Possibly, due to the fact virtual meetings only have one person speaking and it can be difficult to edge in. This reduces the pool of ideas and the best idea may not be chosen.
 
 It's important to note that each level of the structures listed above include both tangible and intangible elements. Liberating structures are specifically different ways to have a meeting/discussion/report. This puts them in the category of intangible microstructures.
 
@@ -32,13 +32,15 @@ There are five main conventional structures that people use:
 * Open Discussions
 * Brainstorms
 
-These are just the default options for information sharing, however they have a few problems as the first three are inhibiting as they don't allow everyone to get involved and often restrict the majority of the talking to a small amount of people. The final two (open discussions and brainstorms) are often too loose and disorganised to drive actual outcomes. 
+These are the most common options for information sharing, but they aren't without their problems. The first three structures are inhibiting as they don't allow everyone to get involved and often restrict the majority of the talking to a small amount of people. On the other hand, the final two are often too loose and disorganised to drive actual outcomes.
+
+However, these problems can be solved through the use of liberating structures.
 
 ## Liberating Structures
 
 Liberating structures are 33 alternatives to the conventional structures noted above. They aim to structure your meeting to get everyone involved whilst not inhibiting anyone.
 
-The 33 have different use cases and often have different outcomes, so you picking the right tool for the job is required here. Many of them leverage the '1-2-4-All' structure, where you think alone, in pairs, in quads and then share back with the rest of the group.
+Each structure has its own different use cases and they often have different outcomes, so picking the right tool for the job is important. Many of them leverage the '1-2-4-All' structure, where you think alone, in pairs and in quads before then sharing with the rest of the group.
 
 ![](/assets/images/liberating-structures.png)
 *List of the structures taken from - [Liberating Structures][liberatingstructures]*
