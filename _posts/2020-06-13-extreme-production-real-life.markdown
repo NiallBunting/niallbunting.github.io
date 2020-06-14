@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Early thoughts on Extreme Production and real life"
-date:   2020-06-12 12:00:00
+date:   2020-06-13 12:00:00
 categories: extreme production interruptions daily
 ---
 
