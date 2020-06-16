@@ -12,3 +12,6 @@ This is a major factor is my life as I often try to start new habits, but often 
 At the minute, the best solution I can offer is never skip something twice. Which does sound like a nice way about going about it as it does give you some breathing room. I know in my own life though that breathing room leads to stuff not being done.
 
 I can’t offer any solutions to this but hopefully over the next year I will be able to give you some solutions. I have messaged Craig about this at this point so will update below if I find an answer but I think this will be something to reflect upon.
+
+_Edit: Chris got back to me (thanks Chris), he says it mainly comes down to disapline. However he also plans ahead so he has a buffer if something unexpected comes up._
+
