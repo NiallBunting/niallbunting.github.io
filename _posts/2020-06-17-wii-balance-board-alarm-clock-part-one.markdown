@@ -33,4 +33,4 @@ A side benefit of using the board is that it can measure my weight, which I plan
 
 This is going to be a multipart post that follows along as I complete various aspects and get the project working.
 
-1. Parts and Electronics (Coming Soon)
+1. [Raspberry Pi and initial setup](/wii/balance/board/alarm/clock/daily/2020/06/21/wii-balance-board-alarm-clock-part-two.html)
