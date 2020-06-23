@@ -11,60 +11,62 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 </head>
 <body>
-	<div class="wrapper">
-		<div id="left">
-			<p>
-				<div class="circular">
-					<img src="{{ "assets/images/profile.png" | relative_url }}" alt="A Black and white picture of Niall." />
-				</div>
-			</p>
-		</div>
-		<div id="right">
+	{% unless paginator.previous_page %}
+		<div class="wrapper">
+			<div id="left">
+				<p>
+					<div class="circular">
+						<img src="{{ "assets/images/profile.png" | relative_url }}" alt="A Black and white picture of Niall." />
+					</div>
+				</p>
+			</div>
+			<div id="right">
 
-			<h1>Hi, I'm Niall Bunting</h1>
-			<p>
-				A software developer currently working at <a href="https://bjss.com">BJSS</a>. Alumni of <a href="http://aber.ac.uk">Aberystwyth University</a>, having studied computer science.
-			</p>
-			<p>
-				I enjoy setting myself projects normally involving technology. One area I think particularly interesting is virtual reality (VR) and embedded projects.
-			</p>
-			<p>
-				Outside of technology I like playing the game of Go and have competed in <a href="http://www.europeangodatabase.eu/EGD/Player_Card.php?key=18650280">tournaments</a>.
-			</p>
+				<h1>Hi, I'm Niall Bunting</h1>
+				<p>
+					A software developer currently working at <a href="https://bjss.com">BJSS</a>. Alumni of <a href="http://aber.ac.uk">Aberystwyth University</a>, having studied computer science.
+				</p>
+				<p>
+					I enjoy setting myself projects normally involving technology. One area I think particularly interesting is virtual reality (VR) and embedded projects.
+				</p>
+				<p>
+					Outside of technology I like playing the game of Go and have competed in <a href="http://www.europeangodatabase.eu/EGD/Player_Card.php?key=18650280">tournaments</a>.
+				</p>
 
+			</div>
 		</div>
-	</div>
-	<div class="wrapper">
-		<div class="content">
-			<h2>Project Links</h2>
-				<ul>
-					<li><a href="https://rawcdn.githack.com/NiallBunting/Password-Generator/v0.1/index.html">Data Derived Password Generator.</a></li>
-					<li><a href="url-multi-redirect">Multiple URL Forwarder.</a></li>
-					<li>Others on Github.</li>
-				</ul>
+		<div class="wrapper">
+			<div class="content">
+				<h2>Project Links</h2>
+					<ul>
+						<li><a href="https://rawcdn.githack.com/NiallBunting/Password-Generator/v0.1/index.html">Data Derived Password Generator.</a></li>
+						<li><a href="url-multi-redirect">Multiple URL Forwarder.</a></li>
+						<li>Others on Github.</li>
+					</ul>
+			</div>
 		</div>
-	</div>
+		<div class="wrapper">
+			<hr>
+		</div>
+		<div class="wrapper">
+			<div class="content">
+				<p>
+					<h2>Places To Find Me:</h2>
+					<ul>
+						<li><a href="https://twitter.com/NiallBunting">Twitter (only tweets posts)</a></li>
+						<li><a href="http://linkedin.com/in/niallbunting">LinkedIn</a></li>
+						<li><a href="http://github.com/NiallBunting/">GitHub</a></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	{% endunless %} 
 	<div class="wrapper">
 		<hr>
 	</div>
 	<div class="wrapper">
 		<div class="content">
-			<p>
-				<h2>Places To Find Me:</h2>
-				<ul>
-					<li><a href="https://twitter.com/NiallBunting">Twitter (only tweets posts)</a></li>
-					<li><a href="http://linkedin.com/in/niallbunting">LinkedIn</a></li>
-					<li><a href="http://github.com/NiallBunting/">GitHub</a></li>
-				</ul>
-			</p>
-		</div>
-	</div>
-	<div class="wrapper">
-		<hr>
-	</div>
-	<div class="wrapper">
-		<div class="content">
-			<h2>Blog</h2>
+			<h2>Blog {% if paginator.previous_page %}(Page {{paginator.page}}){% endif %}</h2>
 			{{content}}
 		</div>
 	</div>
