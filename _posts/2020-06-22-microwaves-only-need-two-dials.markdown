@@ -21,7 +21,7 @@ Products should make it easy to use the core functionality. The shouldn't just i
 
 > Your scientists were so preoccupied with whether or not they could, they didn’t stop to think if they should.
 >
-> -- <cite>Jurassic Park</cite>
+> -- <cite>Ian, Jurassic Park</cite>
 
 You see the complication (that manly software introduces) everywhere: cars, websites, Chrome, even going to the Post Office (it took me ages to work out how to post a parcel with an automatic machine). Occasionally we need to zoom out, consider the Pareto principle and make that core functionality easy to use.
 
