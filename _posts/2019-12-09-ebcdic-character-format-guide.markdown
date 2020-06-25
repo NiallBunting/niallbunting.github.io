@@ -5,7 +5,7 @@ date:   2019-12-09 18:00:00
 categories: EBCDIC Cobol packing copybooks
 ---
 
-This aims to explain what EBCDIC is and give an overview how to use it. If you want to read about its history, have a look at the [wiki page][wikipage] (also take a look at the joke section).
+This aims to explain what EBCDIC is and give an overview how to use it. If you want to read about its history, have a look at the [wiki page][wikipage] (also take a look at the joke section). Also includes the command to do EBCDIC Cobol to ASCII conversions.
 
 This post is mainly going to deal with fixed width EBCDIC records. We will also briefly cover reading EBCDIC into a Apache Spark cluster using the Cobrix library.
 
