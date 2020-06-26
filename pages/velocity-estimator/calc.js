@@ -107,13 +107,13 @@ function doCalulations() {
 
   let samples = elementText.replace(/\s+/g, '').split(',').filter((x) => x && parseInt(x, 10) > 0).map((f) => parseInt(f, 10));
 
-  if (samples < 2) {
-    error("Please enter some velocity values.");
+  if (samples.length < 2) {
+    error("Please enter 2 or more velocity values.");
     return;
   }
 
-  if (samples > 30) {
-    error("Wow that's a lot of data. This page is going to be inaccurate with that. If you see this please email me at niallbunting.com and complain. I might add the distribution to handle this..");
+  if (samples.length > 30) {
+    error("Wow that's a lot of data. This page is going to be inaccurate with that. If you see this please email me velocity-at-niallbunting.com and complain. I might add the normal distribution to handle this..");
   }
 
   const n = samples.length;
@@ -129,7 +129,9 @@ function doCalulations() {
   });
 
 
-  const ci = TTESTVALUES[samples.length-1][elementCIIndex]  * (sd / Math.sqrt(n))
+  const ciconst = TTESTVALUES[samples.length <= 30 ? samples.length-1 : 29][elementCIIndex]; 
+
+  const ci =  ciconst * (sd / Math.sqrt(n))
   const ciupper = mean + ci;
   const cilower = mean - ci;
 
