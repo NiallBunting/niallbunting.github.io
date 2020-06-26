@@ -113,7 +113,7 @@ function doCalulations() {
   }
 
   if (samples.length > 30) {
-    error("Wow that's a lot of data. This page is going to be inaccurate with that. If you see this please email me velocity-at-niallbunting.com and complain. I might add the normal distribution to handle this..");
+    error("Wow that's a lot of data. This page is going to be inaccurate with that. If you see this please email me velocity-at-niallbunting.com and complain. I might add the normal distribution to handle this.");
   }
 
   const n = samples.length;
