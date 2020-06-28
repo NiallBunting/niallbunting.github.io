@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thoughts on video games as a post-gamer"
-date:   2020-06-25 12:00:00
+date:   2020-06-26 12:00:00
 categories: thoughts on video games daily
 ---
 
