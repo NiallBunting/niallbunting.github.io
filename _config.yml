@@ -12,8 +12,8 @@ paginate: 15
 baseurl: ""
 domain_name: 'https://www.niallbunting.com'
 google_analytics: 'UA-56330367-1'
-gems: [jekyll-paginate]
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-sitemap]
+plugins: [jekyll-paginate, jekyll-sitemap]
 
 # Details for the RSS feed generator
 url: 'https://www.niallbunting.com/'
