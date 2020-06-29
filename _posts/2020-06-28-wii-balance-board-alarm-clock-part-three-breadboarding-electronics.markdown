@@ -51,7 +51,7 @@ This is the simplest of all the requirements, as it only requires connecting one
 All these electronics are using some spare space on a breadboard and pretty dodgy wiring to the GPIO pins (waiting for fixtures in the post). Even so all the tests of all the electronics worked successfully. The next part is to get it all connected in a more permanent fashion and get the components neatly tucked inside the board.
 
 __Bonus__: here is a video a demonstration:
-<iframe  title="Video demonstration of the electronics" width="480" height="390" src="http://www.youtube.com/watch?v=YfS38hoqUrs?autoplay=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YfS38hoqUrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [powerrequire]: https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md
 [5voltrail]: https://elinux.org/RPi_Low-level_peripherals#Power_pins
