@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /url-multi-redirect/$
 Disallow: /url-multi-redirect/*
+Sitemap: https://niallbunting.com/sitemap.xml
