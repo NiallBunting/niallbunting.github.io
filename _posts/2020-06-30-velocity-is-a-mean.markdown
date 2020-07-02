@@ -20,5 +20,5 @@ The average would be 54.3 (90% CI: 41.6-66.9). And out of this sample 63% are ab
 
 This post is pointing out quite an obvious fact in hindsight, just something I hadn’t considered. As in some planning sessions the sprint velocity and the goals based of them are often discussed as sure bets, something we can be confident showing the client, in reality it’s a coin toss.
 
-[calculator]: /velocity-estimator/
+[calculator]: /sprint-forecaster/
 
