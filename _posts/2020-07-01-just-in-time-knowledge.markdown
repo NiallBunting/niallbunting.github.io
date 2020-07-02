@@ -33,9 +33,9 @@ I’m sure you can think of many more work and non-work examples.
 
 There are two [memory biases][memorybias] relevant to rest of the article:
 
-*Verbatim effect*: There are two types of knowledge: the gist and the concrete facts and figures, the gist is remembered better than the verbatim facts. I can remember that Milgram’s experiment uses a shocking box and many people will follow the authority, but I can’t remember numbers of participants or the variations that he did. This comes from Fuzzy-Trace theory.
+**Verbatim effect**: There are two types of knowledge: the gist and the concrete facts and figures, the gist is remembered better than the verbatim facts. I can remember that Milgram’s experiment uses a shocking box and many people will follow the authority, but I can’t remember numbers of participants or the variations that he did. This comes from Fuzzy-Trace theory.
 
-*Context effects*: that ideas in context are much easier to remember than memories that are currently out of context. This is why you can remember a memory after somebody reminds you of a detail. This really isn't helpful at pub quizzes.
+**Context effects**: that ideas in context are much easier to remember than memories that are currently out of context. This is why you can remember a memory after somebody reminds you of a detail. This really isn't helpful at pub quizzes.
 
 ### What this means
 
