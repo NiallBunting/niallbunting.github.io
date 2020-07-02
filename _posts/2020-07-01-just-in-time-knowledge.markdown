@@ -5,63 +5,66 @@ date:   2020-07-01 12:00:00
 categories: daily knowledge just in time
 ---
 
-The just in time (JIT) idea came from manufacturing where a part would not be manufactured until it was needed. Can we take these lean ideas of waste and apply them to knowledge?
+The idea of just in time (JIT) comes from manufacturing, it meant changing processes so a part would only be manufactured when it was needed, reducing stock that isn't needed. Can we take these lean ideas of waste reduction and apply them to knowledge?
 
-_It got a bit late and I didnt manage to proof read this. Will do it tommorow._
-
-JIT knowledge, means not knowing the knowledge until the point that you need it. This is especially possible nowadays as the internet has vast streams of information, just seconds away. Meaning it's much more practical to just look up the information on demand. 
+JIT knowledge, means not knowing specific knowledge until you need it and then looking it up. This is especially possible nowadays due to the internet's vast streams of information, discoverable moments away. This means it's now practical to look up information on demand. 
 
 ## Sources non-JIT
 
 ### Childhood
 
-I think I need to mention one of the largest sources of non-JIT in our life and that is education. I think early primary school is actually JIT friendly because learning maths, how to write etc. takes time which is needed at this stage of life to be able to interact in the world.
+I think I need to mention one of the largest sources of non-JIT knowledge in our life: education. I think early primary school is actually JIT friendly because learning maths, how to write etc. is needed at this stage of life to be able to interact in the world successfully.
 
-I suppose first source of high levels of high non-JIT information is secondary school which covers a broader set of topics. It depends on your school but I covered topics such as literature, history, foreign language, electronics alongside the core subjects (maths, English and science).
+The first major source of high levels of non-JIT information is secondary school, as this covers a broad set of topics. It depends on the school but many different subjects are taught alongside the core subjects (maths, English and science).
 
-Next is university, which narrows the scope considerably but takes an even more in-depth view at that narrow slice, looking at sub-topics within the field.
+University narrows the scope considerably taking a in-depth view of a narrow slice, often looking at sub-topics within a field. This may still give you knowledge that you won't need but is more likely to come up in the future (if you get a career in that field).
 
 ### Later Life
 
-Much information is passively received as an adult that doesn’t actually have much impact on the way you go about your life day to day. For example, the most of the news doesn’t have a measurable impact on your day to day life.
+Vast quantities of information is received passively as an adult, most of this information doesn’t have an impact on your day to day life. For example, the most of the news isn't particularly relevant to you (unless your name is Donald).
 
-There are also aspects of non-JIT in the workplace, for example meetings to show how a certain sub-system works when you don't interact with it. Or long email chains that you're included in that are not relevant.
+It's also common to share non-JIT information in the workplace, for example, meetings to show how a certain sub-system works, even if you don't interact with it. Another example would be long email chain that you're included in that is not relevant to your work.
 
-I’m sure you can think of many more examples of both work and non-work.
+I’m sure you can think of many more work and non-work examples.
 
 ## Gists
 
 ### Memory
 
-There are some memory effects to talk about here:
-There are two types of knowledge here the idea of the ‘gist’ of the knowledge and the direct facts and figures. For example I can remember that Milgram’s experiment uses a shocking box and many people will follow the authority, but I can’t remember numbers of participants or the variations that he did. This is sometimes called the verbatim effect from Fuzzy-Trace theory.
+There are two [memory biases][memorybias] here that effect the rest of the article:
 
-Context effects that ideas in context are much easier to remember than memories that are currently out of context. This is why you can remember something after someone has mentioned a triggering aspect.
+*Verbatim effect*: There are two types of knowledge: the gist and the concrete facts and figures, the gist is remembered better than the verbatim facts. I can remember that Milgram’s experiment uses a shocking box and many people will follow the authority, but I can’t remember numbers of participants or the variations that he did. This comes from Fuzzy-Trace theory.
+
+*Context effects*: that ideas in context are much easier to remember than memories that are currently out of context. This is why you can remember a memory after somebody reminds you of a detail. This really isn't helpful at pub quizzes.
 
 ### What this means
 
-Of the knowledge gained in education, small amounts are remembered verbatim, with more being remembered as gist, then we have the context effects and finally just forgotten information.
+Of the knowledge gained in education, small amounts are remembered verbatim, with more being remembered as gists, then we have the memories that require context effects and finally the information we have totally forgotten.
 
-With that gist in place it’s much easier to come back to the information at a later stage and parse it again and bring more of the knowledge back into the fray. Coming back to the information can actually make it make much more sense the previous times that you have tried to learn a concept. This happened to me as a child I couldn’t wrap my head around why you would ever use pointers, I spent days trying to work out why you would use them. Came back a few years later and it was so obvious why you wouldn’t want to pass massive pieces of information about.
+If we retain the gist of information, it's much easier to come back to the information at a later stage and renew your memory of the specifics, as you don't need to learn it all from scratch. As you dive in context memories are remembered helping you out.
 
-This is an important thing to note as when people says learning about X was pointless at school as they can’t remember it any more, they are actually showing that they do remember that aspect. And could refresh their memory if needs be.
+One example of this happening to me, is as a child I couldn’t wrap my head around why you would ever use pointers, I spent days trying to work out why you would use them. Came back a year or two later and it was now plainly obvious to me from just reading a brief summary of them.
 
-## Non-jit needs to be a gist
+Therefore, remembering the gist of the information can unlock the detailed deeper information with some slight prodding and hints.
 
-Non-JIT information needs to be information that is gistable. If it’s gistable then people will remember that. However, if it’s some detailed analysis then it’s not worth doing as people are not going to rember those items.
+## Non-jit info needs to be gist level
 
-It’s just not useful to have detailed non-jit information as it will not be commited to memory with any great reliability.
+Non-JIT information needs to be information that is 'gistable'. If it’s gistable then people will have a take away from the information you have given, as they will forget any concrete subject matter. If the information only contains concrete information most of this will be lost.
+
+This is one of the core problems with adult information, much of it is not really gistable. If we take a item of news, we can't make a gist of X has done X, unless it's particularly big.
 
 ## Can we use JIT and the internet instead
 
-I think one of the strongest problems is that many ideas come out from combining ideas from different disciplines in an interesting way to create a hybrid solution. For example, this post, combining the JIT ideas from manufacturing and exploring applying them to knowledge.
+I think the strongest problem is that many ideas, are developed from combining ideas from different disciplines in a new way. For example, this post combines the JIT ideas from manufacturing and the psychology of memories.
 
-With the JIT framework you don’t know about that other idea to even search for it. Unless we upgrade our suggestions to such an extend that computers can make those inferences for us.
+Another obvious problem is that if you don't know about the existence of something, you are not able to search out additional information on the matter using that kernel. Therefore, you may be missing a piece of the puzzle. 
 
-This is what makes all those early investments so important they build up your banks of gists that you may need in the future. You have many books to pull from if needed and at that stage nobody knows what you need or not. I didn’t expect to ever end up using the stats I learnt but only the other day I was implementing those exact equtations.
+This argues early investments in education are important as they build up your banks of gists, any of which you may require in the future. Different gists will be needed by different people but you all get that foundation. I didn’t expect to use some of the knowledge learnt at school, but years later those gists helped me dive quickly in when it became relevant.
 
-This means to effectively come up with ideas we need large banks of gists and once we have a gist we can bring back the context specific information by doing research to bring that data back into the forefront of our minds.
+So the answer is it depends. If it's specific information that the internet can give us, we should learn it just in time. Even though we will be slower at learning it, without a gist, as we have to start learning the first time. If we have a wide array of gists for foundational information and we get a 'cache hit' we can spin up much quicker and then use the buried contextual information.
 
 --------
 
 _I’m not a psychologist, this post contains my thoughts on the matter._
+
+[memorybias]: https://en.wikipedia.org/wiki/List_of_memory_biases
