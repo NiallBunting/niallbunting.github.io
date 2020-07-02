@@ -46,6 +46,6 @@ I’m not sure if the last couple of sprints is the best random sample, as they 
 
 I think the calculator probably has some problems with its statistical model, but for the accuracy required from it, we can kick the problems into the long grass in my opinion.
 
-[calculator]: /velocity-estimator/
+[calculator]: /sprint-forecaster/
 [studentst]: https://en.wikipedia.org/wiki/Student%27s_t-distribution
 
