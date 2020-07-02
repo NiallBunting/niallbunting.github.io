@@ -959,7 +959,14 @@ body:not(.post-template) .post-title {
     position: absolute;
     top: 6rem;
     right: 0;
-    width: 140px;
+    width: 80px;
+}
+
+.post-footer .follow {
+    position: absolute;
+    top: 6rem;
+    right: 80px;
+    width: 80px;
 }
 
 .post-footer .share a {
@@ -970,7 +977,19 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
+.post-footer .follow a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1rem 1.6rem 1.6rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
 .post-footer .share a:hover {
+    color: #50585D;
+}
+
+.post-footer .follow a:hover {
     color: #50585D;
 }
 
@@ -1661,6 +1680,15 @@ body:not(.post-template) .post-title {
     }
 
     .post-footer .share a {
+        margin: 1.4rem 0.8rem 0 0.8rem;
+    }
+
+    .post-footer .follow {
+        position: static;
+        width: auto;
+    }
+
+    .post-footer .follow a {
         margin: 1.4rem 0.8rem 0 0.8rem;
     }
 
