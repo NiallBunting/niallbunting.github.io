@@ -31,7 +31,7 @@ I’m sure you can think of many more work and non-work examples.
 
 ### Memory
 
-There are two [memory biases][memorybias] here that effect the rest of the article:
+There are two [memory biases][memorybias] relevant to rest of the article:
 
 *Verbatim effect*: There are two types of knowledge: the gist and the concrete facts and figures, the gist is remembered better than the verbatim facts. I can remember that Milgram’s experiment uses a shocking box and many people will follow the authority, but I can’t remember numbers of participants or the variations that he did. This comes from Fuzzy-Trace theory.
 
