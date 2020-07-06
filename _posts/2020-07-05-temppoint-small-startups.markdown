@@ -34,7 +34,7 @@ This has fed my desire to create my own business, so decided to just push this i
 ### The downsides
 
 * I think the only real downside would be monetary costs I have put into this product. I have however tried to keep the irrecoverable costs as small as possible. For example, I have used female jumpers on the components so I could take them out and reuse them in a different project if needed.
-* The largest irrecoverable cost is going to me my small marketing budget.
+* The largest irrecoverable cost is going to be the small marketing budget.
 * I also don’t know if there is a market for this product, especially as I’m also quite late with regards to the emergence of COVID. On the other hand, businesses are still trying to figure out how they may open up again.
 
 ## Future
