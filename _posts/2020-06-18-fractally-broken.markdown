@@ -9,7 +9,7 @@ Fractally broken a definition.
 
 **Fractal**: _A never ending pattern._<br/>**Broken**: _Not functioning properly._
 
-This is a phrase I heard from [Louis Taylor][kragniz] a few years ago and I absolutely love it.
+This is a phrase I heard from [Louis Taylor][kragniz] a few years ago and I absolutely love it. _Edit: I have been told that the original source may have been [https://eev.ee][source]._
 
 It means that however much you zoom in or out from a thing it has faults. In an almost recursive manner.
 
@@ -28,3 +28,4 @@ I also composed a limerick:
 > so none of the dev’s wanted to touch it.
 
 [kragniz]: https://kragniz.eu/
+[source]: https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/
