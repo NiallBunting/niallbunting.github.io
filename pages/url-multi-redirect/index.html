@@ -59,7 +59,11 @@ function showAd(){
 
 // Checks for the prameters so to forward.
 if(window.location.search != ""){
+ if(Math.random() > 0.22) {
+   forward();
+ } else {
    showAd();
+ }
 }
 </script>
 <div>
