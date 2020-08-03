@@ -7,7 +7,7 @@ categories: small start ups guest post directory
 
 This is the story of a start-up delivered at a blistering pace, one weekend in fact.
 
-[Guest Post Directory][gpd] is a website that is designed to answer the question "Where can I guest post?". For those who are non-bloggers, guest posting is writing content for someone elses website and in return receiving a link to yours. This is done in the blogging world as a method to increase your websites ranking and SEO as guest posting grows your back links.
+[Guest Post Directory][gpd] is a website that is designed to answer the question "Where can I guest post?". For those who are non-bloggers, guest posting is writing content for someone else's website and in return receiving a link to yours. This is done in the blogging world as a method to increase your websites ranking and SEO as guest posting grows your back links.
 
 The journey below, describes the process we went through, to build and go live with the website in a weekend.
 
@@ -15,19 +15,26 @@ The journey below, describes the process we went through, to build and go live w
 
 ### Preamble
 
-The idea was suggested to me by a [friend][jake], and I thought it seemed simple enough. I thought it would be interesting to try and do it in a hackathon style, where you have 48 hours to bring together an MVP. 
+The idea was suggested to me by my friend [Jake][jake]. I'm not heavily involved in the world of blogging but the problem of finding websites to guest post on seems like an easy one to fix. Hopefully, this project can deliver value to these people.
+
+I have wanted to develop something in hackathon style project for a while, where you have 48 hours to bring together an MVP. Therefore, I suggested this as the format for the project. It also gives us the highest chance that we actually bring a product to market.
 
 He agreed and chose a weekend.
 
 ### The weekend
 
-Saturday morning, I opened up my laptop and logged in. Jake was already plugging away building out a listing page as he knew that would have been a core requirement.
+Saturday morning, I opened up my laptop and logged in. Jake was already online, plugging away, building out what would eventually become the listing page.
 
-It was at this point that we caught up and decided what we could carve out to make this in the time limit. We had to make some tough decisions for example removing accounts, accepting applications over Google forms and entering database info manually were some of the big ones.
+It was at this point that we had our first catch up and planned what features we needed, and workarounds for the other requirements. We had to make some tough decisions with some of the big ones being removing accounts, accepting applications over Google forms and entering database info manually.
 
-Once we had a plan, we started work. Jake focused on the frontend and I focused on the backend and infrastructure. We focused on a product that we could get done within the time limit that would deliver benefit.
+Once we had created this outline of a plan, we started work. Jake focused on the frontend and I focused on the backend and infrastructure. As this played to both our natural strengths as he has much better design skills whilst he has less familiarity with backend technologies.
 
-The highlight on the technology side for me was using Elasticsearch, I haven’t looked at it very closely before (outside of use in the ELK stack). It was interesting to have a bit of a deep dive to find out some of its capability and bring an instance up and start writing searches.
+Our technology stack was:
+* The frontend: Bootstrap and custom Javascript.
+* The backend: Node with Express and Elasticsearch as the search engine.
+
+The highlight on the backend technology side, was using Elasticsearch, I haven’t explored before (outside of use in the ELK stack). It was interesting to have shallow dive to find out its capabilities and query language. It was fun working out how to structure a query to get back the result types that we wanted, even though it ended up being a relatively simple search.
+
 
 At the end of a very quick two days we ended up with the following:
 
@@ -37,17 +44,17 @@ At the end of a very quick two days we ended up with the following:
 
 We have continued to do minor bug fixes and improvements to the application in the week since. Our main focus has been on making the platform more reliable and gathering users.
 
-Also did some work about making it easier to take new entries off the spreadsheet that we are currently using and upgraded the server to be more powerful.
+We have a backlog of ideas and tasks that need doing to improve the website, that we want to get to over the future.
 
 ## My takeaways
 
-On finishing that weekend, I was definitely on a high. The fact that we actually got a signup the next day just added it. I felt like we were actually done, that’s a very rare feeling in software engineering. Often sprints just seem to blur together and as someone said to me:
+After finishing our products MVP that weekend, I was definitely feeling on a high. That we actually got a signup the next day just added to it. I felt like we were actually done, with what we set out to do, that’s sometimes a rare feeling in software engineering. Often sprints just seem to blur together in endless backlogs and as someone said to me:
 
 > I’ve been sprinting for years, it’s more like a marathon.
 >
 > -- <cite>Rob, from work</cite>
 
-For me, even though there was more to do it felt like the two aspects below caused it:
+It was great to hit the goal of MVP and actually be done.
 
 ### Real MVP
 
