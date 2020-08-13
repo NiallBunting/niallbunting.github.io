@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lottery Odds: Jackpot Rolldown Edition"
+title:  "UK Lottery: How does a Jackpot Rolldown affect the odds?"
 date:   2020-06-23 12:00:00
 categories: probability lottery daily
 ---
