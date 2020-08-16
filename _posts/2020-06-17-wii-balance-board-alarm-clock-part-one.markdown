@@ -36,3 +36,4 @@ This is going to be a multipart post that follows along as I complete various as
 1. [Raspberry Pi and initial setup](/wii/balance/board/alarm/clock/daily/2020/06/21/wii-balance-board-alarm-clock-part-two.html)
 1. [Breadboarding the electronics](/wii/balance/board/alarm/clock/daily/2020/06/28/wii-balance-board-alarm-clock-part-three-breadboarding-electronics.html)
 1. [Closing the lid](/wii/balance/board/alarm/clock/daily/2020/07/04/wii-balance-board-alarm-clock-part-four-closing-lid.html)
+1. [Software and Setup](/wii/balance/board/alarm/clock/daily/2020/08/15/wii-balance-board-alarm-clock-part-four-software-and-setup.html)
