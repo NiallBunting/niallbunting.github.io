@@ -5,7 +5,7 @@ date:   2020-01-10 18:30:00
 categories: Spring Kafka SSL SCRAM
 ---
 
-I needed to implement a Spring Kafka listener using SCRAM. I couldn't find an example configuration and had to piece it together, here is a short post about what I came up with.
+I needed to implement a Spring Kafka listener with authentication using SCRAM via SASL. I couldn't find an example configuration and had to piece it together, here is a short post about what I came up with.
 
 This post contains a brief overview of the technologies to ground the code which follows.
 
@@ -26,11 +26,13 @@ By default Kafka communicates in plain text this can be changed by specifying SS
 
 For the reference of options search kafka in the [spring reference][springref].
 
-### The Code
+### The Solution
 
-Spring-kafka can be imported via Gradle or Maven (the following examples use: 2.1.6).
+This is an example using the solution I created. Spring-kafka can be imported via Gradle or Maven (the following examples use: 2.1.6).
 
 The `application.yml` is the most important step as it defines the configuration to spring, such as were to connect. The rest is the boilerplate code that listens to the events.
+
+This uses an inline `sasl.jaas.config` this however can also be moved to external JASS config file, to allow the username and password to be stored outside the config.
 
 #### application.yml
 
@@ -80,6 +82,10 @@ public class MyEventListener {
   }
 }
 {% endhighlight %}
+
+### Conclusions
+
+This code made it easy to integrate Spring Kafka without too much additional configuration as other approaches seem to require rather a lot of code.
 
 
 [kafka]: https://kafka.apache.org/
