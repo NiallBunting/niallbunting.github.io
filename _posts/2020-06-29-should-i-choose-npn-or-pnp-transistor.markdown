@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Should I use an NPN or PNP transistor?"
+title:  "How to choose between a NPN or PNP transistor? (For beginners)"
 date:   2020-06-29 12:00:00
 categories: npn pnp transistor daily
 ---
@@ -11,7 +11,7 @@ Many of the articles that were read to research this topic, went into the minute
 
 This article aims to answer this question in a way that I can understand and only covers switching. I’m also going to purposely avoid talking about silicon in this post. _Warning: i'm a beginner and am only [covering basic switching][wiialarm]._
 
-## BJT Transistors
+## What are BJT Transistors?
 
 NPN and PNP transistors are types of [Bipolar Junction Transistors][bjt]. All BJT transistors are current driven, this means they depend on the amps passing through them to open and close the switch. (MOSFETs are a voltage driven transistor, but we won't talk about them here.)
 
