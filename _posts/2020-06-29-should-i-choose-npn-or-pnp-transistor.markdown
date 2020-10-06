@@ -27,7 +27,7 @@ As mentioned above, the resistor requires current flowing for control. Unfortuna
 
 Knowing these facts caused me to think about transistors being more like variable resistors, that you can turn up and down.
 
-## Which type should we use?
+## How to choose between NPN and PNP transistors?
 
 For switching applications, you should use NPN if it’s a low-side switch or PNP if it’s a high side switch. As using the other one will cause issues such as excessive current draw (and even more complex issues I’ve been told). This is because you will need to have current flowing in odd directions through the transistor.
 
