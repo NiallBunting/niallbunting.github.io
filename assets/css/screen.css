@@ -237,6 +237,24 @@ a {
     transition: color ease 0.3s;
 }
 
+.moreposts {
+  display: flex;
+  width: 100%;
+}
+
+.moreposts h6 {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.moreposts a {
+  text-decoration: none;
+}
+
+.row {
+  flex: 50%;
+}
+
 a:hover {
     color: #111;
 }

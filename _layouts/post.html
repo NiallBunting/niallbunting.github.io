@@ -60,19 +60,18 @@ post_class: post-template
         </section>
         {% endif %}
 
+        <hr>
 
-<!--
-        <section id="more-work">
+        <section id="more-work" class="moreposts">
             {% if page.previous %}
                 {% assign previous = page.previous %}
             {% else %}
                 {% assign previous = site.posts[0] %}
             {% endif %}
-            <div class="left">
+            <div class="row">
                 <a class="equalize" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
                     <div>
-                        <h6> ← Previous Project </h6>
-                        <h4> {{previous.title}} </h4>
+                        <h6> ← Previous Post </h6> {{previous.title}} 
                     </div>
                 </a>
             </div>
@@ -83,16 +82,15 @@ post_class: post-template
                 {% assign last lastPostIndex = site.posts | size | minus: 1 %}
                 {% assign next = site.posts[lastPostIndex] %}
             {% endif %}
-            <div class="right">
+            <div class="row">
                 <a class="equalize" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
                     <div>
-                        <h6> Next Project →</h6>
-                        <h4> {{next.title}}</h4>
+                        <h6> Next Post →</h6>
+                         {{next.title}}
                     </div>
                 </a>
             </div>
         </section>
--->
 
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
