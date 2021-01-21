@@ -37,3 +37,11 @@ This is going to be a multipart post that follows along as I complete various as
 1. [Breadboarding the electronics](/wii/balance/board/alarm/clock/daily/2020/06/28/wii-balance-board-alarm-clock-part-three-breadboarding-electronics.html)
 1. [Closing the lid](/wii/balance/board/alarm/clock/daily/2020/07/04/wii-balance-board-alarm-clock-part-four-closing-lid.html)
 1. [Software and Setup](/wii/balance/board/alarm/clock/daily/2020/08/15/wii-balance-board-alarm-clock-part-four-software-and-setup.html)
+1. [Outcomes and six month review](/wii/balance/board/alarm/clock/daily/2021/01/21/wii-balance-board-alarm-clock-part-five-six-month-review.html)
+
+## Final Look
+
+This is the alarm clock in it's final position. Read my thoughts about it in the six month review.
+
+![](/assets/images/posts/wii-final-board.png) 
+*The alarm clock in it's final position.*
