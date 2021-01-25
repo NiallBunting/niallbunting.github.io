@@ -55,6 +55,8 @@ I have split them into two groups, one when I facilitated the meeting and anothe
 
 ##### [Facilitator](#f)
 1. [Wicked Questions](#f-wicked-questions)
+1. [Impromptu Networking](#f-impromptu-networking)
+1. [What, So What, Now What?](#f-what-sowhat-nowwhat)
 
 <!---
 ##### [Participant](#p)
@@ -81,6 +83,30 @@ I have split them into two groups, one when I facilitated the meeting and anothe
    Once the questions were listed, I felt the group didn't really know how to proceed, as we had identified problems without obvious solutions. As by the very nature of wicked questions they are not easily fixable. It will be interesting to see if over time this leads the team to reduce the friction between the two sides of the major dichotomy.
    </p> <p>
    I would recommend trying it out with your team.
+   </p>
+  </div>
+  </details>
+</ul>
+
+<ul>
+  <details>
+  <summary><a name="f-impromptu-networking"/><li><strong>Impromptu Networking</strong> - Focusing on people and the power of loose connections.</li></summary>
+    
+  <div class="details-inner">
+   <p>
+     Coming soon (25-01-2021)
+   </p>
+  </div>
+  </details>
+</ul>
+
+<ul>
+  <details>
+  <summary><a name="f-what-sowhat-nowwhat"/><li><strong>What, So What, Now What?</strong> - Reflecting on progress and making adjustments.</li></summary>
+    
+  <div class="details-inner">
+   <p>
+     Coming soon (25-01-2021)
    </p>
   </div>
   </details>
