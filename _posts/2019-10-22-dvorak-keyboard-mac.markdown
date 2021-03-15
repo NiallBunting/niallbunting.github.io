@@ -15,6 +15,8 @@ I was using this on macOS Mojave (10.14.6), now Catalina (10.15.7).
 
 Hopefully this makes your life a little easier by not having to create it yourself.
 
+## Download
+
 **[Download][download]**
 
 MD5: f1d2779e933f142c6a1b52b3504b678d (Updated 03/2020 - This keyboard now works with caps lock pressed).
