@@ -11,7 +11,7 @@ This was inspired by the following [tarind.com][tarind].
 
 This bundle was created using the [Ukelele tool][ukelele].
 
-I'm using this on macOS Mojave (10.14.6).
+I was using this on macOS Mojave (10.14.6), now Catalina (10.15.7).
 
 Hopefully this makes your life a little easier by not having to create it yourself.
 
