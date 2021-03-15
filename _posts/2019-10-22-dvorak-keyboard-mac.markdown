@@ -17,7 +17,11 @@ Hopefully this makes your life a little easier by not having to create it yourse
 
 **[Download][download]**
 
-MD5: 7569e4838914ef73ac01e939a4eadba6
+MD5: f1d2779e933f142c6a1b52b3504b678d (Updated 03/2020 - This keyboard now works with caps lock pressed).
+
+## Installation Instructions
+
+Just drop the file into the `/Library/Keyboard Layouts/` directory. Then enable it through the settings.
 
 [tarind]: https://web.archive.org/web/20190211013314/http://www.tarind.com/ukdvorak.html
 [download]: https://www.niallbunting.com/ukdvorak/macukdvorak.zip
