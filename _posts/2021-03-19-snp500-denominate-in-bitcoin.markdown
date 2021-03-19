@@ -210,6 +210,8 @@ From March 2020 to March 2021 the price of BTC increased from $6,000 to around $
 
 ## Opinions
 
+(As of publishing 2021-03-19)
+
 Let me start off by saying I’m no expert, just a technology guy that has an vague idea what "Blockchain" means.
 
 I first saw Bitcoin early on when the price was around $0.10, as a young person interested in technology, I thought Bitcoin sounded fantastic. Like many people I then promptly forgot all about it for a number of years.
