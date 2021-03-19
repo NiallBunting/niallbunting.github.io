@@ -21,7 +21,9 @@ While there are many chemicals in the brain, in this post, we will use a simplif
 
 ### Dopamine
 
-Dopamine is commonly called the feel-good hormone. This is the hormone that many applications and games try to trigger to keep you on the platform. It is also triggered by natural acts such as having sex, but I’m not sure I would suggest that in the office<sup>[[source]][endorphins]</sup>.
+Dopamine is commonly called the feel-good hormone. This is the hormone that many websites and games try to trigger to keep you on the platform. It's that rush that's triggered by completing a task.
+
+It is also triggered by natural acts such as having sex, but I’m not sure I would suggest that in the office<sup>[[source]][endorphins]</sup>.
 
 ### Serotonin and Oxytocin
 
