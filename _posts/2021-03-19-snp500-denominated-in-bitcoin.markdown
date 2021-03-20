@@ -2,7 +2,7 @@
 layout: post
 title:  "S&P 500 denominated in Bitcoin"
 date:   2021-03-19 02:00:00
-categories: finance chart s&p500 denominated priced bitcoin
+categories: finance chart snp500 denominated priced bitcoin
 ---
 
 <div class="text-content">
