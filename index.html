@@ -11,6 +11,7 @@ cover: false
     </div>
 
     {% for post in paginator.posts %}
+      {% unless post.sitemap == false %}
 
     <article class="post">
         <header class="post-header">
@@ -33,6 +34,7 @@ cover: false
         </footer>
     </article>
 
+      {% endunless %}
     {% endfor %}
 
     {% include pagination.html %}
