@@ -2,8 +2,115 @@
 <html>
 <head>
 
+<style>
+ .flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  min-width: 150px;
+  margin: 4px;
+  text-align: center;
+}
+
+.clicker {
+cursor:pointer;
+}
+
+.hiddendiv{
+display:none;
+height:200px;
+background-color:green;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+</style>
+
+<script>
+
+ftNewsURL = "https://rss.acast.com/ftnewsbriefing";
+
+fetch(ftNewsURL).then((res) => {
+  res.text().then((htmlTxt) => {
+    var domParser = new DOMParser();
+    let doc = domParser.parseFromString(htmlTxt, 'text/html');
+
+    var firstFeedUrl = doc.querySelector('item');
+
+    var firstName = firstFeedUrl.querySelector('title').innerText.trim();
+    var firstDate = firstFeedUrl.querySelector('pubDate').innerText;
+    var firstUrl = firstFeedUrl.querySelector('enclosure').getAttribute('url');
+
+    var ftname = document.getElementById('ftCurrentName');
+    ftname.innerHTML = firstName;
+    var ftdate = document.getElementById('ftCurrentDate');
+    ftdate.innerHTML = firstDate;
+
+    var ftaudio = document.getElementById('ftCurrentAudioSource');
+    ftaudio.src = firstUrl;
+
+    var ftaudio = document.getElementById('ftCurrentAudio');
+    ftaudio.load();
+
+    // all
+    //var feedUrl = doc.querySelectorAll('item');
+
+  })
+}).catch(() => console.error('Error in fetching the website'))
+
+</script>
+
 </head>
+
 <body>
+
+<div class="flex-container">
+ <div style="flex-grow: 8">
+  A bunch of complied news
+ </div>
+
+ <div style="flex-grow: 1">
+  <div>
+   FT daily news
+   <span class="clicker" tabindex="1">+</span>
+   <div class="hiddendiv">past days</div>
+  </div>
+  <div>
+   <span id="ftCurrentName">Loading</span> (<span id="ftCurrentDate">?</span>)
+  </div>
+  <audio controls id="ftCurrentAudio">
+    <source id="ftCurrentAudioSource" src="" type="audio/mpeg">
+  </audio>
+
+ </div>
+
+ <div style="flex-grow: 1">
+  <div>
+   Radio 2
+  </div>
+
+  <audio controls>
+    <source src="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_two" type="audio/mpeg">
+    <source src="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_two" type="audio/ogg">
+  </audio>
+
+ </div>
+
+
+</div>
+
+<hr/>
+
+<div>
+
+text news
+
+</div>
+
 
 </body>
 </html>
