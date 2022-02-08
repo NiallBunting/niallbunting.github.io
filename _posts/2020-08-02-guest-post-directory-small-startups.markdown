@@ -7,6 +7,8 @@ categories: small start ups guest post directory
 
 This is the story of a start-up delivered at a blistering pace, one weekend in fact.
 
+_Update (2022-02-08): This service has now been discontinued._
+
 [Guest Post Directory][gpd] is a website that is designed to answer the question "Where can I guest post?". For those who are non-bloggers, guest posting is writing content for someone else’s website and in return receiving a link to yours. This is done in the blogging world as a means to increase your website’s ranking as guest posting grows your backlinks and at the same time grows your audience.
 
 The journey below describes the process we went through, to build and launch a website in a weekend.
