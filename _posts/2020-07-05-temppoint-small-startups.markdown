@@ -8,6 +8,8 @@ categories: daily small start ups
 
 Today I launched a small startup called [TempPoint][temppoint]. Inspired by what I know about the book '$100 dollar startup' (it's in my "to read" list after reading [this review][100startup]), I have decided releasing a product a go.
 
+_Update (2022-02-08): This idea/product was discontinued a while back._
+
 ## The journey
 
 We were discussing if temperature checks would be part of our risk management strategy at work. One of the team had done some initial research and found that you either had to buy/rent an expensive system or could use a temperature gun which requires having a person operating it.
