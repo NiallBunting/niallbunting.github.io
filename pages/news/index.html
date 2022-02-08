@@ -28,39 +28,97 @@ background-color:green;
 .clicker:focus + .hiddendiv{
 display:block;
 }
+
+.itemheader {
+  color: #000000;
+}
+
+.itemdesc {
+  color: #505050;
+  font-size: small;
+}
 </style>
 
 <script>
+function getRSS(url) {
+  return fetch(url).then((res) => {
+    return res.text().then((htmlTxt) => {
+      var domParser = new DOMParser();
+      let doc = domParser.parseFromString(htmlTxt, 'text/html');
+  
+      var feedUrl = doc.querySelectorAll('item');
+
+      return feedUrl;
+  
+    })
+  }).catch(() => console.error('Error in fetching the website'))
+}
 
 ftNewsURL = "https://rss.acast.com/ftnewsbriefing";
 
-fetch(ftNewsURL).then((res) => {
-  res.text().then((htmlTxt) => {
-    var domParser = new DOMParser();
-    let doc = domParser.parseFromString(htmlTxt, 'text/html');
+getRSS(ftNewsURL).then((item) => {
+  var firstFeedUrl = item[0];
 
-    var firstFeedUrl = doc.querySelector('item');
+  var firstName = firstFeedUrl.querySelector('title').innerText.trim();
+  var firstDate = firstFeedUrl.querySelector('pubDate').innerText;
+  var firstUrl = firstFeedUrl.querySelector('enclosure').getAttribute('url');
 
-    var firstName = firstFeedUrl.querySelector('title').innerText.trim();
-    var firstDate = firstFeedUrl.querySelector('pubDate').innerText;
-    var firstUrl = firstFeedUrl.querySelector('enclosure').getAttribute('url');
+  var ftname = document.getElementById('ftCurrentName');
+  ftname.innerHTML = firstName;
+  var ftdate = document.getElementById('ftCurrentDate');
+  ftdate.innerHTML = firstDate;
 
-    var ftname = document.getElementById('ftCurrentName');
-    ftname.innerHTML = firstName;
-    var ftdate = document.getElementById('ftCurrentDate');
-    ftdate.innerHTML = firstDate;
+  var ftaudio = document.getElementById('ftCurrentAudioSource');
+  ftaudio.src = firstUrl;
 
-    var ftaudio = document.getElementById('ftCurrentAudioSource');
-    ftaudio.src = firstUrl;
+  var ftaudio = document.getElementById('ftCurrentAudio');
+  ftaudio.load();
+});
 
-    var ftaudio = document.getElementById('ftCurrentAudio');
-    ftaudio.load();
+textFeeds = [ "https://cors-anywhere.herokuapp.com/https://hnrss.org/frontpage", "https://cors-anywhere.herokuapp.com/https://feeds.bbci.co.uk/news/rss.xml"];
 
-    // all
-    //var feedUrl = doc.querySelectorAll('item');
+function parseRSS(items) {
+  let parsed = [];
 
-  })
-}).catch(() => console.error('Error in fetching the website'))
+  for (let i = 0; i < items.length && i < 20; i++) {
+    let item = items[i];
+
+    var title = item.querySelector('title').innerText.replace("<![CDATA[", "").replace("]]>", "").trim();
+    var link =  new URL(item.querySelector('link').nextSibling.nodeValue.trim());
+    var comments = new URL(item.querySelector('guid').innerText.replace("<![CDATA[", "").replace("]]>", ""));
+    var desc = item.querySelector('description').innerText.replace("<![CDATA[", "").replace("]]>", "");
+    var pubdate = new Date(item.querySelector('pubdate').innerText);
+
+    parsed.push({"title": title, "link": link, "comments": comments, "description": desc, "pubdate": pubdate});
+  }
+
+  return parsed;
+}
+
+promises = textFeeds.map((feed) => {
+  console.log(feed);
+  return getRSS(feed).then(parseRSS);
+});
+
+Promise.all(promises).then((results) => {
+
+  let items = [].concat.apply([], results);
+
+  items.sort((a, b) => b.pubdate - a.pubdate);
+
+  let itemMarkdown = items.map((data) => {
+
+    return "<div><div class='itemheader'><a href='" + data.link.href + "'>" + data.title + "</a> (" + data.link.hostname.replace('www.','') + ")</div><div class='itemdesc'>" + data.pubdate.getFullYear() + "-" + (data.pubdate.getMonth() + 1) + "-" + data.pubdate.getDate() + " " + data.pubdate.getHours() + ":" + data.pubdate.getMinutes() + " | <a href='" + data.comments + "'>Comments</a></div></div>";
+
+  });
+
+  var fullMarkdown = itemMarkdown.join("<br/>");
+
+
+  var textElement = document.getElementById('text-area');
+  textElement.innerHTML = fullMarkdown;
+  
+});
 
 </script>
 
@@ -105,12 +163,9 @@ fetch(ftNewsURL).then((res) => {
 
 <hr/>
 
-<div>
-
-text news
-
+<div id="text-area">
+  Loading...
 </div>
-
 
 </body>
 </html>
