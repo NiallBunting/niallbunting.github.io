@@ -113,6 +113,11 @@ function timeAgo(dateParam) {
 
 function getRSS(url) {
   return fetch(url).then((res) => {
+
+    if (!res.ok) {
+      throw new Error('Network response was not OK');
+    }
+
     return res.text().then((htmlTxt) => {
       var domParser = new DOMParser();
       let doc = domParser.parseFromString(htmlTxt, 'text/html');
@@ -122,7 +127,7 @@ function getRSS(url) {
       return feedUrl;
   
     })
-  }).catch(() => console.error('Error in fetching the website'))
+  })
 }
 
 ftNewsURL = "https://rss.acast.com/ftnewsbriefing";
@@ -171,9 +176,10 @@ function parseRSS(items) {
 }
 
 promises = textFeeds.map((feed) => {
-  console.log(feed);
   return getRSS(feed).then(parseRSS);
 });
+
+console.log(promises);
 
 Promise.all(promises).then((results) => {
 
@@ -194,6 +200,8 @@ Promise.all(promises).then((results) => {
   var textElement = document.getElementById('text-area');
   textElement.innerHTML = fullMarkdown;
   
+}).catch(function(err) {
+  console.log(err.message); // some coding error in handling happened
 });
 
 </script>
