@@ -112,7 +112,7 @@ function timeAgo(dateParam) {
 }
 
 function getRSS(url) {
-  return fetch(url, redirect: 'follow').then((res) => {
+  return fetch(url, { redirect: 'follow' }).then((res) => {
 
     if (!res.ok) {
       throw new Error('Network response was not OK');
