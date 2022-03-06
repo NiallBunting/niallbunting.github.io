@@ -130,7 +130,7 @@ function getRSS(url) {
   })
 }
 
-ftNewsURL = "https://rss.acast.com/ftnewsbriefing";
+ftNewsURL = "https://cors-anywhere.herokuapp.com/https://rss.acast.com/ftnewsbriefing";
 
 getRSS(ftNewsURL).then((item) => {
   var firstFeedUrl = item[0];
