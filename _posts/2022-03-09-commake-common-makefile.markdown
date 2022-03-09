@@ -5,7 +5,7 @@ date:   2022-03-09 02:00:00
 categories: commake common makefile
 ---
 
-Commake makes it easy jump between projects and get them into a running state.
+Commake is a standardised wrapper for your projects commands. Making it easy to jump between projects and get them into a running state.
 
 # Summary
 
