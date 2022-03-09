@@ -1,15 +1,17 @@
 ---
 layout: post
-title:  "RFC: (Commake) Common Makefile v0.0.1"
-date:   2022-03-09 12:00:00
+title:  "RFC: Commake (Common Makefile) v0.0.1"
+date:   2022-03-09 02:00:00
 categories: commake common makefile
 ---
+
+Commake makes it easy jump between projects and get them into a running state.
 
 # Summary
 
 This is a file to have in all software projects to create a common way of running parts of a projects life cycle. Without having to remember commands or read documents/README.md.
 
-This page currently reflects my first iteration of this idea. Hopefully, to be improved. See the [contributing][#Contributing] section about raising ideas.
+This page currently reflects my first iteration of this idea. Hopefully, to be improved. See the [contributing](#contributing) section about raising ideas.
 
 # Introduction
 
@@ -70,7 +72,7 @@ deploy: #help Run any infra changes
 
 ```
 
-The idea is not that these become really fancy, often they are just one line. See the [examples section][#Examples].
+The idea is not that these become really fancy, often they are just one line. See the [examples section](#examples).
 
 # Examples
 
@@ -92,9 +94,9 @@ This project requires more thought on the following areas:
 This was created originally by Niall Bunting. If you would like to leave feedback please raise an issue on [Github][github].
 
 # Licence
-[Creative Commons ― CC BY 3.0][exapple]
+[Creative Commons ― CC BY 3.0][creativecommons]
 
 
-[goexample][https://raw.githubusercontent.com/NiallBunting/dotfiles/master/makefile]
+[goexample]: https://raw.githubusercontent.com/NiallBunting/dotfiles/master/makefile
 [github]: https://github.com/NiallBunting/niallbunting.github.io
 [creativecommons]: https://creativecommons.org/licenses/by/3.0/
