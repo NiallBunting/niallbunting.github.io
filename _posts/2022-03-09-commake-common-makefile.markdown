@@ -37,6 +37,8 @@ All of this can be solved by using a common makefile across all your projects. U
 This is a version with nothing implemented:
 
 ```
+# Commake (v0.0.1) - https://niallbunting.com/commake/common/makefile/2022/03/09/commake-common-makefile.html
+
 all: lint test run #help Full check
 
 help:
@@ -77,6 +79,7 @@ The idea is not that these become really fancy, often they are just one line. Se
 # Examples
 
 * [Golang][goexample]
+* [Github Pages][ghpagesexample]
 
 # Contributing
 
@@ -97,6 +100,7 @@ This was created originally by Niall Bunting. If you would like to leave feedbac
 [Creative Commons ― CC BY 3.0][creativecommons]
 
 
+[ghpagesexample]: https://raw.githubusercontent.com/NiallBunting/niallbunting.github.io/master/makefile
 [goexample]: https://raw.githubusercontent.com/NiallBunting/dotfiles/master/makefile
 [github]: https://github.com/NiallBunting/niallbunting.github.io
 [creativecommons]: https://creativecommons.org/licenses/by/3.0/

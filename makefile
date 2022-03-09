@@ -1,3 +1,5 @@
+# Commake (v0.0.1) - https://niallbunting.com/commake/common/makefile/2022/03/09/commake-common-makefile.html
+
 .PHONY: all help init install build run lint test e2e plan deploy
 all: lint test run #help Full check
 
