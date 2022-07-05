@@ -1,0 +1,231 @@
+---
+layout: page
+title:  "Commake - v0.1.0"
+date:   2022-07-05 02:00:00
+permalink: /commake
+---
+
+Commake (Common Makefile) is a standardised wrapper for your projects commands. Making it easy to jump between projects and get them into a running state.
+
+Commake is a makefile for all software projects that creates a common and simple way to run a project locally. Therefore you don't have to remember commands or read documents/README.md every time.
+
+### Contents
+1. [Introduction](#introduction)
+1. [Specification](#specification)
+1. [Usage](#usage)
+1. [Examples](#examples)
+1. [Customising Your Commake](#customising-your-commake)
+1. [Contributing](#contributing)
+1. [About](#about)
+1. [Licence](#licence)
+1. [Previous Versions](#previous-versions)
+
+### Introduction
+
+I find occasionally I come back to projects and can no longer remember how to set them up so they run. On some projects, the commands have not been added to the README and passed between people. Other times on a personal project I forget to write them down.
+
+#### Example - A node project:
+
+If I come back to a Node project, this is my thought process:
+* Does this project use yarn or npm?
+* Have I got the correct version of node installed?
+* Do I need to do an install?
+* Do I need to set environment variables?
+* How do I serve this? npm run start, npm run serve, npm run dev?
+
+All of this can be solved by using a common makefile across all your projects. Under the new world this would become the following:
+
+1. `$ make init` - Get the project requirements
+1. `$ make install` - Install any dependencies
+1. `$ make run` - Run the project
+
+### Specification
+
+This is a version with nothing implemented:
+
+```
+# Commake (v0.1.0) - https://niallbunting.com/commake/
+
+.PHONY: all help init install build run lint test e2e plan deploy int versioncheck
+.ONESHELL:
+all: lint test run #help Full check
+
+help:
+	@echo "-- HELP --"
+	@grep '#[h]elp' makefile
+
+# Use this to check if they have the correct version
+# To use update the if statement and the message.
+versioncheck:
+        @if [ 0 -gt 0 ]; then
+                echo "Wrong version of: <DEP>" &&
+                exit 1;
+        fi
+
+init: #help Run through dependencies and check
+	@echo Not Implemented
+
+install: versioncheck #help Install packages
+	@echo Not Implemented
+
+build: #help Bulid the project files
+	@echo Not Implemented
+
+run: #help Run locally
+	@echo Not Implemented
+
+lint: #help Run linting
+	@echo Not Implemented
+
+test: #help Run the unit tests
+	@echo Not Implemented
+
+int: #help Run the int tests
+	@echo Not Implemented
+
+e2e: #help Run the e2e tests
+	@echo Not Implemented
+
+plan: #help Plan to run any infra changes
+	@echo Not Implemented
+
+deploy: #help Run any infra changes
+	@echo Not Implemented
+
+# Custom Commands - Put your custom commands below
+```
+
+The idea is not that these become really fancy, often they are just one line. See the [examples section](#examples).
+
+### Usage
+
+#### Requirements
+You will need make installed. The instructions for installing will depend on your operating system.
+
+For example on Ubuntu: `sudo apt install make`
+
+#### Usage
+
+To run the help command use:
+
+```
+$ make help
+```
+
+Otherwise to run a command use `make <target>`. For example:
+```
+$ make run
+or
+$ make # To run the all target (lint, test, run)
+```
+
+### Examples
+
+* [Golang][goexample] <small>(v0.0.1)</small>
+* [Github Pages][ghpagesexample] <small>(v0.1.0)</small>
+* [Node][nodeexample] <small>(v0.0.1)</small>
+
+### Customising your Commake
+
+This section contains a brief overview of make to help you get started. More in-depth content can be found [here][makefiletutorial].
+
+*__Note:__ All makefiles are tab seperated, they won't work with spaces.*
+
+#### Variables
+
+Variables from bash are accessed via a double dollar sign.
+
+```
+	myvar="test"
+	echo $$myvar
+```
+
+#### Silencing commands
+
+By default make prints out the command it's about to run. Sometimes you may want to silence this. This is done by adding an at symbol before the command.
+
+Since we run everything as a single line ([see more](#phony-and-oneshell)). We only need this on the first line and that's the only line that counts.
+```
+	@echo "Dont print me"
+```
+
+#### Dependencies
+
+You might want to run other targets as prerequisites of your command. This is done by adding it after the targets colon.
+
+You can see here that the `install` target requires `versioncheck` to be run beforehand.
+```
+install: versioncheck #help Install packages
+	@echo Not Implemented
+```
+
+#### Make arguments
+
+To pass arguments run make in the following style:
+```
+$ make run env=prod
+```
+
+You can then access this like:
+```
+run: #help Run locally
+	@echo $(env)
+	python test.py $(env)
+```
+
+#### User interaction
+
+This is useful when you want to pause and wait for the user to continue the script. Maybe waiting for them to run a command.
+```
+	@echo "Press ENTER to continue (ctrl+c to cancel)"
+	@read line
+```
+
+If you want to do something more complex you can use a case statement.
+```
+	read -p "Do that? [y,n]" doit
+	case $$doit in
+		y|Y) echo yes ;;
+		n|N) echo no ;;
+		*) echo dont know ;;
+	esac
+```
+
+#### .PHONY and .ONESHELL
+
+Here are some default options that make our life a little easier.
+
+* __.PHONY__ - This means that this isn't actually a file and is just a command. Without this it will check if a file with the name of the target exists and if it does won't run the command.
+* __.ONESHELL__ - This is more natural for a beginners perspective. It stops each line being run as a different shell.
+
+
+### Contributing
+
+The makefile and this document are a work in progress. For example not much though has been put into the windows world. I would love to hear your suggestions. Either through PRs or Bugs [here][github].
+
+If you want to contribute a PR, you will need create a new version in the `_posts` directory of the current version.
+
+On that new version set `permalink: /commake` and update the previous version. With the following:
+```
+6 sitemap: false
+7 ---
+8
+9 # <span style="color:red">This is a old version: [newest version](/commake)</span>
+```
+
+### About
+This was created originally by [Niall Bunting][niallbunting].
+
+### Licence
+[Creative Commons ― CC BY 3.0][creativecommons]
+
+### Previous Versions
+[0.0.1](/commake/common/makefile/2022/03/09/commake-common-makefile.html)
+
+[ghpagesexample]: https://raw.githubusercontent.com/NiallBunting/niallbunting.github.io/master/makefile
+[goexample]: https://raw.githubusercontent.com/NiallBunting/dotfiles/master/makefile
+[nodeexample]: https://github.com/dvsa/cvs-app-vtm/blob/develop/makefile
+[github]: https://github.com/NiallBunting/niallbunting.github.io
+[creativecommons]: https://creativecommons.org/licenses/by/3.0/
+[makefiletutorial]: https://makefiletutorial.com/
+[niallbunting]: https://niallbunting.com/

@@ -1,9 +1,12 @@
 ---
-layout: post
+layout: page
 title:  "RFC: Commake (Common Makefile) v0.0.1"
 date:   2022-03-09 02:00:00
 categories: commake common makefile
+sitemap: false
 ---
+
+# <span style="color:red">This is a old version: [newest version](/commake)</span>
 
 Commake is a standardised wrapper for your projects commands. Making it easy to jump between projects and get them into a running state.
 
