@@ -57,10 +57,10 @@ help:
 # Use this to check if they have the correct version
 # To use update the if statement and the message.
 versioncheck:
-        @if [ 0 -gt 0 ]; then
-                echo "Wrong version of: <DEP>" &&
-                exit 1;
-        fi
+	@if [ 0 -gt 0 ]; then
+		echo "Wrong version of: <DEP>" &&
+		exit 1;
+	fi
 
 init: #help Run through dependencies and check
 	@echo Not Implemented
