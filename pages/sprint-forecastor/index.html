@@ -19,8 +19,6 @@ permalink: /sprint-forecaster/
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- Customisation  -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-
-    <script src="/pages/sprint-forecastor/calc.js"></script> 
 </head>
 <body class="home-template">
 
@@ -100,9 +98,13 @@ permalink: /sprint-forecaster/
           <label for="values">Enter previous velocities (separated by commas):</label>
           <input type="text" id="values" style="width: 100%" oninput="updateText()" onkeyup="updateText()"/>
 
+          <div style="padding-top: 2em">
+            <canvas id="velocityChart"></canvas>
+          </div>
+
           <hr/>
 
-          <p>Your sample mean (average) is: <strong><span id="average">???</span></strong></p>
+          <p>Your mean (average) is: <strong><span id="average">???</span></strong></p>
           
           <p>With a 
           <select name="confidence" id="confidence" onchange="updateDropdown()">
@@ -153,5 +155,9 @@ permalink: /sprint-forecaster/
       })();
 
     </script>   
+
+    <!-- Import chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/pages/sprint-forecastor/calc.js"></script> 
 </body>
 </html>

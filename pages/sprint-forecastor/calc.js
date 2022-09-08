@@ -116,6 +116,10 @@ function doCalulations() {
     error("Wow that's a lot of data. This page is going to be inaccurate with that. If you see this please email me velocity-at-niallbunting.com and complain. I might add the normal distribution to handle this.");
   }
 
+  velocityChart.data.labels = samples.map((data, i) => {return ""});
+  velocityChart.data.datasets[0].data = samples;
+  velocityChart.update();
+
   const n = samples.length;
   const mean = samples.reduce((a,b) => a+b)/n;
 
@@ -169,3 +173,30 @@ function updateText() {
   window.clearTimeout(timeoutHandle);
   timeoutHandle = window.setTimeout(doCalulations, 500);
 }
+
+const data = {
+  labels: [],
+  datasets: [{
+    label: 'Story Points',
+    backgroundColor: '#0099ff',
+    borderColor: '#0099ff',
+    data: [],
+  }]
+};
+
+const config = {
+  type: 'bar',
+  data: data,
+  options: {
+    y: {
+      beginAtZero: true
+    }
+  }
+};
+const velocityChart = new Chart(
+  document.getElementById('velocityChart'),
+  config
+);
+
+
+
