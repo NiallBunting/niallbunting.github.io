@@ -95,8 +95,8 @@ permalink: /sprint-forecaster/
           <p>The more velocity data you provide the more accurate the tool will be (it's recommended to use at least the previous five).</p>
 
           <div id="error" style="color: red" ></div>
-          <label for="values">Enter previous velocities (separated by commas):</label>
-          <input type="text" id="values" style="width: 100%" oninput="updateText()" onkeyup="updateText()"/>
+          <label for="values"><strong>Enter previous velocities:</strong> (separated by commas)</label>
+          <input type="text" id="values" style="width: 100%" oninput="updateText()" onkeyup="updateText()" placeholder="32, 23, 42, 28"/>
 
           <div style="padding-top: 2em">
             <canvas id="velocityChart"></canvas>
