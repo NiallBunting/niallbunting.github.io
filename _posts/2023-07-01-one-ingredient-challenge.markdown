@@ -57,6 +57,7 @@ div.gallery {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 div.gallery img:hover {
