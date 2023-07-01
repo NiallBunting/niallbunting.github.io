@@ -3,6 +3,7 @@ layout: post
 title:  "One Ingredient Challenge"
 date:   2023-07-01 12:00:00
 categories: challenge one ingredient
+excerpt: "One ingredient challenge is a month long challenge where you only eat foods containing one single ingredient."
 ---
 
 One ingredient challenge is a month long challenge where you only eat foods containing one single ingredient.

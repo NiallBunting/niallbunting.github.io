@@ -3,6 +3,7 @@ layout: post
 title:  "Match the design of input fields to look like Select2 fields"
 date:   2021-03-17 12:00:00
 categories: select2 design css
+excerpt: "Make your regular input fields have the same style as Select2 inputs."
 ---
 
 Whilst creating a mixed form, there were fields on a form that did not match the default style of a Select2 input. I created this bit of CSS that creates a style that can be applied to the other fields so they match. Feel free to use this code.

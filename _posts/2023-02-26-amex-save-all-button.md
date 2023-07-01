@@ -3,6 +3,7 @@ layout: post
 title:  "American Express (Amex) Enable All Offers Bookmarklet"
 date:   2023-02-26 12:00:00
 categories: bookmarklet tips amex lifehack
+excerpt: "A piece of Javascript to enable all the offers on your Amex card."
 ---
 
 The American Express website has many cashback 'offers' available. These offers allow you to gain cashback if you spend a certain amount in a shop.
