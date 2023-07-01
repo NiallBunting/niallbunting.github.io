@@ -21,6 +21,9 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 1st Jul
 
 * Porridge (porridge oats, milk).
+* 2 * Boiled Egg (egg, salt).
+* Salad (pepper, tomato, carrot, cabbage, broccoli, onion, red wine vinegar, olive oil, sesame seeds).
+* Coriander Chicken Curry (vegetable oil, chicken, onion, potato, pepper, turmeric powder, cumin powder, coriander powder, cinnamon powder, fresh coriander, salt, green chilli, tomato, water, cornflour).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -28,9 +31,24 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/01-porridge-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/01-egg.jpg">
+    <img src="/assets/images/oneingredientchallenge/01-egg-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/01-salad.jpg">
+    <img src="/assets/images/oneingredientchallenge/01-salad-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/01-curry.jpg">
+    <img src="/assets/images/oneingredientchallenge/01-curry-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
-**Thoughts:** I didn't consider breakfast much until today, porridge on it's own is a bit bland therefore will need to spice it up after a few days. Also discovered that soy sauce always contains multiple ingredients, so am unable to use it in my stir fry. 
+**Thoughts:** I didn't consider breakfast much until today, porridge on it's own is a bit bland therefore will need to spice it up after a few days. Also discovered that soy sauce always contains multiple ingredients, so am unable to use it in a stir fry. The curry was really nice, I wouldn't have known that it was from my spice draw, if I hadn't made it.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
