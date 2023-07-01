@@ -23,7 +23,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Porridge (porridge oats, milk).
 * 2 * Boiled Egg (egg, salt).
 * Salad (pepper, tomato, carrot, cabbage, broccoli, onion, red wine vinegar, olive oil, sesame seeds).
-* Coriander Chicken Curry (vegetable oil, chicken, onion, potato, pepper, turmeric powder, cumin powder, coriander powder, cinnamon powder, fresh coriander, salt, green chilli, tomato, water, cornflour).
+* Coriander Chicken Curry (rice, vegetable oil, chicken, onion, potato, pepper, turmeric powder, cumin powder, coriander powder, cinnamon powder, fresh coriander, salt, green chilli, tomato, water, cornflour).
 
 <div class="gallery">
   <div class="galleryitem">
