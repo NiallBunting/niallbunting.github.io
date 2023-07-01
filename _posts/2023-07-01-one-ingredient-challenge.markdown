@@ -30,7 +30,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** I didn't consider breakfast much until today, porridge on it's own is a bit bland therefore will need to spice it up after a few days. Also discovered that soy sauces contain multiple ingredients, so am unable to use it in my stir fry tonight. 
+**Thoughts:** I didn't consider breakfast much until today, porridge on it's own is a bit bland therefore will need to spice it up after a few days. Also discovered that soy sauce always contains multiple ingredients, so am unable to use it in my stir fry. 
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
