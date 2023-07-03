@@ -50,6 +50,32 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 **Thoughts:** I didn't consider breakfast much until today, porridge on it's own is a bit bland therefore will need to spice it up after a few days. Also discovered that soy sauce always contains multiple ingredients, so am unable to use it in a stir fry. The curry was really nice, I wouldn't have known that it was from my spice draw, if I hadn't made it.
 
+##### 2nd Jul
+
+* Porridge (porridge oats, milk).
+* Leftover Coriander Chicken Curry (leftover curry, rice).
+* Salad, Cheese and Eggs (leftover salad, cheese, eggs, salt).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/02-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/02-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/02-curry.jpg">
+    <img src="/assets/images/oneingredientchallenge/02-curry-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/02-salad.jpg">
+    <img src="/assets/images/oneingredientchallenge/02-salad-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** An easy day as eating the leftovers from the previous day.
+
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
 <style>
