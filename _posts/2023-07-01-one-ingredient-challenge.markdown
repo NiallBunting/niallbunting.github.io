@@ -76,6 +76,38 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 **Thoughts:** An easy day as eating the leftovers from the previous day.
 
+##### 3rd Jul
+
+* Porridge (porridge oats, milk).
+* Fajita Spice (cumin, chilli powder, paprika, garlic powder, oregano, fresh coriander).
+* Chicken Fajitas (vegetable oil, chicken, onion, pepper, wraps(wholemeal flour, salt, vegetable oil), salsa(tomato, salt, pepper, basil), leftover salad, cheese).
+* Fajita chicken rice bowl (fajita leftovers, rice, cheese).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/03-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/03-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/03-fajita.jpg">
+    <img src="/assets/images/oneingredientchallenge/03-fajita-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/03-fajita1.jpg">
+    <img src="/assets/images/oneingredientchallenge/03-fajita1-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/03-rice.jpg">
+    <img src="/assets/images/oneingredientchallenge/03-rice-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** I made my own Fajita seasoning today, as mentioned in the introduction my usual contains mainly Maltodextrin. It was hotter than usual and gave a good flavour profile, I will be using this again. I discovered a couple of things that I can't use today. Firstly, instant yeast, which isn't too surprising. Secondly most flours as they are fortified, with the only exception wholemeal flour which I happened to have. And finally, I discovered that my salt has a caking agent so will no longer be using it past this point.
+
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
 <style>
