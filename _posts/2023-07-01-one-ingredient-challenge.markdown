@@ -106,7 +106,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** I made my own Fajita seasoning today, as mentioned in the introduction my usual contains mainly Maltodextrin. It was hotter than usual and gave a good flavour profile, I will be using this again. I discovered a couple of things that I can't use today. Firstly, instant yeast, which isn't too surprising. Secondly most flours as they are fortified, with the only exception wholemeal flour, as that's the law in the UK. And finally, I discovered that my salt has a caking agent so will find an alternative.
+**Thoughts:** I made my own Fajita seasoning today, as mentioned in the introduction my usual contains mainly Maltodextrin. It was hotter than usual and gave a good flavour profile, I will be using this again. I discovered a couple of things that I can't use today. Firstly, instant yeast, which isn't too surprising. Secondly most flours as they are fortified, with the only exception wholemeal flour, due to the law in the UK. And finally, I discovered that my salt has a caking agent so will find an alternative.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
