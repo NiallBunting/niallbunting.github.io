@@ -108,6 +108,26 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 **Thoughts:** I made my own Fajita seasoning today, as mentioned in the introduction my usual contains mainly Maltodextrin. It was hotter than usual and gave a good flavour profile, I will be using this again. I discovered a couple of things that I can't use today. Firstly, instant yeast, which isn't too surprising. Secondly most flours as they are fortified, with the only exception wholemeal flour, due to the law in the UK. And finally, I discovered that my salt has an anti-caking agent (Sodium Ferrocyanide) so will find an alternative.
 
+##### 4th Jul
+
+* Porridge (porridge oats, milk, banana).
+* Vegetable Omelette (egg, butter, cheese, carrot, onion, cabbage, chili, broccoli).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/04-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/04-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/04-omelette.jpg">
+    <img src="/assets/images/oneingredientchallenge/04-omelette-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Continued to use up ingredients in the fridge. I have noticed that my weight is dropping, so will be interested to see if that continues.
+
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
 <style>
