@@ -128,6 +128,38 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 **Thoughts:** Continued to use up ingredients in the fridge. I have noticed that my weight is dropping, so will be interested to see if that continues.
 
+##### 5th Jul
+
+* Porridge (porridge oats, milk, banana).
+* Vegetable Omelette (egg, butter, cheese, carrot, cabbage, broccoli, tomato, pepper, salt).
+* Steak and Chips (Steak, salt, pepper, broccoli, potatoes, oregano, paprika, chilli flakes, olive oil, vegetable oil).
+* Scones (Wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, sugar, banana).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/05-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/05-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/05-omelette.jpg">
+    <img src="/assets/images/oneingredientchallenge/05-omelette-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/05-steak.jpg">
+    <img src="/assets/images/oneingredientchallenge/05-steak-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/05-scones.jpg">
+    <img src="/assets/images/oneingredientchallenge/05-scones-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** The recipe I used for the scones called for 4 tsp of baking powder, turns out what I have is baking soda so the first batch had a really bad aftertaste of baking soda. They rose really nicely though. Today I was really hungry all throughout the day, I felt like I had to eat more to stay satisfied.
+
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
 <style>
