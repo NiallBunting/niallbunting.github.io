@@ -132,8 +132,8 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk, banana).
 * Vegetable Omelette (egg, butter, cheese, carrot, cabbage, broccoli, tomato, pepper, salt).
-* Steak and Chips (Steak, salt, pepper, broccoli, potatoes, oregano, paprika, chilli flakes, olive oil, vegetable oil).
-* Scones (Wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, sugar, banana).
+* Steak and Chips (steak, salt, pepper, broccoli, potatoes, oregano, paprika, chilli flakes, olive oil, vegetable oil).
+* Scones (wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, sugar, banana).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -158,7 +158,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** The recipe I used for the scones called for 4 tsp of baking powder, turns out what I have is baking soda so the first batch had a really bad aftertaste of baking soda. They rose really nicely though. Today I was really hungry all throughout the day, I felt like I had to eat more to stay satisfied.
+**Thoughts:** The recipe I used for the scones called for 4 tsp of baking powder, turns out what I have is baking soda so the first batch had a really bad aftertaste of baking soda. Really nice rise though! Today I was really hungry all throughout the day, I felt like I had to eat more to stay satisfied.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 
