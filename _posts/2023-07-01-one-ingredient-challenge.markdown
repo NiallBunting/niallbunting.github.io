@@ -160,7 +160,40 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 **Thoughts:** The recipe I used for the scones called for 4 tsp of baking powder, turns out what I have is baking soda so the first batch had a really bad aftertaste of baking soda. Really nice rise though! Today I was really hungry all throughout the day, I felt like I had to eat more to stay satisfied.
 
+##### 6th Jul
+
+* Porridge (porridge oats, milk, yogurt).
+* Peach
+* Coffee (coffee, water, milk).
+* Chilli con carne with rice and wedges (steak mince, tomatoes, chilli, chilli powder, cumin, onion, pepper, garlic, rice, potato, oregano, chilli flakes, smoked paprika, salt, black pepper, vegetable oil).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/06-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/06-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/06-peach.jpg">
+    <img src="/assets/images/oneingredientchallenge/06-peach-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/06-coffee.jpg">
+    <img src="/assets/images/oneingredientchallenge/06-coffee-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/06-chilli.jpg">
+    <img src="/assets/images/oneingredientchallenge/06-chilli-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** The coffee was bought from a shop, which gave me mixed feelings under the rules of the challenge. After discussion I decided, since it's simple and one ingredient foods being directly prepared for me, it's okay within the rules. This was my first dish using dry red kidney beans, upon checking online how to cook them i found raw beans contain a lectin [Phytohaemagglutinin][phytohaemagglutinin] which causes mild/serious symptoms if raw beans are eaten. Therefore, I made sure I cooked the beans well. Also searched for some coco powder but could only find it with acidity regulators such as Potassium Hydroxide and Potassium Carbonate.
+
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
+[phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
 
 <style>
 div.gallery {
