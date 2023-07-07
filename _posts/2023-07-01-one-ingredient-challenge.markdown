@@ -166,6 +166,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Peach
 * Coffee (coffee, water, milk).
 * Chilli con carne with rice and wedges (steak mince, tomatoes, chilli, chilli powder, cumin, onion, pepper, garlic, rice, potato, oregano, chilli flakes, smoked paprika, salt, black pepper, vegetable oil).
+* Yogurt with a spoon of jam (yogurt, strawberries, raspberries, sugar, cornflour).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -188,9 +189,35 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/06-chilli-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/06-yogurt.jpg">
+    <img src="/assets/images/oneingredientchallenge/06-yogurt-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
 **Thoughts:** The coffee was bought from a shop, which gave me mixed feelings under the rules of the challenge. After discussion I decided, since it's simple and one ingredient foods being directly prepared for me, it's okay within the rules. This was my first dish using dry red kidney beans, upon checking online how to cook them i found raw beans contain a lectin [Phytohaemagglutinin][phytohaemagglutinin] which causes mild/serious symptoms if raw beans are eaten. Therefore, I made sure I cooked the beans well. Also searched for some coco powder but could only find it with acidity regulators such as Potassium Hydroxide and Potassium Carbonate.
+
+##### 7th Jul
+
+* Leftover chilli con carne (leftover chilli con carne).
+* Fruit (easy peeler, banana, mango).
+* Fish and salad (sea bass, rice, red kidney beans, broccoli, coriander, red cabbage, salt, pepper, carrot, red pepper, carrot, almonds, olive oil, onion, red win vinegar, vegetable oil).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/07-chilli.jpg">
+    <img src="/assets/images/oneingredientchallenge/07-chilli-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/07-fish.jpg">
+    <img src="/assets/images/oneingredientchallenge/07-fish-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** It was a hot day today, would have been nice to go to the pub for a pint after finishing our walk.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
