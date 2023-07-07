@@ -132,7 +132,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk, banana).
 * Vegetable Omelette (egg, butter, cheese, carrot, cabbage, broccoli, tomato, pepper, salt).
-* Steak and Chips (steak, salt, pepper, broccoli, potatoes, oregano, paprika, chilli flakes, olive oil, vegetable oil).
+* Steak and Chips (steak, salt, red pepper, broccoli, potatoes, oregano, paprika, chilli flakes, olive oil, vegetable oil).
 * Scones (wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, sugar, banana).
 
 <div class="gallery">
@@ -202,7 +202,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Leftover chilli con carne (leftover chilli con carne).
 * Fruit (easy peeler, banana, mango).
-* Fish and salad (sea bass, rice, red kidney beans, broccoli, coriander, red cabbage, salt, pepper, carrot, red pepper, carrot, almonds, olive oil, onion, red win vinegar, vegetable oil).
+* Fish and salad (sea bass, rice, red kidney beans, broccoli, coriander, red cabbage, salt, pepper, carrot, red pepper, carrot, almonds, olive oil, onion, red wine vinegar, vegetable oil, tomato).
 
 <div class="gallery">
   <div class="galleryitem">
