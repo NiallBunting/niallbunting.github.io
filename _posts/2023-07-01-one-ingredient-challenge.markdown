@@ -217,7 +217,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** It was a hot day today, would have been nice to go to the pub for a pint after finishing our walk.
+**Thoughts:** It was a hot day today, would have been nice to go to the pub for a pint after finishing our walk. The spices that I bought that contain a single spice have more taste then the regular supermarket spices I buy. I think i'm going to buy those instead in future.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
