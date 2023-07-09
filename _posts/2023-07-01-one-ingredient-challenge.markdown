@@ -227,7 +227,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 ##### 8th Jul
 
-* Porridge (porridge oats, milk, yogurt).
+* Porridge (porridge oats, milk).
 * Pancakes (flour, egg, milk, vegetable oil, butter, homemade jam, maple syrup, lemon, banana, sugar).
 * Falafel Wraps (flour, vegetable oil, dried chickpeas, fresh coriander, ground coriander, salt, black pepper, onion, garlic, cumin, yogurt, cucumber, lemon, red cabbage, lettuce, avocado, tomato, cheese, leftover salad).
 
@@ -255,6 +255,26 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 </div>
 
 **Thoughts:** Looking around the shops I noticed that kefir contains 'Milk, Live Cultures of Kefir Bacteria'. Whereas yogurt and cheese, according to the packs I buy, only contain the respective single ingredient. Even though both contain cultures of their own. Therefore, some products must be able to not list ingredients. Since my arbitrary line in the sand was the ingredient list, they are okay in this challenge, but it makes me wonder what isn't listed.
+
+##### 9th Jul
+
+* Porridge (porridge oats, milk).
+* Leftovers (eggs, leftover salad, leftover falafel, potato, oil, chilli flakes, oregano, smoked paprika, salt, pepper).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/09-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/09-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/09-leftovers.jpg">
+    <img src="/assets/images/oneingredientchallenge/09-leftovers-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Wasn't feeling too hungry today after the large meal yesterday. For my evening meal ate various leftovers from the fridge.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
