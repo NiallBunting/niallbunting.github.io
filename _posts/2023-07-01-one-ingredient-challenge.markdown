@@ -12,7 +12,7 @@ This means any food items with exactly one ingredient on the package is fine, an
 
 I am allowed to process food myself. For example I can't buy bread from the shop but can make it at home. As long as all the ingredients that go into the item are single foods that I can hold in my hand.
 
-Since I don't fancy not cleaning my teeth I'm going to have an exception for toothpaste and mouthwash. Not that I eat them! Just including here for completeness.
+Since I don't fancy not cleaning my teeth I'm going to have an exception for toothpaste and mouthwash (and medicine). Not that I eat them! Just including here for completeness.
 
 This blog post is going to chart my progress with what I'm eating. I'm no chef and am going to stay simple and easy. I'm not going to include drinks which are going to consist of water, tea and coffee.
 
@@ -133,7 +133,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Porridge (porridge oats, milk, banana).
 * Vegetable Omelette (egg, butter, cheese, carrot, cabbage, broccoli, tomato, pepper, salt).
 * Steak and Chips (steak, salt, red pepper, broccoli, potatoes, oregano, paprika, chilli flakes, olive oil, vegetable oil).
-* Scones (wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, sugar, banana).
+* Scones (wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, sugar, banana, clotted cream).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -203,6 +203,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Leftover chilli con carne (leftover chilli con carne).
 * Fruit (easy peeler, banana, mango).
 * Fish and salad (sea bass, rice, red kidney beans, broccoli, coriander, red cabbage, salt, pepper, carrot, red pepper, carrot, almonds, olive oil, onion, red wine vinegar, vegetable oil, tomato).
+* Scones (wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, clotted cream, homemade jam).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -215,9 +216,45 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/07-fish-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/07-scones.jpg">
+    <img src="/assets/images/oneingredientchallenge/07-scones-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
 **Thoughts:** It was a hot day today, would have been nice to go to the pub for a pint after finishing our walk. The spices that I bought that contain a single spice have more taste then the regular supermarket spices I buy. I think i'm going to buy those instead in future.
+
+##### 8th Jul
+
+* Porridge (porridge oats, milk, yogurt).
+* Pancakes (flour, egg, milk, vegetable oil, butter, homemade jam, maple syrup, lemon, banana, sugar).
+* Falafel Wraps (flour, vegetable oil, dried chickpeas, fresh coriander, ground coriander, salt, black pepper, onion, garlic, cumin, yogurt, cucumber, lemon, red cabbage, lettuce, avocado, tomato, cheese, leftover salad).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/08-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/08-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/08-pancake.jpg">
+    <img src="/assets/images/oneingredientchallenge/08-pancake-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/08-falafel1.jpg">
+    <img src="/assets/images/oneingredientchallenge/08-falafel1-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/08-falafel2.jpg">
+    <img src="/assets/images/oneingredientchallenge/08-falafel2-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Looking around the shops I noticed that kefir contains 'Milk, Live Cultures of Kefir Bacteria'. Whereas yogurt and cheese, according to the packs I buy, only contain the respective single ingredient. Even though both contain cultures of their own. Therefore, some products must be able to not list ingredients. Since my arbitrary line in the sand was the ingredient list, they are okay in this challenge, but it makes me wonder what isn't listed.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
