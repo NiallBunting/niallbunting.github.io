@@ -278,7 +278,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 ##### 10th Jul
 
-* Porridge (porridge oats, milk).
+* Porridge (porridge oats, milk, yogurt).
 * Fried Egg (egg).
 * Easy Peeler ('a cross-breed of satsumas and clementines').
 * Vegetable Omelette (egg, butter, carrot, broccoli, chilli, onion, carrot, red cabbage, cheese, salt, pepper).
@@ -325,6 +325,18 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 </div>
 
 **Thoughts:** Well, looks like my body was balancing out yesterday. I have never searched for what 'easy peelers' are turns out they are a cross-breed of satsumas and clementines, that are easy to peel. Another way that humans shape the world. I've heard there used to be 100's of types of apple that for various reasons are not as easy to farm or as tasty so you don't see them anymore in the supermarket.
+
+##### 11th Jul
+
+* Porridge (porridge oats, milk).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/11-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/11-porridge-sm.jpg"/>
+   </a>
+  </div>
+</div>
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
