@@ -329,6 +329,9 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 11th Jul
 
 * Porridge (porridge oats, milk).
+* No Bake Oat Cookies (leftover no bake oat cookies).
+* Bubble and squeak (potato, red cabbage, onion, broccoli, carrot, garlic, leftover chicken, salt, pepper).
+* Banana (banana).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -336,7 +339,24 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/11-porridge-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/11-oat.jpg">
+    <img src="/assets/images/oneingredientchallenge/11-oat-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/11-bubble.jpg">
+    <img src="/assets/images/oneingredientchallenge/11-bubble-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/11-banana.jpg">
+    <img src="/assets/images/oneingredientchallenge/11-banana-sm.jpg"/>
+   </a>
+  </div>
 </div>
+
+**Thoughts:** I forgot to take a picture of the porridge. Been stacking on those leftover oat cookies, probably ate a few too many. It seems my meals have been using the same carrot, broccoli, red cabbage and onion combination. That's whats in the fridge.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
