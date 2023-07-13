@@ -80,7 +80,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk).
 * Fajita Spice (cumin, chilli powder, paprika, garlic powder, oregano, fresh coriander).
-* Chicken Fajitas (vegetable oil, chicken, onion, pepper, wraps(wholemeal flour, salt, vegetable oil), salsa(tomato, salt, pepper, basil), leftover salad, cheese).
+* Chicken Fajitas (vegetable oil, chicken, onion, pepper, fajita spice, wraps(wholemeal flour, salt, vegetable oil), salsa(tomato, salt, pepper, basil), leftover salad, cheese).
 * Fajita chicken rice bowl (fajita leftovers, rice, cheese).
 
 <div class="gallery">
@@ -332,6 +332,8 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * No Bake Oat Cookies (leftover no bake oat cookies).
 * Bubble and squeak (potato, red cabbage, onion, broccoli, carrot, garlic, leftover chicken, salt, pepper).
 * Banana (banana).
+* Chicken Fajitas (vegetable oil, chicken, onion, pepper, fajita spice, wraps(wholemeal flour, salt, vegetable oil), cheese, tomatoes, lettuce, salad(carrot, broccoli, cucumber, red cabbage, vinegar, oil)).
+* Scones (wholemeal flour, cornflour, baking soda, brown sugar, butter, milk, clotted cream, homemade jam).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -354,9 +356,77 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/11-banana-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/11-fajita.jpg">
+    <img src="/assets/images/oneingredientchallenge/11-fajita-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/11-scones.jpg">
+    <img src="/assets/images/oneingredientchallenge/11-scones-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
 **Thoughts:** I forgot to take a picture of the porridge. Been stacking on those leftover oat cookies, probably ate a few too many. It seems my meals have been using the same carrot, broccoli, red cabbage and onion combination. That's whats in the fridge.
+
+##### 12th Jul
+
+* Porridge (porridge oats, milk, banana).
+* Cob (butter, sourdough starter, wholemeal flour, salt).
+* Cottage Pie (potatoes, beef mince, onion, peas, kidney beans, leftover chicken stock, cheese, carrot, broccoli, red cabbage, vinegar, salt, pepper).
+* Scones (leftover scones, homemade jam, clotted cream).
+* Sourdough Bread (sourdough starter, wholemeal flour, salt).
+* Cheese Sandwich (sourdough bread, butter, cheese).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/12-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/12-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/12-bread.jpg">
+    <img src="/assets/images/oneingredientchallenge/12-bread-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/12-pie.jpg">
+    <img src="/assets/images/oneingredientchallenge/12-pie-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/12-scone.jpg">
+    <img src="/assets/images/oneingredientchallenge/12-scone-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/12-loaf.jpg">
+    <img src="/assets/images/oneingredientchallenge/12-loaf-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/12-cheese.jpg">
+    <img src="/assets/images/oneingredientchallenge/12-cheese-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** I have been creating a sourdough starter mix, as I can't find single ingredient yeast. It's a few days from being ready for baking bread but decided to give baking a go with the discard. Creating the dense bread that you see above.
+
+##### 13th Jul
+
+* Jam Toast (sourdough bread, jam, butter).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/13-toast.jpg">
+    <img src="/assets/images/oneingredientchallenge/13-toast-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** 
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
