@@ -417,6 +417,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 13th Jul
 
 * Jam Toast (sourdough bread, homemade jam, butter).
+* Omelette (eggs, red kidney beans, onion, broccoli, cheese, sunflower oil).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -424,9 +425,14 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/13-toast-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/13-omelette.jpg">
+    <img src="/assets/images/oneingredientchallenge/13-omelette-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
-**Thoughts:** 
+**Thoughts:** I do wonder looking back through my foods if my foods are a bit 'beige'. Lots of stuff the same colour.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
