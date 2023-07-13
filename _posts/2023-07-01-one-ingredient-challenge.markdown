@@ -416,7 +416,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 ##### 13th Jul
 
-* Jam Toast (sourdough bread, jam, butter).
+* Jam Toast (sourdough bread, homemade jam, butter).
 
 <div class="gallery">
   <div class="galleryitem">
