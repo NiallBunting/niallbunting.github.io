@@ -442,7 +442,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 ##### 14th Jul
 
-* Porridge (porridge oats, milk, banana).
+* Porridge (porridge oats, milk).
 * Pork Stir Fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflour oil, sesame oil).
 * Banana (banana).
 
