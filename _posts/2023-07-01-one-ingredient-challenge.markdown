@@ -418,6 +418,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Jam Toast (sourdough bread, homemade jam, butter).
 * Omelette (eggs, red kidney beans, onion, broccoli, cheese, sunflower oil).
+* Sourdough Pancake (sourdough starter, cornflour, milk, honey, sugar, butter, clotted cream).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -430,9 +431,40 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/13-omelette-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/13-pancake.jpg">
+    <img src="/assets/images/oneingredientchallenge/13-pancake-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
 **Thoughts:** I do wonder looking back through my foods if my foods are a bit 'beige'. Lots of stuff the same colour.
+
+##### 14th Jul
+
+* Porridge (porridge oats, milk, banana).
+* Pork Stir Fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflour oil, sesame oil).
+* Banana (banana).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/14-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/14-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/14-stirfry.jpg">
+    <img src="/assets/images/oneingredientchallenge/14-stirfry-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/14-banana.jpg">
+    <img src="/assets/images/oneingredientchallenge/14-banana-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Tried to be a bit less beige today with a stir fry. Bought a lots of vegetables from the shop today for both the salad and stir fry. I think i'll be having a stir fry again tomorrow night. My friend had some fish and chips from the chippy and it smelt particularly nice.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
