@@ -443,7 +443,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 14th Jul
 
 * Porridge (porridge oats, milk).
-* Pork Stir Fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflour oil, sesame oil).
+* Pork Stir Fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflour oil, sesame oil, seseme seeds).
 * Banana (banana).
 
 <div class="gallery">
@@ -464,7 +464,54 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** Tried to be a bit less beige today with a stir fry. Bought a lots of vegetables from the shop today for both the salad and stir fry. I think i'll be having a stir fry again tomorrow night. My friend had some fish and chips from the chippy and it smelt particularly nice.
+**Thoughts:** Tried to be a bit less beige today with a stir fry. Bought a lots of vegetables from the shop today for both the salad and stir fry. I think i'll be having a stir fry again tomorrow night. My friend had some fish and chips from the chippy and it smelt particularly nice but stayed strong.
+
+##### 15th Jul
+
+* Porridge (porridge oats, milk, banana).
+* Pork Stir Fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika sesame oil, salt, pepper).
+* Bread (sourdough starter, flour, baking powder, butter, honey).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/15-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/15-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/15-stirfry.jpg">
+    <img src="/assets/images/oneingredientchallenge/15-stirfry-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/15-bread.jpg">
+    <img src="/assets/images/oneingredientchallenge/15-bread-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Enjoying my stirfrys. I am planning to make my first proper sourdough bread over the next few days. As have been using the sourdough starter discard.
+
+##### 16th Jul
+
+* Porridge (porridge oats, banana).
+* Fried egg sandwich (eggs, bread, butter, salt, pepper).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/16-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/16-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/16-egg.jpg">
+    <img src="/assets/images/oneingredientchallenge/16-egg-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** 
+
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
