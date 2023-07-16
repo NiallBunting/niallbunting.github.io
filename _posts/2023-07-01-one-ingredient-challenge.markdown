@@ -418,7 +418,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Jam Toast (sourdough bread, homemade jam, butter).
 * Omelette (eggs, red kidney beans, onion, broccoli, cheese, sunflower oil).
-* Sourdough Pancake (sourdough starter, cornflour, milk, honey, sugar, butter, clotted cream).
+* Sourdough Pancake (sourdough starter, cornflour, milk, honey, sugar, butter, clotted cream, sunflour oil).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -469,13 +469,19 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 15th Jul
 
 * Porridge (porridge oats, milk, banana).
-* Pork Stir Fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika sesame oil, salt, pepper).
+* Wild Blackberries (blackberries).
+* Pork Stir Fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika sesame oil, sunflour oil, salt, pepper).
 * Bread (sourdough starter, flour, baking powder, butter, honey).
 
 <div class="gallery">
   <div class="galleryitem">
    <a target="_blank" href="/assets/images/oneingredientchallenge/15-porridge.jpg">
     <img src="/assets/images/oneingredientchallenge/15-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/15-bush.jpg">
+    <img src="/assets/images/oneingredientchallenge/15-bush-sm.jpg"/>
    </a>
   </div>
   <div class="galleryitem">
@@ -490,12 +496,12 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** Enjoying my stirfrys. I am planning to make my first proper sourdough bread over the next few days. As have been using the sourdough starter discard.
+**Thoughts:** Found some wild blackberries. Will go collecting them soon as they are starting to ripe. Enjoying my stirfrys. I am planning to make my first proper sourdough bread over the next few days. As have been using the sourdough starter discard. I wanted some soy sauce on my stir fry tonight.
 
 ##### 16th Jul
 
 * Porridge (porridge oats, banana).
-* Fried egg sandwich (eggs, bread, butter, salt, pepper).
+* Fried egg sandwich (eggs, bread, butter, salt, pepper, sunflour oil).
 
 <div class="gallery">
   <div class="galleryitem">
