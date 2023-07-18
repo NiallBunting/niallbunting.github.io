@@ -553,6 +553,8 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 18th Jul
 
 * Porridge (porridge oats, milk, banana).
+* Leftover Peanut Chicken (leftover peanut butter chicken, rice).
+* Pancakes (sourdough discard, milk, egg, honey, sugar, lemon).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -560,9 +562,19 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/18-porridge-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/18-chicken.jpg">
+    <img src="/assets/images/oneingredientchallenge/18-chicken-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/18-pancake.jpg">
+    <img src="/assets/images/oneingredientchallenge/18-pancake-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
-**Thoughts:** 
+**Thoughts:** I was in a foul mood around lunchtime, ate the chicken dish and it lifted. In the evening went with my friends to a pizza joint, hard to resist the tasty pizzas they were having, but managed to pull through.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
