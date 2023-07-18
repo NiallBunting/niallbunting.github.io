@@ -443,7 +443,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 14th Jul
 
 * Porridge (porridge oats, milk).
-* Pork Stir Fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflour oil, sesame oil, seseme seeds).
+* Pork Stir-fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflour oil, sesame oil, seseme seeds).
 * Banana (banana).
 
 <div class="gallery">
@@ -470,7 +470,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk, banana).
 * Wild Blackberries (blackberries).
-* Pork Stir Fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika sesame oil, sunflour oil, salt, pepper).
+* Pork Stir-fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika sesame oil, sunflour oil, salt, pepper).
 * Bread (sourdough starter, flour, baking powder, butter, honey).
 
 <div class="gallery">
@@ -496,12 +496,13 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** Found some wild blackberries. Will go collecting them soon as they are starting to ripe. Enjoying my stirfrys. I am planning to make my first proper sourdough bread over the next few days. As have been using the sourdough starter discard. I wanted some soy sauce on my stir fry tonight.
+**Thoughts:** Found some wild blackberries. Will go collecting them soon as they are starting to ripe. Enjoying my stir-frys. I am planning to make my first proper sourdough bread over the next few days. As have been using the sourdough starter discard. I wanted some soy sauce on my stir fry tonight.
 
 ##### 16th Jul
 
 * Porridge (porridge oats, banana).
-* Fried egg sandwich (eggs, bread, butter, salt, pepper, sunflour oil).
+* Fried egg sandwich (eggs, bread, butter, salt, pepper, sunflower oil).
+* Vegetable Stir-fry (carrot, broccoli, cabbage, mushroom, spinach, beansprout, egg, peas, chilli, onion, garlic, ginger, monosodium glutamate, salt, pepper).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -514,13 +515,58 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/16-egg-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/16-stirfry.jpg">
+    <img src="/assets/images/oneingredientchallenge/16-stirfry-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** I was thinking about the fact I'm eating very little food additives and that reminded me that i've been curious to try [Monosodium Glutamate][msg] (MSG) for a while. Since I'm not eating processed foods potentially containing it, I thought that it's a good time to try it. I went to town and bought, according to the pack, the funniest ingredient I've eaten all month: 'Flavour Enhancer (Monosodium Glutamate (E621)) 100% (refined from Tapioca Flour & Cane)'. Which I believe is technically a single ingredient. I did enjoy the stir-fry a lot.
+
+##### 17th Jul
+
+* Porridge (porridge oats, milk, banana).
+* Salad (onion, red wine vinegar, carrot, pepper, cabbage, tomato, cucumber, salt, pepper, chilli, sunflower seeds)
+* Peanut Butter Chicken (chicken, onion, chilli, spinach, peanut butter, garlic, ginger, cumin, coriander, turmeric, cardamom, cloves, salt, pepper, rice, salad).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/17-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/17-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/17-salad.jpg">
+    <img src="/assets/images/oneingredientchallenge/17-salad-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/17-chicken.jpg">
+    <img src="/assets/images/oneingredientchallenge/17-chicken-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** I found some 100% peanut butter in the supermarket. I brought it home and eating a teaspoon out of the jar was absolutely wonderful, so I decided to cook it into my evening meal. I do wonder if I have been eating enough protein recently. I continue to loose weight.
+
+##### 18th Jul
+
+* Porridge (porridge oats, milk, banana).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/18-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/18-porridge-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
 **Thoughts:** 
 
-
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
+[msg]: https://en.wikipedia.org/wiki/Monosodium_glutamate
 
 <style>
 div.gallery {
