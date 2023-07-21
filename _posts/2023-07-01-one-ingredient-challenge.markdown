@@ -418,7 +418,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Jam Toast (sourdough bread, homemade jam, butter).
 * Omelette (eggs, red kidney beans, onion, broccoli, cheese, sunflower oil).
-* Sourdough Pancake (sourdough starter, cornflour, milk, honey, sugar, butter, clotted cream, sunflour oil).
+* Sourdough Pancake (sourdough starter, cornflour, milk, honey, sugar, butter, clotted cream, sunflower oil).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -443,7 +443,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 14th Jul
 
 * Porridge (porridge oats, milk).
-* Pork Stir-fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflour oil, sesame oil, seseme seeds).
+* Pork Stir-fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflower oil, sesame oil, sesame seeds).
 * Banana (banana).
 
 <div class="gallery">
@@ -527,7 +527,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 17th Jul
 
 * Porridge (porridge oats, milk, banana).
-* Salad (onion, red wine vinegar, carrot, pepper, cabbage, tomato, cucumber, salt, pepper, chilli, sunflower seeds)
+* Salad (onion, red wine vinegar, carrot, pepper, cabbage, tomato, cucumber, salt, pepper, chilli, sunflower seeds).
 * Peanut Butter Chicken (chicken, onion, chilli, spinach, peanut butter, garlic, ginger, cumin, coriander, turmeric, cardamom, cloves, salt, pepper, rice, salad).
 
 <div class="gallery">
@@ -548,7 +548,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** I found some 100% peanut butter in the supermarket. I brought it home and eating a teaspoon out of the jar was absolutely wonderful, so I decided to cook it into my evening meal. I do wonder if I have been eating enough protein recently. I continue to loose weight.
+**Thoughts:** I found some 100% peanut butter in the supermarket. I brought it home and eating a teaspoon out of the jar was absolutely wonderful, so I decided to cook it into my evening meal. I do wonder if I have been eating enough protein recently. I continue to lose weight.
 
 ##### 18th Jul
 
@@ -575,6 +575,80 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 </div>
 
 **Thoughts:** I was in a foul mood around lunchtime, ate the chicken dish and it lifted. In the evening went with my friends to a pizza joint, hard to resist the tasty pizzas they were having, but managed to pull through.
+
+##### 19th Jul
+
+* Porridge (porridge oats, milk).
+* Egg Salad (egg, spinach, salt, pepper, leftover salad).
+* Baked Potatoes (potatoes, butter, cheese, pepper).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/19-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/19-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/19-salad.jpg">
+    <img src="/assets/images/oneingredientchallenge/19-salad-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/19-potato.jpg">
+    <img src="/assets/images/oneingredientchallenge/19-potato-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Visiting another household, it's easy to see how many products that people buy usually containing many different ingredients (mine are moved out of the way). The best meal I could rustle up was a baked potato.
+
+##### 20th Jul
+
+* Banana (banana).
+* Leftover Salad (leftover salad).
+* Broccoli and Stilton Soup (broccoli, blue cheese, garlic, carrot, onion, garlic, potato, salt, pepper).
+* Steak and Chips (steak, onion, potato, broccoli, carrot, butter, cayenne pepper, oregano, salt, pepper).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/17-salad.jpg">
+    <img src="/assets/images/oneingredientchallenge/17-salad-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/20-soup.jpg">
+    <img src="/assets/images/oneingredientchallenge/20-soup-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/20-steak.jpg">
+    <img src="/assets/images/oneingredientchallenge/20-steak-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Still visiting another household and their vegetable oil contained "Soya Bean Oil (Produced from genetically modified Soya), Anti-Foaming Agent: E900". I had assumed that vegetable oil was just another word for rapeseed oil but seems that's not the case. It did claim that it had "extended life" so that might by a property of oil from soya bean.
+
+##### 21th Jul
+
+* Broccoli and Stilton Soup (leftover soup).
+* Banana (banana).
+* Sourdough Pizza (sourdough starter, wholemeal flour, olive oil, baking powder, salt, cheese, chicken, chilli, basil, tomato, salt, pepper).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/21-soup.jpg">
+    <img src="/assets/images/oneingredientchallenge/21-soup-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/21-pizza.jpg">
+    <img src="/assets/images/oneingredientchallenge/21-pizza-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Pizza tasted nicer than I thought it would from the starter and discard used in it. Pizza was implanted in my brain from a few days ago.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
