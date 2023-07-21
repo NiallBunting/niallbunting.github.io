@@ -608,6 +608,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Leftover Salad (leftover salad).
 * Broccoli and Stilton Soup (broccoli, blue cheese, garlic, carrot, onion, garlic, potato, salt, pepper).
 * Steak and Chips (steak, onion, potato, broccoli, carrot, butter, cayenne pepper, oregano, salt, pepper).
+* Milk and sugar (milk and caster sugar).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -627,7 +628,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** Still visiting another household and their vegetable oil contained "Soya Bean Oil (Produced from genetically modified Soya), Anti-Foaming Agent: E900". I had assumed that vegetable oil was just another word for rapeseed oil but seems that's not the case. It did claim that it had "extended life" so that might by a property of oil from soya bean.
+**Thoughts:** Still visiting another household and their vegetable oil contained "Soya Bean Oil (Produced from genetically modified Soya), Anti-Foaming Agent: E900". I had assumed that vegetable oil was just another word for rapeseed oil but seems that's not the case. It did claim that it had "extended life" so that might by a property of oil from soya bean. The E900 is [Polydimethylsiloxane][polydimethylsiloxane] and reduces surface tension therefore reducing foam.
 
 ##### 21th Jul
 
@@ -653,6 +654,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
 [msg]: https://en.wikipedia.org/wiki/Monosodium_glutamate
+[polydimethylsiloxane]: https://en.wikipedia.org/wiki/Polydimethylsiloxane
 
 <style>
 div.gallery {
