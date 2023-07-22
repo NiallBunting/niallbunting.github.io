@@ -635,6 +635,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Broccoli and Stilton Soup (leftover soup).
 * Banana (banana).
 * Sourdough Pizza (sourdough starter, wholemeal flour, olive oil, baking powder, salt, cheese, chicken, chilli, basil, tomato, salt, pepper).
+* Peanut Butter Smoothie (milk, peanut butter, oats, honey).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -647,9 +648,40 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/21-pizza-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/21-smoothy.jpg">
+    <img src="/assets/images/oneingredientchallenge/21-smoothy-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
 **Thoughts:** Pizza tasted nicer than I thought it would from the starter and discard used in it. Pizza was implanted in my brain from a few days ago.
+
+##### 22th Jul
+
+* Porridge (porridge, milk).
+* Broccoli and Stilton Soup (leftover soup).
+* Chicken Pizza (sourdough starter, wholemeal flour, olive oil, salt, cheese, chicken, chilli flakes, basil, tomato, salt, pepper, garlic).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/22-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/22-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/22-soup.jpg">
+    <img src="/assets/images/oneingredientchallenge/22-soup-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/22-pizza.jpg">
+    <img src="/assets/images/oneingredientchallenge/22-pizza-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** My sourdough starter is now really growing well. I'm proofing some bread that will be baked tomorrow.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
