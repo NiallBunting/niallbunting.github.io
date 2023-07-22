@@ -661,7 +661,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge, milk).
 * Broccoli and Stilton Soup (leftover soup).
-* Chicken Pizza (sourdough starter, wholemeal flour, olive oil, salt, cheese, chicken, chilli flakes, basil, tomato, salt, pepper, garlic).
+* Chicken Pizza (sourdough starter, wholemeal flour, olive oil, salt, cheese, chicken, chilli flakes, basil, tomato, onion, garlic, salt, pepper).
 
 <div class="gallery">
   <div class="galleryitem">
