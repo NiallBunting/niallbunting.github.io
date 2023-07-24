@@ -683,6 +683,94 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 **Thoughts:** My sourdough starter is now really growing well. I'm proofing some bread that will be baked tomorrow.
 
+##### 23th Jul
+
+* Sourdough Bread (wholemeal flour, salt, water, sourdough starter).
+* Cheese Sandwich (sourdough bread, butter, cheese).
+* Blackberries (blackberries).
+* Bread and Salmon Oil (sourdough bread, butter, oil from cooked fish).
+* Salmon and Vegetables (salmon, potato, carrot, broccoli, salt, pepper).
+* Blackberry Crumble and Cream (wholemeal flour, butter, brown sugar, white sugar, apples, wild blackberries, cream).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/23-loaf.jpg">
+    <img src="/assets/images/oneingredientchallenge/23-loaf-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/23-cheesebread.jpg">
+    <img src="/assets/images/oneingredientchallenge/23-cheesebread-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/23-blackberries.jpg">
+    <img src="/assets/images/oneingredientchallenge/23-blackberries-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/23-fishbread.jpg">
+    <img src="/assets/images/oneingredientchallenge/23-fishbread-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/23-salmon.jpg">
+    <img src="/assets/images/oneingredientchallenge/23-salmon-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/23-crumble.jpg">
+    <img src="/assets/images/oneingredientchallenge/23-crumble-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Baked the sourdough bread today, turned out really well for a first attempt! I went picking blackberries for the crumble and jam, therefore ate many during the picking process.
+
+##### 24th Jul
+
+* Porridge with Blackberry Crumble (porridge, milk, leftover crumble).
+* Bubble and Squeak (potato, onion, carrot, broccoli, red cabbage, salt, pepper).
+* Coffee (coffee, water, milk).
+* Bread and butter (sourdough bread, butter).
+* Chicken and Vegetables (chicken, potato, carrot, broccoli, paprika, garlic powder, oregano, cumin, chilli flakes, basil, monosodium glutamate, salt, pepper).
+* Blackberry Crumble and Cream (leftover crumble, cream).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/24-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/24-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/24-bubble.jpg">
+    <img src="/assets/images/oneingredientchallenge/24-bubble-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/24-coffee.jpg">
+    <img src="/assets/images/oneingredientchallenge/24-coffee-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/24-bread.jpg">
+    <img src="/assets/images/oneingredientchallenge/24-bread-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/24-chicken.jpg">
+    <img src="/assets/images/oneingredientchallenge/24-chicken-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/24-crumble.jpg">
+    <img src="/assets/images/oneingredientchallenge/24-crumble-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Starting to think about the end of this challenge and what my takeaways will be. Eating lots of bread as it's back on the menu.
+
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
 [msg]: https://en.wikipedia.org/wiki/Monosodium_glutamate
