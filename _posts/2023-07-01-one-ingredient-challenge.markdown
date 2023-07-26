@@ -470,7 +470,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk, banana).
 * Wild Blackberries (blackberries).
-* Pork Stir-fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika sesame oil, sunflour oil, salt, pepper).
+* Pork Stir-fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika, sesame oil, sunflour oil, salt, pepper).
 * Bread (sourdough starter, flour, baking powder, butter, honey).
 
 <div class="gallery">
@@ -502,7 +502,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, banana).
 * Fried egg sandwich (eggs, bread, butter, salt, pepper, sunflower oil).
-* Vegetable Stir-fry (carrot, broccoli, cabbage, mushroom, spinach, beansprout, egg, peas, chilli, onion, garlic, ginger, monosodium glutamate, salt, pepper).
+* Vegetable Stir-fry (carrot, broccoli, cabbage, mushroom, spinach, beansprout, egg, peas, chilli, onion, garlic, ginger, monosodium glutamate, salt, pepper, sesame oil, sunflower oil).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -528,7 +528,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk, banana).
 * Salad (onion, red wine vinegar, carrot, pepper, cabbage, tomato, cucumber, salt, pepper, chilli, sunflower seeds).
-* Peanut Butter Chicken (chicken, onion, chilli, spinach, peanut butter, garlic, ginger, cumin, coriander, turmeric, cardamom, cloves, salt, pepper, rice, salad).
+* Peanut Butter Chicken (chicken, onion, chilli, spinach, peanut butter, garlic, ginger, cumin, coriander, turmeric, cardamom, cloves, salt, pepper, rice, salad, sunflower oil).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -554,7 +554,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk, banana).
 * Leftover Peanut Chicken (leftover peanut butter chicken, rice).
-* Pancakes (sourdough discard, milk, egg, honey, sugar, lemon).
+* Pancakes (sourdough discard, milk, egg, honey, sugar, lemon, sunflower oil, butter).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -689,8 +689,9 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Cheese Sandwich (sourdough bread, butter, cheese).
 * Blackberries (blackberries).
 * Bread and Salmon Oil (sourdough bread, butter, oil from cooked fish).
-* Salmon and Vegetables (salmon, potato, carrot, broccoli, salt, pepper).
+* Salmon and Vegetables (salmon, potato, carrot, broccoli, salt, pepper, butter, milk, salt, pepper).
 * Blackberry Crumble and Cream (wholemeal flour, butter, brown sugar, white sugar, apples, wild blackberries, cream).
+* Homemade Jam (wild blackberries, sugar, lemon, cornflour).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -730,10 +731,10 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 24th Jul
 
 * Porridge with Blackberry Crumble (porridge, milk, leftover crumble).
-* Bubble and Squeak (potato, onion, carrot, broccoli, red cabbage, salt, pepper).
+* Bubble and Squeak (potato, butter, milk, onion, carrot, broccoli, red cabbage, salt, pepper, sunflower oil).
 * Coffee (coffee, water, milk).
 * Bread and butter (sourdough bread, butter).
-* Chicken and Vegetables (chicken, potato, carrot, broccoli, paprika, garlic powder, oregano, cumin, chilli flakes, basil, monosodium glutamate, salt, pepper).
+* Chicken and Vegetables (chicken, potato, carrot, broccoli, paprika, garlic powder, oregano, cumin, chilli flakes, basil, monosodium glutamate, salt, pepper, sunflower oil).
 * Blackberry Crumble and Cream (leftover crumble, cream).
 
 <div class="gallery">
@@ -770,6 +771,53 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 </div>
 
 **Thoughts:** Starting to think about the end of this challenge and what my takeaways will be. Eating lots of bread as it's back on the menu.
+
+##### 25th Jul
+
+* Pancakes (sourdough starter, wholemeal flour, milk, egg, sunflower oil, butter, homemade jam, lemon).
+* Cheese Sandwich (sourdough bread, butter, cheese).
+* Banana (banana).
+* Burgers (beef, potatoes, lettuce, tomatoes, smoked paprika, oregano, basil, chilli powder, sunflower oil, onion, chilli flakes, salt, pepper).
+* Apple/Banana and Custard (apple, banana, egg, cream, milk, sugar, cornflour, cinnamon).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/25-pancake.jpg">
+    <img src="/assets/images/oneingredientchallenge/25-pancake-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/25-sandwich.jpg">
+    <img src="/assets/images/oneingredientchallenge/25-sandwich-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/25-burger.jpg">
+    <img src="/assets/images/oneingredientchallenge/25-burger-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/25-custard.jpg">
+    <img src="/assets/images/oneingredientchallenge/25-custard-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** I have been putting weight back on since the re-introduction of bread.
+
+##### 26th Jul
+
+* Jam and Stilton Sandwiches (homemade sourdough bread, butter, homemade jam, stilton cheese).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/26-sandwich.jpg">
+    <img src="/assets/images/oneingredientchallenge/26-sandwich-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** 
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
