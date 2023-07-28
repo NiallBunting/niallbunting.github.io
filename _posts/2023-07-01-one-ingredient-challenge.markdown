@@ -869,6 +869,38 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 **Thoughts:** I visited a local heritage mill today and learnt about the process they use to mill their flour. They follow the process used 200 years ago. Due to this process being not as efficient as modern techniques, more nutrients remain in the flour, meaning fortification is not required. Therefore, I bought some white and wholemeal flour for the scones.
 
+##### 28th Jul
+
+* Cheese and Jam Sandwiches (homemade sourdough bread, butter, cheese, homemade jam).
+* Apple (apple).
+* Chicken and Rice (chicken, rice, lettuce, tomato, avocado, carrot, cabbage, onion, broccoli, sunflower seeds, fresh coriander, pepper, olive oil, red wine vinegar, chilli, oregano, basil, cumin, garlic powder, smoked paprika, monosodium glutamate, sunflower oil, salt, pepper).
+* Blackberry and Apple Tart (spelt flour, butter, sugar, butter, blackberries, apples, cream).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/28-bread.jpg">
+    <img src="/assets/images/oneingredientchallenge/28-bread-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/28-apple.jpg">
+    <img src="/assets/images/oneingredientchallenge/28-apple-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/28-chicken.jpg">
+    <img src="/assets/images/oneingredientchallenge/28-chicken-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/28-pie.jpg">
+    <img src="/assets/images/oneingredientchallenge/28-pie-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Went picking wild blackberries today, to stock up on jam and make the tart. Also found some apples and plumbs. Having fresh ingredients is great.
+
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
 [msg]: https://en.wikipedia.org/wiki/Monosodium_glutamate
