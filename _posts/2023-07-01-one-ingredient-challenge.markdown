@@ -808,6 +808,9 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 26th Jul
 
 * Jam and Stilton Sandwiches (homemade sourdough bread, butter, homemade jam, stilton cheese).
+* Salmon (salmon, tomato, potato, butter, milk, sunflower oil, carrot, cucumber, pepper, broccoli, carrot, sunflower seeds, red wine vinegar, salt, pepper, olive oil)
+* Banana and Custard (leftover custard, banana).
+* Egg (egg, leftover salad, cheese, monosodium glutamate, salt, pepper).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -815,9 +818,56 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
     <img src="/assets/images/oneingredientchallenge/26-sandwich-sm.jpg"/>
    </a>
   </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/26-salmon.jpg">
+    <img src="/assets/images/oneingredientchallenge/26-salmon-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/26-custard.jpg">
+    <img src="/assets/images/oneingredientchallenge/26-custard-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/26-egg.jpg">
+    <img src="/assets/images/oneingredientchallenge/26-egg-sm.jpg"/>
+   </a>
+  </div>
 </div>
 
-**Thoughts:** 
+**Thoughts:** Happy with how the challenge has gone up to this point.
+
+##### 27th Jul
+
+* Porridge (porridge, milk, banana).
+* Apple (wild apple).
+* Chicken and Rice (chicken, rice, lettuce, tomato, avocado, carrot, cabbage, onion, broccoli, sunflower seeds, fresh coriander, pepper, olive oil, red wine vinegar, chilli, oregano, basil, cumin, smoked paprika, turmeric, monosodium glutamate, sunflower oil, salt, pepper).
+* Scones (wholemeal flour, sugar, spelt flour, sourdough starter, milk, butter, egg, baking soda, cornflour, homemade jam, clotted cream).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/27-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/27-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/27-apple.jpg">
+    <img src="/assets/images/oneingredientchallenge/27-apple-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/27-chicken.jpg">
+    <img src="/assets/images/oneingredientchallenge/27-chicken-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/27-scone.jpg">
+    <img src="/assets/images/oneingredientchallenge/27-scone-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** I visited a local heritage mill today and learnt about the process they use to mill their flour. They follow the process used 200 years ago. Due to this process being not as efficient as modern techniques, more nutrients remain in the flour, meaning fortification is not required. Therefore, I bought some white and wholemeal flour for the scones.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
