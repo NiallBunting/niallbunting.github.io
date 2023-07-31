@@ -16,6 +16,8 @@ Since I don't fancy not cleaning my teeth I'm going to have an exception for too
 
 This blog post is going to chart my progress with what I'm eating. I'm no chef and am going to stay simple and easy. I'm not going to include drinks which are going to consist of water, tea and coffee.
 
+[Skip to the conclusion](#conclusion).
+
 ## Food Diary
 
 ##### 1st Jul
@@ -900,6 +902,64 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 </div>
 
 **Thoughts:** Went picking wild blackberries today, to stock up on jam and make the tart. Also found some apples and plumbs. Having fresh ingredients is great.
+
+##### 29th Jul
+
+* Porridge (porridge, milk, banana).
+* Egg Fried Rice (rice, leftover salad, egg, salt, sunflower oil, monosodium glutamate).
+* More Egg Fried Rice (rice, chilli, carrot, peas, egg, salt, onion, sunflower oil, monosodium glutamate).
+* Blackberry and Apple Tart (leftover blackberry and apple tart, cream).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/29-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/29-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/29-rice1.jpg">
+    <img src="/assets/images/oneingredientchallenge/29-rice1-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/29-rice2.jpg">
+    <img src="/assets/images/oneingredientchallenge/29-rice2-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/29-tart.jpg">
+    <img src="/assets/images/oneingredientchallenge/29-tart-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** Needed to eat up that leftover rice today. I'm planning to finish this challenge tomorrow, with a pint after a 10 mile kayak.
+
+##### 30th Jul
+* Porridge (porridge, milk).
+* Jam Sandwiches (homemade sourdough bread, butter, homemade jam).
+* Banana (banana).
+* Easy peeler (easy peeler).
+* Pint of Stout (**unknown**).
+
+<div class="gallery">
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/30-porridge.jpg">
+    <img src="/assets/images/oneingredientchallenge/30-porridge-sm.jpg"/>
+   </a>
+  </div>
+  <div class="galleryitem">
+   <a target="_blank" href="/assets/images/oneingredientchallenge/30-pint.jpg">
+    <img src="/assets/images/oneingredientchallenge/30-pint-sm.jpg"/>
+   </a>
+  </div>
+</div>
+
+**Thoughts:** There we have it, the first multi ingredient food (whats that saying about stout being a meal), brining this challenge to a conclusion. Lack of pictures as I didn't bring my phone on the water. I did eat after the stout but finished recording after that time.
+
+## Conclusion
+
+...
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
