@@ -876,7 +876,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 * Cheese and Jam Sandwiches (homemade sourdough bread, butter, cheese, homemade jam).
 * Apple (apple).
 * Chicken and Rice (chicken, rice, lettuce, tomato, avocado, carrot, cabbage, onion, broccoli, sunflower seeds, fresh coriander, pepper, olive oil, red wine vinegar, chilli, oregano, basil, cumin, garlic powder, smoked paprika, monosodium glutamate, sunflower oil, salt, pepper).
-* Blackberry and Apple Tart (spelt flour, butter, sugar, butter, blackberries, apples, cream).
+* Blackberry and Apple Tart (spelt flour, butter, sugar, cornflour, salt, blackberries, apples, cream).
 
 <div class="gallery">
   <div class="galleryitem">
@@ -955,11 +955,19 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** There we have it, the first multi ingredient food (whats that saying about stout being a meal), brining this challenge to a conclusion. Lack of pictures as I didn't bring my phone on the water. I did eat after the stout but finished recording after that time.
+**Thoughts:** There we have it, the first multi ingredient food (whats that saying about stout being a meal), bringing this challenge to a conclusion. Lack of pictures as I didn't bring my phone on the water. I did eat after the stout but finished recording after that time.
 
 ## Conclusion
 
-...
+Assuming you live to 80 years old, one month of your life is is ~0.1%. I think this challenge was well worth trying for that 0.1%.
+
+I'm surprised how much stuff you can make yourself, with single ingredients, leading to food containing much less sugar than store bought alternatives. The meals made over the challenge tended to be more healthy, due to a higher use of fresh vegetables. This has an impact on my weight, with me losing a few kilograms over the month.
+
+The food hasn't been lacking any taste throughout the challenge, with me rarely missing food products. Especially after buying spices that contain more flavour, without all the additional stabilisers/anti-oxidants/flavorings/etc. Dried beans also are easy, as you can choose how firm you want them, but require more preparation.
+
+This challenge had me making more homemade foods than I would have otherwise, things such as jam, pizza and bread. They take more effort to make than the shop bought alternative, but give you a sense of satisfaction when eating them. I also now want to grow more of my own herbs and food. Along with buying the locally hand produced flour.
+
+Overall, this challenge has made me reconsider my food habits in a good way. Going forwards, I'm going to use single ingredient foods where possible, whilst adding some things such as soy sauce back into the mix. Here's to the remaining 62.4%.
 
 [maltodextrin]: https://en.wikipedia.org/wiki/Maltodextrin
 [phytohaemagglutinin]: https://en.wikipedia.org/wiki/Phytohaemagglutinin
