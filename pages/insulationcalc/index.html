@@ -1,0 +1,175 @@
+---
+permalink: /insulation-r-value-calculator/
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Insulation - Niall Bunting</title>
+    <meta name="description" content="Calculate insulation" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+
+<!--
+<script type="module">
+
+  // Find the latest version by visiting https://unpkg.com/three. The URL will
+  // redirect to the newest stable release.
+  //import * as THREE from 'https://unpkg.com/three@0.157.0/build/three.js';
+
+  //import { CSS2DRenderer } from 'https://unpkg.com/three@0.157.0/examples/jsm/renderers/CSS2DRenderer.js';
+
+</script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": 'https://unpkg.com/three@0.157.0/build/three.js',
+                "three/examples/jsm/renderers/CSS2DRenderer": 'https://unpkg.com/three@0.157.0/examples/jsm/renderers/CSS2DRenderer.js'
+            }
+        }
+    </script>
+-->
+
+
+</head>
+<body class="home-template">
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+    </nav>
+
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">What is insulations r-value and how can I calculate it's cost savings?</h1>
+            <section class="post-meta">
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://www.niallbunting.com/">
+                
+                    <span class="blog-title">Niall Bunting</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <h1 class="post-title">Software Engineering Velocity Estimator</h1> -->
+
+        <section class="post-content">
+
+          Use this tool to calculate the differences in efficiency of applying insulation to your room or house. 
+
+          <strong>!This tool is still under construction!</strong>
+
+          <div>
+            Height (m):  <input id="roomheight" type="number"/> <br/>
+            Width (m): <input id="roomwidth" type="number"/> <br/>
+            Depth (m): <input id="roomdepth" type="number"/> <br/>
+            Inside Temp (&#176;C): <input id="roominsidetemp" type="number"/> <br/>
+            Outside Temp (&#176;C): <input id="roomoutsidetemp" type="number"/> <br/>
+          </div>
+          <div style="width:100%" id="animation"></div>
+          <div>
+            Wall/Object: <strong><span id="wallname">Choose a wall</span></strong> (<span id="wallsize">0</span>m<sup>2</sup>)<br/>
+            Outside Wall: <input id="wallisoutside" type="checkbox"/><br/>
+            R Value: <input id="wallrvalue" type="number"/><br/>
+          </div>
+
+
+          <h4>Results</h4>
+
+
+          This room has an area of <strong><span id="resultarea"></span>m<sup>2</sup></strong> that it can lose heat directly to the environment.
+
+          You would need to heat the room by <strong><span id="resultwatts"></span> watts</strong> to maintain the inside temp.
+
+          <div>
+            <canvas id="chartOfTempChange"></canvas>
+          </div>
+
+          <h4>Why are R-Values important?</h4>
+
+          <p>The r-values are important as it defines how much heat can escape out of your room or house. The higher the r-value the less heat that can escape out of your house.</p>
+
+          <p>The r-value is the thermal conductivity of a material (how well it resists the flow of heat).</p>
+
+          <p>Rooms insulated with more material will have a lower thermal conductivity and therefore be cheaper to maintain a comfortable temperature. The savings can add up to large amounts over time.</p>
+
+          <p>If you have no insulation adding some can make a world of difference. For example on a solid double brick wall with a width of 3m and a height of 2.4m will require 96 watts to maintain at 21&#176;C. At gas prices of 7p/kWh that costs 0.7p/hour to keep heated or £61.32/year. By insulating the wall when it was being re-plastered the price has dropped to 0.2p/hour or £18.39/year. Saving £42.93 every year in heating.</p>
+
+          <p>That was just one wall in one room. Insulating more of your house will mean that the savings quickly add up.</p>
+          
+
+          <h4>How to use the tool</h4>
+
+          <p>To use this tool enter the values for your house or room. Then use the room to select the walls and set the r-value and if it's an outside wall. (Inside walls are ignored).</p>
+
+          <p>To calculate an r-value for a wall, add up all the layers. For example a double brick layer has an r-value of ~1.2 and plaster has 0.07. Combine these for 1.27.</p>
+
+          <p>To rotate the room please use the arrow keys then click on the rooms values you wish to change.</p>
+
+          <h4>Contribute or issues</h4>
+
+          This tool has had to make some estimations and rough guesses to supply it's answers:
+
+
+          <ul>
+           <li>The tool ignores the heat capacity of the walls themselves and assumes they don't hold any heat.</li>
+           <li> Your room may contain vents other ways fresh air can enter this is not calculated.</li>
+           <li> This tool only looks at the walls leading directly to the outside. Internal walls are not included in the calculations.</li>
+            <li>Currently the tool does not take windows or doors into account.</li>
+          </ul>
+
+          Contributions are welcome via Github.
+
+        </section>
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="/">Niall Bunting</a> &copy; 
+              2023 &bull; All rights reserved.
+      </section>
+    </footer>
+
+    <script src="https://lightbikeio.niallbunting.com/js/three.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/pages/insulationcalc/insulation.js"></script>
+    
+    <!-- Google Analytics Tracking code -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-56330367-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>   
+
+</body>
+</html>

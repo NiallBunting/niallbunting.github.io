@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ceiling Light Round
+* source:	https://sketchfab.com/3d-models/ceiling-light-round-5508e18e61e84346b8d51ed73e0f5411
+* author:	Heck (https://sketchfab.com/HeckingHeck)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ceiling Light Round" (https://sketchfab.com/3d-models/ceiling-light-round-5508e18e61e84346b8d51ed73e0f5411) by Heck (https://sketchfab.com/HeckingHeck) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
