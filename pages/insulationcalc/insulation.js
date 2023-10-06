@@ -158,22 +158,67 @@ function keyboardControls(e) {
     }
 }
 
+
+// Make mouse drags work
+const MOUSE_DELTA = 6;
+let mouse_StartX = null;
+let mouse_StartY = null;
+
 function mouseControls(roomData, cubeMesh) {
+
   renderer.domElement.addEventListener("mousedown", event => {
+     mouse_StartX = event.clientX;
+     mouse_StartY = event.clientY;
+  });
+
+  document.addEventListener('mouseup', function (event) {
+    // Ignore mouse up if not started in the canvas.
+    if(mouse_StartX === null || mouse_StartY === null) {
+      return;
+    }
+
+    const diffX = Math.abs(event.clientX - mouse_StartX);
+    const diffY = Math.abs(event.clientY - mouse_StartY);
+ 
+    if (diffX < MOUSE_DELTA && diffY < MOUSE_DELTA) {
+       const domClientRect = renderer.domElement.getBoundingClientRect();
   
-     var vector = new THREE.Vector3( 
-        ( event.clientX / window.innerWidth ) * 2 - 1, 
-        - ( event.clientY / window.innerHeight ) * 2 + 1, 0.5 );
-     vector.unproject( camera );
-     raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
+       var vector = new THREE.Vector3( 
+          ( (event.clientX - domClientRect.left) / renderer.domElement.offsetWidth ) * 2 - 1, 
+          - ( (event.clientY - domClientRect.top) / renderer.domElement.offsetHeight ) * 2 + 1, 0.5 );
+       vector.unproject( camera );
+       raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
   
-     var intersects = raycaster.intersectObject( cubeMesh );
-     if ( intersects.length > 0 ) {
-       var index = Math.floor( intersects[0].faceIndex / 2 );
-       selectedWall = index;
+       var intersects = raycaster.intersectObject( cubeMesh );
+       if ( intersects.length > 0 ) {
+         var index = Math.floor( intersects[0].faceIndex / 2 );
+         selectedWall = index;
   
-       populateWallValues(roomData, index); 
-     }
+         populateWallValues(roomData, index); 
+       }
+    } else {
+      // This is a drag. We can ignore as is handled by mouse move.
+    }
+
+    mouse_StartX = null;
+    mouse_StartY = null;
+  });
+
+  document.addEventListener('mousemove', function (event) {
+    // Ignore mouse if not started in the canvas.
+    if(mouse_StartX === null || mouse_StartY === null) {
+      return;
+    }
+
+    const diffX = (event.clientX - mouse_StartX) / window.innerWidth;
+    const diffY = (event.clientY - mouse_StartY) / window.innerHeight;
+
+    camera.rotation.x += diffY * 0.1;
+    camera.rotation.y += diffX * 0.1;
+
+    requestAnimationFrame(() => renderer.render( scene, camera ));
+        //if(camera.rotation.x < 0.8) { camera.rotation.x += 0.1; }
+
   });
 }
 
