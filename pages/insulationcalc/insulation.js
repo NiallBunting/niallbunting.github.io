@@ -172,6 +172,7 @@ function mouseControls(roomData, cubeMesh) {
   });
 
   document.addEventListener('mouseup', function (event) {
+
     // Ignore mouse up if not started in the canvas.
     if(mouse_StartX === null || mouse_StartY === null) {
       return;
@@ -224,6 +225,34 @@ function mouseControls(roomData, cubeMesh) {
     requestAnimationFrame(() => renderer.render( scene, camera ));
         //if(camera.rotation.x < 0.8) { camera.rotation.x += 0.1; }
 
+  });
+
+  renderer.domElement.addEventListener('touchmove', function (event) {
+     event.preventDefault();
+
+    // Ignore mouse if not started in the canvas.
+    if(mouse_StartX === null || mouse_StartY === null) {
+      mouse_StartX = event.touches[0].clientX;
+      mouse_StartY = event.touches[0].clientY;
+    }
+
+    const diffX = (event.touches[0].clientX - mouse_StartX) / window.innerWidth;
+    const diffY = (event.touches[0].clientY - mouse_StartY) / window.innerHeight;
+
+    camera.rotation.x += diffY * 0.1;
+    camera.rotation.y += diffX * 0.1;
+
+    if(camera.rotation.x > 0.9) { camera.rotation.x = 0.9; }
+    if(camera.rotation.x < -0.9) { camera.rotation.x = -0.9; }
+
+    requestAnimationFrame(() => renderer.render( scene, camera ));
+        //if(camera.rotation.x < 0.8) { camera.rotation.x += 0.1; }
+
+  });
+
+  document.addEventListener('touchend', function(event) {
+      mouse_StartX = null;
+      mouse_StartY = null;
   });
 }
 
