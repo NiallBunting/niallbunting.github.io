@@ -190,7 +190,7 @@ function mouseControls(roomData, cubeMesh) {
        vector.unproject( camera );
        raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
   
-       var intersects = raycaster.intersectObject( cubeMesh );
+       var intersects = raycaster.intersectObject( threeRoomMesh[0] );
        if ( intersects.length > 0 ) {
          var index = Math.floor( intersects[0].faceIndex / 2 );
          selectedWall = index;
@@ -434,11 +434,19 @@ const chart = new Chart(ctx, {
         }
       },
       x: {
-        beginAtZero: true,
         title: {
           text: "Minutes",
           display: true
         },
+        //ticks: {
+        //        min: 0,
+        //        steps: 20,
+        //        stepSize: 10,
+        //        autoSkip: false,
+        //        callback: function(val, index) {
+        //          return index % 10 === 0 ? val : '';
+        //        }
+        //   }
       }
     }
   }
