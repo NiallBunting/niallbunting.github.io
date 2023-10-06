@@ -139,10 +139,10 @@ function keyboardControls(e) {
     e = e || window.event;
 
     if (e.keyCode == '38') { // Up
-        if(camera.rotation.x < 0.8) { camera.rotation.x += 0.1; }
+        if(camera.rotation.x < 0.9) { camera.rotation.x += 0.1; }
     }
     else if (e.keyCode == '40') { // Down
-        if(camera.rotation.x > -0.8) { camera.rotation.x -= 0.1; }
+        if(camera.rotation.x > -0.9) { camera.rotation.x -= 0.1; }
     }
     else if (e.keyCode == '37') { // Left
        camera.rotation.y += 0.1;
@@ -153,7 +153,7 @@ function keyboardControls(e) {
 
     requestAnimationFrame(() => renderer.render( scene, camera ));
 
-    if(selectedWall) {
+    if(selectedWall && (e.keyCode === '38' || e.keyCode === '40')) {
       return false;
     }
 }
@@ -200,6 +200,8 @@ function mouseControls(roomData, cubeMesh) {
       // This is a drag. We can ignore as is handled by mouse move.
     }
 
+    document.activeElement.blur();
+
     mouse_StartX = null;
     mouse_StartY = null;
   });
@@ -215,6 +217,9 @@ function mouseControls(roomData, cubeMesh) {
 
     camera.rotation.x += diffY * 0.1;
     camera.rotation.y += diffX * 0.1;
+
+    if(camera.rotation.x > 0.9) { camera.rotation.x = 0.9; }
+    if(camera.rotation.x < -0.9) { camera.rotation.x = -0.9; }
 
     requestAnimationFrame(() => renderer.render( scene, camera ));
         //if(camera.rotation.x < 0.8) { camera.rotation.x += 0.1; }
