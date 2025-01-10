@@ -1,6 +1,6 @@
 #!/usr/bin/env just --justfile
 
-# Just version based on Commake (v0.2.0) - https://niallbunting.com/commake/
+# Just version of Commake (v0.2.0) - https://niallbunting.com/commake/
 
 # lint, test and run
 all: lint test run
