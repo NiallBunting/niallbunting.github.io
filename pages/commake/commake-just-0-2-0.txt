@@ -1,0 +1,54 @@
+#!/usr/bin/env just --justfile
+
+# Just version based on Commake (v0.2.0) - https://niallbunting.com/commake/
+
+# lint, test and run
+all: lint test run
+
+# Use this to check if you need to ensure the correct version of dep
+# To use update the if statement and the message.
+versioncheck:
+  @if [ 0 -gt 0 ]; then echo "Wrong version of: <DEP>" && exit 1; fi
+
+# Run through dependencies and check
+init: 
+  @echo Not Implemented
+
+# Install packages
+install: versioncheck 
+  @echo Not Implemented
+
+# Bulid the project files
+build:
+  @echo Not Implemented
+
+# Run locally
+run:
+  @echo Not Implemented
+
+# Run linting
+lint:
+  @echo Not Implemented
+
+# Run the unit tests
+test:
+  @echo Not Implemented
+
+# Run the int tests
+int: 
+  @echo Not Implemented
+
+# Run the e2e tests
+e2e:
+  @echo Not Implemented
+
+# Plan to run any infra changes
+plan:
+  @echo Not Implemented
+
+# Run any infra changes
+deploy:
+  @echo Not Implemented
+
+# Custom Commands - Put your custom commands below
+
