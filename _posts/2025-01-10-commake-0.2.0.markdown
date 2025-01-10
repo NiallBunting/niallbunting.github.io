@@ -1,16 +1,19 @@
 ---
 layout: page
-title:  "Commake - v0.1.0"
-date:   2022-07-05 02:00:00
-categories: commake
-sitemap: false
+title:  "Commake - v0.2.0"
+date:   2025-01-10 02:00:00
+categories: commake common makefile
+permalink: /commake/
 ---
 
-# <span style="color:red">This is a old version: [newest version](/commake)</span>
+### Summary
 
-Commake (Common Makefile) is a standardised wrapper for your projects commands. Making it easy to jump between projects and get them into a running state.
+Commake (Common Makefile) is a base template `makefile`/[`justfile`](https://github.com/casey/just) for your software project. The aim is to make it easy to check/install requirements and to run projects without having remember commands or to consult the readme.
 
-Commake is a makefile for all software projects that creates a common and simple way to run a project locally. Therefore you don't have to remember commands or read documents/README.md every time.
+To start a project simply run (or the `just` equivalent):
+1. `$ make init` - Check that you have the projects dependencies (e.g. `docker`)
+1. `$ make install` - Install any project packages (e.g. `yarn install`)
+1. `$ make run` - Run the projects development environment (e.g `yarn run`)
 
 ### Contents
 1. [Introduction](#introduction)
@@ -25,9 +28,13 @@ Commake is a makefile for all software projects that creates a common and simple
 
 ### Introduction
 
-I find occasionally I come back to projects and can no longer remember how to set them up so they run. On some projects, the commands have not been added to the README and passed between people. Other times on a personal project I forget to write them down.
+Joining new software projects is difficult, you often need to be run through the setup. As you go along finding things that you need to install and doing it all manually. 
 
-#### Example - A node project:
+Jumping between software projects is also difficult. You come back after a few months and no longer remember how to set the project up or the commands to run it. On some projects, the commands have not been added to the README and you have to reach out for help. Other times there is neither and you have to figure it out.
+
+This is what `Commake` aims to fix, by providing a standard template. You can run the `init`, `install` and `run` steps.
+
+##### Example - A node project:
 
 If I come back to a Node project, this is my thought process:
 * Does this project use yarn or npm?
@@ -36,18 +43,14 @@ If I come back to a Node project, this is my thought process:
 * Do I need to set environment variables?
 * How do I serve this? npm run start, npm run serve, npm run dev?
 
-All of this can be solved by using a common makefile across all your projects. Under the new world this would become the following:
-
-1. `$ make init` - Get the project requirements
-1. `$ make install` - Install any dependencies
-1. `$ make run` - Run the project
+All of this can be solved by using a common makefile across all your projects. So you don't need to consult the readme, remember, or figure it out.
 
 ### Specification
 
 This is a version with nothing implemented:
 
 ```
-# Commake (v0.1.0) - https://niallbunting.com/commake/
+# Commake (v0.2.0) - https://niallbunting.com/commake/
 
 .PHONY: all help init install build run lint test e2e plan deploy int versioncheck
 .ONESHELL:
@@ -71,7 +74,7 @@ init: #help Run through dependencies and check
 install: versioncheck #help Install packages
 	@echo Not Implemented
 
-build: #help Bulid the project files
+build: #help Build the project files
 	@echo Not Implemented
 
 run: #help Run locally
@@ -98,16 +101,36 @@ deploy: #help Run any infra changes
 # Custom Commands - Put your custom commands below
 ```
 
-The idea is not that these become really fancy, often they are just one line. See the [examples section](#examples).
+##### Guidance
+
+The idea is not that these become really fancy, often they are just one line. [For more examples](#examples).
+
+You don't need to always do try and everything in the script. People may be using different environments or have a different setup and dealing with that can be complicated. That complexity takes time to handle so it's better to have a simple `commake` and defer to the developer.
+
+You can can always improve the steps, the most critical thing is getting the steps in the file, so the file can act as a checklist to begin with.
+
+This is an example `init` that checks you have yarn and a key set. It will just fail if yarn doesn't exist and the second one just requires the dev to press enter.
+
+```
+init: #help Run through dependencies and check
+	yarn --version
+	@echo Have you set the key in the .env file? && read input
+```
+
+##### Examples
+
+* [Golang][goexample] <small>(v0.0.1)</small>
+* [Github Pages][ghpagesexample] <small>(v0.1.0)</small>
+* [Node][nodeexample] <small>(v0.0.1)</small>
 
 ### Usage
 
-#### Requirements
+##### Requirements
 You will need make installed. The instructions for installing will depend on your operating system.
 
 For example on Ubuntu: `sudo apt install make`
 
-#### Usage
+##### Usage
 
 To run the help command use:
 
@@ -121,12 +144,6 @@ $ make run
 or
 $ make # To run the all target (lint, test, run)
 ```
-
-### Examples
-
-* [Golang][goexample] <small>(v0.0.1)</small>
-* [Github Pages][ghpagesexample] <small>(v0.1.0)</small>
-* [Node][nodeexample] <small>(v0.0.1)</small>
 
 ### Customising your Commake
 
@@ -223,7 +240,8 @@ This was created originally by [Niall Bunting][niallbunting].
 [Creative Commons ― CC BY 3.0][creativecommons]
 
 ### Previous Versions
-[0.0.1](/commake/common/makefile/2022/03/09/commake-common-makefile.html)
+* [0.1.0](/commake/2022/07/05/commake-0.1.0.html)
+* [0.0.1](/commake/common/makefile/2022/03/09/commake-common-makefile.html)
 
 [ghpagesexample]: https://raw.githubusercontent.com/NiallBunting/niallbunting.github.io/master/makefile
 [goexample]: https://raw.githubusercontent.com/NiallBunting/dotfiles/master/makefile
