@@ -1,19 +1,17 @@
 ---
 layout: post
-title:  "Windows UK Dvorak Keyboard Layout"
-date:   2019-02-10 22:00:00
+title: "Windows UK Dvorak Keyboard Layout"
+date: 2019-02-10 22:00:00
 categories: Keyboard Dvorak Microsoft Windows
 ---
 
-This prompted me to make this blog. As I didn't really think the current place for the dvorak keyboard was the right place.
+I created this post because I felt the Dvorak keyboard deserved its own dedicated resource.
 
-
-This page offers a download to a Microsoft Windows built version of the Dvorak keyboard layout with UK punctuation (I used Windows 10).
-
+This page offers a download of a Microsoft Windows-compatible Dvorak keyboard layout with UK punctuation (tested on Windows 10).
 
 The download file is built following the instructions at [tarind.com][tarind].
 
-I have shared this keyboard layout, to ease the pain of creating the keyboard on each new windows machine. As this means you don't need to download the keyboard creation tool. 
+I've shared this keyboard layout to save you the effort of setting up the Dvorak keyboard on each new Windows machine—no need to download the keyboard creation tool separately.
 
 **[Download][download]**
 

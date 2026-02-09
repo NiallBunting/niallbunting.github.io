@@ -5,26 +5,24 @@ date:   2020-06-24 12:00:00
 categories: covid rate daily
 ---
 
-Most of us heard quote "A Single Death is a Tragedy; a Million Deaths is a Statistic". Let’s see if we can change that.
+Most of us have heard the quote "A Single Death is a Tragedy; a Million Deaths is a Statistic". Let’s see if we can change that.
 
-I can’t at least hold a million in my head or the value <input type="number" id="deaths" value="43081" onKeyUp="updateValues()"/> which is today's (2020-06-24) cumulative deaths in the UK with a population of <input type="number" id="pop" value="67879245" onKeyUp="updateValues()"/>. (Feel free to update these numbers with the [values of your country][worldometer].)
+I can't truly hold a million in my head, nor can I grasp the value <input type="number" id="deaths" value="43081" onKeyUp="updateValues()"/> which represents today's (2020-06-24) cumulative deaths in the UK with a population of <input type="number" id="pop" value="67879245" onKeyUp="updateValues()"/>. (Feel free to update these numbers with the [values of your country][worldometer].)
 
-The first thing I thought about is how many died per thousand: <span id="perthousand"></span>. For the UK this number is less than one, which leads us into partial person territory. 
+The first thing I thought about is how many deaths occurred per thousand people. For the UK this number is less than one, which is hard to visualize.
 
-Maybe thinking about a crowd would help. The capacity of Old Trafford (the stadium of Manchester United) is 74,879 which means if we use the death rate here <span id="manunited"></span>% would have died in a full stadium.
+Maybe thinking about a crowd would help. The capacity of Old Trafford (the stadium of Manchester United) is 74,879, which means if we apply the death rate here, <span id="manunited"></span>% of a full stadium would have died.
 
-Or if all those people lined up for double decker buses it would take <span id="bus"></span> buses to move them all. Or <span id="plane"></span> Boeing 737's to get them all in the air which would make these planes <span id="planeinair"></span>% of the traffic in the air.
+Or if all those people boarded double-decker buses, it would take <span id="bus"></span> buses to transport them all. Or <span id="plane"></span> Boeing 737s to get them all airborne, which would represent <span id="planeinair"></span>% of global air traffic.
 
-I came across [a video][paperclips] where school children gathered paperclips for each death in the Holocaust. And thought I would do something similar here. Each asterisk below represents a life that has been lost to this disease.
+I came across [a video][paperclips] where schoolchildren gathered paperclips to represent each death in the Holocaust, and I thought I would do something similar here. Each asterisk below represents a life that has been lost to this disease.
 
 <span id="dots"></span>
 
-Hopefully that helps. The long scrolling helped it a little more real for me.
-
+Hopefully that helps. The long scroll made it feel more tangible for me.
 
 [worldometer]: https://www.worldometers.info/coronavirus/
 [paperclips]: https://www.youtube.com/watch?v=xGnhilD9yGg
-
 
 <script>
 

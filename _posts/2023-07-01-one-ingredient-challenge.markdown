@@ -6,15 +6,15 @@ categories: challenge one ingredient
 excerpt: "One ingredient challenge is a month long challenge where you only eat foods containing one single ingredient."
 ---
 
-One ingredient challenge is a month long challenge where you only eat foods containing one single ingredient.
+One Ingredient Challenge is a month-long challenge where you only eat foods containing a single ingredient.
 
-This means any food items with exactly one ingredient on the package is fine, any with an ingredients list longer that one is disallowed. The challenge aims to make me more conscious of the food I eat. This has already thrown up a surprise that one of my Fajita mixes main ingredient is [Maltodextrin][maltodextrin] a thickener, it's not even spice!
+This means any food items with exactly one ingredient on the package are fine; any with an ingredients list longer than one are disallowed. The challenge aims to make me more conscious of the food I eat. This already threw up a surprise: one of my fajita mix's main ingredients is [Maltodextrin][maltodextrin], a thickener — it's not even a spice!
 
-I am allowed to process food myself. For example I can't buy bread from the shop but can make it at home. As long as all the ingredients that go into the item are single foods that I can hold in my hand.
+I am allowed to process food myself. For example, I can't buy bread from the shop but can make it at home, as long as all the ingredients that go into the item are single foods I can hold in my hand.
 
-Since I don't fancy not cleaning my teeth I'm going to have an exception for toothpaste and mouthwash (and medicine). Not that I eat them! Just including here for completeness.
+Since I don't fancy not cleaning my teeth, I'm going to have an exception for toothpaste and mouthwash (and medicine). Not that I eat them — just including this for completeness.
 
-This blog post is going to chart my progress with what I'm eating. I'm no chef and am going to stay simple and easy. I'm not going to include drinks which are going to consist of water, tea and coffee.
+This blog post will chart my progress with what I'm eating. I'm no chef and will keep things simple. I won't include drinks, which will be water, tea and coffee.
 
 [Skip to the conclusion](#conclusion).
 
@@ -50,7 +50,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** I didn't consider breakfast much until today, porridge on it's own is a bit bland therefore will need to spice it up after a few days. Also discovered that soy sauce always contains multiple ingredients, so am unable to use it in a stir fry. The curry was really nice, I wouldn't have known that it was from my spice draw, if I hadn't made it.
+**Thoughts:** I didn't consider breakfast much until today; porridge on its own is a bit bland, so I'll need to spice it up after a few days. I also discovered that soy sauce always contains multiple ingredients, so am unable to use it in a stir fry. The curry was really nice; I wouldn't have known it was from my spice drawer if I hadn't made it.
 
 ##### 2nd Jul
 
@@ -198,7 +198,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** The coffee was bought from a shop, which gave me mixed feelings under the rules of the challenge. After discussion I decided, since it's simple and one ingredient foods being directly prepared for me, it's okay within the rules. This was my first dish using dry red kidney beans, upon checking online how to cook them i found raw beans contain a lectin [Phytohaemagglutinin][phytohaemagglutinin] which causes mild/serious symptoms if raw beans are eaten. Therefore, I made sure I cooked the beans well. Also searched for some coco powder but could only find it with acidity regulators such as Potassium Hydroxide and Potassium Carbonate.
+**Thoughts:** The coffee was bought from a shop, which gave me mixed feelings under the rules of the challenge. After discussion I decided, since it's simple and one-ingredient foods being directly prepared for me, it's okay within the rules. This was my first dish using dry red kidney beans; upon checking online how to cook them I found raw beans contain a lectin [Phytohaemagglutinin][phytohaemagglutinin] which can cause mild to serious symptoms if raw beans are eaten. Therefore, I made sure I cooked the beans well. I also searched for some cocoa powder but could only find it with acidity regulators such as Potassium Hydroxide and Potassium Carbonate.
 
 ##### 7th Jul
 
@@ -225,7 +225,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** It was a hot day today, would have been nice to go to the pub for a pint after finishing our walk. The spices that I bought that contain a single spice have more taste then the regular supermarket spices I buy. I think i'm going to buy those instead in future.
+**Thoughts:** It was a hot day today; it would have been nice to go to the pub for a pint after finishing our walk. The spices that I bought that contain a single spice have more taste than the regular supermarket spices I buy. I think I'm going to buy those instead in future.
 
 ##### 8th Jul
 
@@ -326,7 +326,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** Well, looks like my body was balancing out yesterday. I have never searched for what 'easy peelers' are turns out they are a cross-breed of satsumas and clementines, that are easy to peel. Another way that humans shape the world. I've heard there used to be 100's of types of apple that for various reasons are not as easy to farm or as tasty so you don't see them anymore in the supermarket.
+**Thoughts:** Well, looks like my body was balancing out yesterday. I had never searched for what 'easy peelers' are; it turns out they are a cross-breed of satsumas and clementines that are easy to peel — another way that humans shape the world. I've heard there used to be hundreds of types of apple that, for various reasons, are not as easy to farm or as tasty, so you don't see them anymore in the supermarket.
 
 ##### 11th Jul
 
@@ -370,7 +370,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** I forgot to take a picture of the porridge. Been stacking on those leftover oat cookies, probably ate a few too many. It seems my meals have been using the same carrot, broccoli, red cabbage and onion combination. That's whats in the fridge.
+**Thoughts:** I forgot to take a picture of the porridge. Been snacking on those leftover oat cookies, probably ate a few too many. It seems my meals have been using the same carrot, broccoli, red cabbage and onion combination. That's what's in the fridge.
 
 ##### 12th Jul
 
@@ -445,7 +445,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 ##### 14th Jul
 
 * Porridge (porridge oats, milk).
-* Pork Stir-fry (pork, cayenne peeper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflower oil, sesame oil, sesame seeds).
+* Pork Stir-fry (pork, cayenne pepper, chilli powder, oregano, honey, chilli, carrot, ginger, garlic, broccoli, bean sprouts, red cabbage, mushrooms, cornflour, salt, pepper, sunflower oil, sesame oil, sesame seeds).
 * Banana (banana).
 
 <div class="gallery">
@@ -472,7 +472,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
 
 * Porridge (porridge oats, milk, banana).
 * Wild Blackberries (blackberries).
-* Pork Stir-fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika, sesame oil, sunflour oil, salt, pepper).
+* Pork Stir-fry (pork, onion, carrots, cabbage, broccoli, spinach, mushroom, beansprout, lettuce, garlic, ginger, sesame seeds, cayenne pepper, chilli powder, oregano, garlic powder, smoked paprika, sesame oil, sunflower oil, salt, pepper).
 * Bread (sourdough starter, flour, baking powder, butter, honey).
 
 <div class="gallery">
@@ -498,7 +498,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** Found some wild blackberries. Will go collecting them soon as they are starting to ripe. Enjoying my stir-frys. I am planning to make my first proper sourdough bread over the next few days. As have been using the sourdough starter discard. I wanted some soy sauce on my stir fry tonight.
+**Thoughts:** Found some wild blackberries. I'll go collecting them soon as they are starting to ripen. Enjoying my stir-fries. I am planning to make my first proper sourdough bread over the next few days, as I have been using the sourdough starter discard. I wanted some soy sauce on my stir fry tonight.
 
 ##### 16th Jul
 
@@ -524,7 +524,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** I was thinking about the fact I'm eating very little food additives and that reminded me that i've been curious to try [Monosodium Glutamate][msg] (MSG) for a while. Since I'm not eating processed foods potentially containing it, I thought that it's a good time to try it. I went to town and bought, according to the pack, the funniest ingredient I've eaten all month: 'Flavour Enhancer (Monosodium Glutamate (E621)) 100% (refined from Tapioca Flour & Cane)'. Which I believe is technically a single ingredient. I did enjoy the stir-fry a lot.
+**Thoughts:** I was thinking about the fact I'm eating very few food additives and that reminded me that I've been curious to try [Monosodium Glutamate][msg] (MSG) for a while. Since I'm not eating processed foods that might contain it, I thought it was a good time to try it. I went to town and bought, according to the pack, the funniest ingredient I've eaten all month: 'Flavour Enhancer (Monosodium Glutamate (E621)) 100% (refined from Tapioca Flour & Cane)', which I believe is technically a single ingredient. I did enjoy the stir-fry a lot.
 
 ##### 17th Jul
 
@@ -901,7 +901,7 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** Went picking wild blackberries today, to stock up on jam and make the tart. Also found some apples and plumbs. Having fresh ingredients is great.
+**Thoughts:** Went picking wild blackberries today to stock up on jam and make the tart. Also found some apples and plums. Having fresh ingredients is great.
 
 ##### 29th Jul
 
@@ -955,11 +955,11 @@ This blog post is going to chart my progress with what I'm eating. I'm no chef a
   </div>
 </div>
 
-**Thoughts:** There we have it, the first multi ingredient food (whats that saying about stout being a meal), bringing this challenge to a conclusion. Lack of pictures as I didn't bring my phone on the water. I did eat after the stout but finished recording after that time.
+**Thoughts:** There we have it, the first multi-ingredient food (what's that saying about stout being a meal), bringing this challenge to a conclusion. Lack of pictures as I didn't bring my phone on the water. I did eat after the stout but finished recording after that time.
 
 ## Conclusion
 
-Assuming you live to 80 years old, one month of your life is is ~0.1%. I think this challenge was well worth trying for that 0.1%.
+Assuming you live to 80 years old, one month of your life is ~0.1%. I think this challenge was well worth trying for that 0.1%.
 
 I'm surprised how much stuff you can make yourself, with single ingredients, leading to food containing much less sugar than store bought alternatives. The meals made over the challenge tended to be more healthy, due to a higher use of fresh vegetables. This has an impact on my weight, with me losing a few kilograms over the month.
 

@@ -5,13 +5,13 @@ date:   2020-06-18 12:00:00
 categories: fractally broken daily
 ---
 
-Fractally broken a definition.
+Fractally broken: a definition.
 
 **Fractal**: _A never ending pattern._<br/>**Broken**: _Not functioning properly._
 
 This is a phrase I heard from [Louis Taylor][kragniz] a few years ago and I absolutely love it. _Edit: I have been told that the original source may have been [https://eev.ee][source]._
 
-It means that however much you zoom in or out from a thing it has faults. In an almost recursive manner.
+It means that no matter how much you zoom in or out on a thing, it has faults. In an almost recursive manner.
 
 It really sums up some projects. You look at the whole system and think some very bad words. Then you look at a component and think the same. Finally, you end up reading individual lines of code and the words continue flowing.
 

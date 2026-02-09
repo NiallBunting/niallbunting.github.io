@@ -5,16 +5,17 @@ date:   2019-12-09 18:00:00
 categories: EBCDIC Cobol packing copybooks
 ---
 
-This aims to explain what EBCDIC is and give an overview how to use it. If you want to read about its history, have a look at the [wiki page][wikipage] (also take a look at the joke section). Also includes the command to do EBCDIC Cobol to ASCII conversions.
+This aims to explain what EBCDIC is and give an overview of how to use it. If you want to read about its history, have a look at the [wiki page][wikipage] (also take a look at the joke section). This post also includes the command to convert EBCDIC Cobol to ASCII.
 
-This post is mainly going to deal with fixed width EBCDIC records. We will also briefly cover reading EBCDIC into a Apache Spark cluster using the Cobrix library.
+This post mainly deals with fixed width EBCDIC records. We will also briefly cover reading EBCDIC into an Apache Spark cluster using the Cobrix library.
 
 ### Contents
+
 1. [EBCDIC in five bullet points](#ebcdic-in-five-bullet-points)
 2. [EBCDIC Basics](#ebcdic-basics)
 3. [EBCDIC Copybooks](#ebcdic-copybooks)
-3. [Convert ASCII to EBCDIC](#convert-ascii-to-ebcdic)
-4. [Reading EBCDIC with a Spark cluster](#reading-ebcdic-with-a-spark-cluster)
+4. [Convert ASCII to EBCDIC](#convert-ascii-to-ebcdic)
+5. [Reading EBCDIC with a Spark cluster](#reading-ebcdic-with-a-spark-cluster)
 
 ### EBCDIC in five bullet points
 
@@ -29,11 +30,11 @@ This post is mainly going to deal with fixed width EBCDIC records. We will also 
 
 ### EBCDIC Basics
 
-At its heart, both EBCDIC (Extended Binary Coded Decimal Interchange Code) and ASCII (American Standard Code for Information Interchange) are methods of character encoding. In simple terms, they are a way of translating a binary number sequence into letters and numbers: ie 61 = a, 62 = b, 63 = c.
+At its heart, both EBCDIC (Extended Binary Coded Decimal Interchange Code) and ASCII (American Standard Code for Information Interchange) are methods of character encoding. In simple terms, they translate a binary number sequence into letters and numbers: e.g. 61 = a, 62 = b, 63 = c.
 
-EBCDIC uses an 8-bit (one byte) character encoding, this is different from ASCII that uses a 7-bit encoding.
+EBCDIC uses an 8-bit (one byte) character encoding, which is different from ASCII that uses 7-bit encoding.
 
-EBCDIC is used to encode the Latin character set. However, there are multiple different versions of EBCDIC that are inoperable with each other, the different formats are defined by their code pages, and they are different. I recommend checking which one your project uses.
+EBCDIC is used to encode the Latin character set. However, there are multiple versions of EBCDIC that are incompatible with each other. The different formats are defined by their code pages, and I recommend checking which one your project uses.
 
 Here is an example of a fixed width record (in ASCII for readability).
 
@@ -42,17 +43,17 @@ Here is an example of a fixed width record (in ASCII for readability).
 00000002Martin    9
 {% endhighlight %}
 
-As you can see in the data, there is no schema baked into this record, so if you received this file you would not know how to parse it. 
+As you can see, there is no schema embedded in this record, so if you received this file you would not know how to parse it.
 
-The schemas are stored in separate files called copybooks, there are two main ways these records can be composed, either fixed or variable width records. The difference between these is how a record is formatted. A fixed width record will always have the exact same length e.g. fixed width of 512 characters, means each record would be that length even if it was just a name. 
+The schemas are stored in separate files called copybooks. Records can be composed in two main ways: either fixed or variable width. Fixed width records always have the exact same length (e.g. 512 characters), whereas variable width records can have different lengths.
 
-Another thing to highlight, if you convert EBCDIC to ASCII encoding the numbers are just characters, rather than using a number format for representation by default. This causes numbers to take up lots of space as each number character is stored independently.
+When you convert EBCDIC to ASCII encoding, the numbers are stored as character strings rather than in a numeric format. This means numbers consume more space since each digit is stored separately.
 
 #### EBCDIC Packing
 
-EBCDIC uses an 8 bit character set, meaning that every row of an EBCDIC file can be read as a string. With a strong focus on minimizing field widths, one trick that this format employs when encoding numbers is to have the sign (whether it's positive or negative) encoded as part of the string changing the least significant digit from a number to a non numeric character. This saves a character by turning the four character "-100" to the three character "10}"
+EBCDIC uses an 8 bit character set, meaning that every row of an EBCDIC file can be read as a string. With an emphasis on minimizing field widths, EBCDIC employs a technique where the sign (positive or negative) is encoded as part of the string, changing the least significant digit from a number to a non-numeric character. This saves space by converting the four-character string "-100" to the three-character string "10}".
 
-Packing uses nibbles (4 bits) of a byte rather than using the full byte. To store the information about a given number. 
+Packing uses nibbles (4 bits) rather than full bytes to store numeric information.
 
 With the values:
   * F - unsigned
@@ -106,25 +107,25 @@ Let's start off showing a fictional fixed width copybook.
          10  FILLER               PIC X(50).
 ```
 
-The layout of a copybook follows the file layout of Cobol. This means that columns have specific uses and this also needs to be followed in the Copybook.
+The layout of a copybook follows Cobol's file layout rules. This means columns have specific purposes and must be followed correctly.
 
 Columns 1-6 are left empty and are where the line numbers were stored on cards. This area is called the Sequence number area and is ignored by the compiler.
 
-Next we have the indicator area which is a single column (7). This column is mainly used to indicate if that line is a comment. As seen above. However it also has a few other characters such as `/`, `-`, and `D`. They have the following effects: a comment that w will be printed, the line continues from the previous one, and enables that line in debugging mode.
+Next is the indicator area, a single column (7). This column is mainly used to indicate if a line is a comment, as shown above. However, it also has a few other characters such as `/`, `-`, and `D`, which have these effects: a comment that will be printed, the line continues from the previous one, or the line is enabled for debugging mode.
 
-Area A (8-11) contains the level numbers such as 01 and 10 in our example. After 01 it does not matter the exact numbers used for ordering. However, the level numbers do need to be larger than any sections below.
+Area A (columns 8-11) contains the level numbers, such as 01 and 10 in our example. After 01, the exact numbers used for ordering are flexible, as long as level numbers increase for nested fields.
 
-Columns 12-72 are called Area B and that contains any other code not allowed in Area A. This contains the name of the field in the above example that continues to around column 25. Next is the definition of the datatype. Described in the next section.
+Columns 12-72 are called Area B and contain code not allowed in Area A. This includes the field names (continuing to around column 25 in our example) followed by the datatype definition.
 
-73+ is the program name area. Historically the max was 80 due to punch cards. It is used to identify the sequence of the card.
+73+ is the program name area. Historically, the maximum length was 80 columns due to punch card limitations. This area is used to identify the sequence of the card.
 
-Lines must end with a full stop, this is a gotcha, so be careful to add it.
+Lines must end with a full stop. This is important to remember, so be careful to include it.
 
 ### PIC
 
-PIC is the next thing we come across, this just tells the copybook how to interpret the data in this case using the value defined by the following number. Where `XXXX` or `X(4)` would be four characters.
+PIC tells the copybook how to interpret the data using the value defined by the following characters. For example, `XXXX` or `X(4)` represents four characters.
 
-The basic types are the following:
+The basic types are:
 
 There are two main types:
 * X : Any character
@@ -217,7 +218,6 @@ I would like to thank Oliver Hathaway for copy editing.
 A thread which I heavily used to refresh my knowledge is [here][copybook].
 
 For further reading [this university of Limerick][resource] is a great resource about Cobol.
-
 
 [wikipage]: https://en.wikipedia.org/wiki/EBCDIC
 [cobrix]: https://github.com/AbsaOSS/cobrix

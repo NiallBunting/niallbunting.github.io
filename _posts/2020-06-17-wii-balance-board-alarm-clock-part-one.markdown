@@ -15,18 +15,17 @@ categories: wii balance board alarm clock daily
 
 ![](/assets/images/daily/2020-06-17-wii-fit-alarm.png)
 
-If your anything like me, you have trouble waking up. The story above is one of my many of the failed battles to wake up for a certain time. It's almost like another brain has control in the initial seconds of waking, and that brain is very efficient at getting me back to sleep. Overriding my best made morning plans made the night before.
+If you're anything like me, you have trouble waking up. The story above is one of my many failed battles to wake up for a certain time. It's almost like another brain has control in the initial seconds of waking, and that brain is very efficient at getting me back to sleep, overriding my carefully laid morning plans from the night before.
 
-I’ve tried a few different methods for getting up. The best method I have found is putting my phone downstairs as this forces me to walk downstairs to switch my alarm off. With one small problem that it wakes the entire house up.
+I’ve tried a few different methods for getting up. The best method I've found is putting my phone downstairs, which forces me to walk downstairs to switch off the alarm. However, this has one small problem: it wakes the entire house.
 
-So I have a different plan, the core idea is simple. I'm required to stand out of bed for 60 seconds to switch off my alarm. This hopefully should allow enough time to let the sleep brain dissipate.
+So I have a different plan. The core idea is simple: I'm required to stand out of bed for 60 seconds to switch off the alarm. This should allow enough time for the sleep brain to dissipate.
 
 ## The Plan
 
 My plan is to have a Wii Fit Board connected to an alarm clock. Every morning the alarm will cause a buzzer to sound.
 
 On stepping on the board, the buzzer will stop. If I get off before the period of 60 seconds has passed the buzzer will continue sounding.
-	
 A side benefit of using the board is that it can measure my weight, which I plan to record and store. Allowing me to track my weight over time without even thinking about it.
 
 ## Parts
@@ -41,7 +40,7 @@ This is going to be a multipart post that follows along as I complete various as
 
 ## Final Look
 
-This is the alarm clock in it's final position. Read my thoughts about it in the six month review.
+This is the alarm clock in its final position. Read my thoughts about it in the six-month review.
 
 ![](/assets/images/posts/wii-final-board.png) 
 *The alarm clock in it's final position.*
