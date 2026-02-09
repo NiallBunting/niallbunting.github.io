@@ -23,7 +23,7 @@ For the purpose of this article the word 'value' will be used as a sort of handw
 
 For these purposes revenue means the total amount of value that all of your releases generate. Since we are interested in revenue per release, this is the amount of value that a given release delivers.
 
-The revenue per release will change based on how many features are in a given release or how in-demand a given feature is. If you release a broken version, you may actually reduce the revenue for a period of time due to decreased customer satisfaction.
+The revenue per release will change based on how many features are in a given release or how in demand a given feature is. If you release a broken version, you may actually reduce the revenue for a period of time due to decreased customer satisfaction.
 
 # Costs
 

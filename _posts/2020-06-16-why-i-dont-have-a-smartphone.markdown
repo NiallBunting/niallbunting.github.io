@@ -36,7 +36,7 @@ We were in a little Spanish speaking village and as we sat down in the restauran
 
 A phone can make you self-reliant in ways that don't always lead to the best results. This is especially true in new places where my previously researched TripAdvisor recommendations are often thrown out. The locals will then tell you about what the best activities actually are.
 
-Sometimes things go wrong with the phoneless approach—don't get me wrong—but the journey is often as important as the destination.
+Sometimes things go wrong with the phoneless approach, don't get me wrong, but the journey is often as important as the destination.
 
 ## The Ugly
 
@@ -54,7 +54,7 @@ Normally, in the technology realm it’s your time, which is even more precious 
 
 Don't get me wrong, it's nice to see what old acquaintances are doing. However, such moments don't happen all the time.
 
-With a smartphone, your time is available most of the time—in bed, on the bus, at the dinner table. Without one, you're off limits; they can't buy your attention and you can relax.
+With a smartphone, your time is available most of the time: in bed, on the bus, at the dinner table. Without one, you're off limits; they can't buy your attention and you can relax.
 
 ### Privacy/Security
 

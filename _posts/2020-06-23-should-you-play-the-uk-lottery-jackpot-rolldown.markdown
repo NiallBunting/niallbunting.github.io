@@ -21,7 +21,7 @@ Tomorrow in the UK we have a special case of the National Lottery (lotto) called
 >
 > <cite>-- national-lottery.co.uk</cite>
 
-I'm interested to see how this affects the expected value—that is, how much you expect to gain each time you play. For example, roulette has an expected value of -5.3% (on red/black), so for every £1.00 spent you can expect to receive £0.95 back.
+I'm interested to see how this affects the expected value, that is, how much you expect to gain each time you play. For example, roulette has an expected value of -5.3% (on red/black), so for every £1.00 spent you can expect to receive £0.95 back.
 
 Jump to the [bottom](#should-you-play) to skip the stats.
 

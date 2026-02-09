@@ -51,7 +51,7 @@ Therefore, remembering the gist of information can unlock deeper detailed knowle
 
 Non-JIT information needs to be information that is 'gistable'. If it's gistable, people will have a takeaway from the information you've given, since they'll forget any concrete details. If the information only contains concrete facts, most of it will be lost.
 
-This is one of the core problems with adult information—much of it isn't really gistable. For example, with a news item, we can't extract a gist from "X has done X" unless it's particularly significant.
+This is one of the core problems with adult information, much of it isn't really gistable. For example, with a news item, we can't extract a gist from "X has done X" unless it's particularly significant.
 
 ## Can we use JIT and the internet instead
 

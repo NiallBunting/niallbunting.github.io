@@ -105,7 +105,7 @@ deploy: #help Run any infra changes
 
 ##### Guidance
 
-The goal isn’t for these steps to be overly complex—often, they’re just one line. [See the examples section](#examples).
+The goal isn’t for these steps to be overly complex. Often, they’re just one line. [See the examples section](#examples).
 
 You don’t need to handle every possible scenario in the script. People may be using different environments or have different setups, and managing those variations can be complicated. That added complexity takes time to address, so it’s better to keep the Commake simple and defer to the developer when necessary.
 

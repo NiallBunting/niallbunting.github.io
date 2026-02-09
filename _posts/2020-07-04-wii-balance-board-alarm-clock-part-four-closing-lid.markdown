@@ -19,7 +19,7 @@ In my case I had perfboard with horizontal rows of connections. Occasionally, I 
 
 At this stage, I decided to use female connectors on the Pi's header pins, which allows me to remove the Pi in the future if needed.
 
-I constantly tested my project throughout this process to catch any mistakes early. Fortunately, I managed it without any issues—perhaps because it's such a simple circuit.
+I constantly tested my project throughout this process to catch any mistakes early. Fortunately, I managed it without any issues perhaps because it's such a simple circuit.
 
 ## Cut and glue
 
@@ -27,7 +27,7 @@ With the circuit completed, I needed to ensure it would fit inside the balance b
 
 The orientation of the Pi meant that a few header pins were separated by the reinforcements. This caused a problem when I connected the Pi to the perfboard, since the separated pins required a connector, preventing them from fitting on either side of the ridge. Therefore, I slightly shifted the Pi across and enlarged the hole in the battery holder to accommodate the USB cable.
 
-Once it looked like everything would fit, I hot-glued a piece of plastic into a corner and secured the perfboard and Raspberry Pi with a screw. It flexes slightly on the other side, but overall, I thought it was good enough—it's not going to move much.
+Once it looked like everything would fit, I hot-glued a piece of plastic into a corner and secured the perfboard and Raspberry Pi with a screw. It flexes slightly on the other side, but overall, I thought it was good enough, it's not going to move much.
 
 ![](/assets/images/daily/2020-07-04-no-lid.jpg)
 

@@ -24,7 +24,7 @@ Time to open up the Wii Balance Board and start work on each requirement.
 
 ## Press the sync button
 
-First, I needed to figure out how the sync button works so I could simulate a press with the electronics. This meant probing to determine if it's a pull-up or pull-down button—in other words, whether the microcontroller gets triggered when the signal goes high or low.
+First, I needed to figure out how the sync button works so I could simulate a press with the electronics. This meant probing to determine if it's a pull-up or pull-down button, in other words, whether the microcontroller gets triggered when the signal goes high or low.
 
 After some imprecise probing with my multimeter and a couple of wires, I discovered that it uses a pull-up resistor, meaning the microcontroller gets triggered when the pin goes low. This means that my circuit needs to use a transistor to pull that pin low, or connect it to ground.
 

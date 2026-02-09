@@ -17,6 +17,6 @@ To put that in context, let's look at some of the previous points delivered on a
 
 The average would be 54.3 (90% CI: 41.6-66.9). Out of this sample, 63% are above the average, which seems ordinary for a small sample. This means the mean is holding relatively true. To test this more concretely, we would need at least 30 data points.
 
-This post is pointing out quite an obvious fact in hindsight—something I hadn't really considered. In some planning sessions, the sprint velocity and the goals based on it are often discussed as sure bets, something we can be confident showing the client. In reality, it's a coin toss.
+This post is pointing out quite an obvious fact in hindsight, something I hadn't really considered. In some planning sessions, the sprint velocity and the goals based on it are often discussed as sure bets, something we can be confident showing the client. In reality, it's a coin toss.
 
 [calculator]: /sprint-forecaster/

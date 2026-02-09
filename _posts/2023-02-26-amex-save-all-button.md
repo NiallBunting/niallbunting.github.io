@@ -33,7 +33,7 @@ I am still wondering if any data is shared when an offer is enabled but not rede
 
 #### Getting details about privacy implications
 
-I found it difficult to locate details on the Amex website. I assumed data would be shared when an offer is redeemed, but I wasn't sure what — if any — data is shared when an offer is merely enabled and not redeemed.
+I found it difficult to locate details on the Amex website. I assumed data would be shared when an offer is redeemed, but I wasn't sure what, if any, data is shared when an offer is merely enabled and not redeemed.
 
 I looked through Amex's privacy document and couldn't find anything about the privacy implications of offers.
 

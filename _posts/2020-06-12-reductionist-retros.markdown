@@ -7,7 +7,7 @@ categories: retrospectives reductionist daily
 
 We can recognize software scope creep, but do we notice the slow creep of extra process on our workflow?
 
-Retrospectives often output a list of tasks or additional processes that your team needs to implement. The tasks vary—perhaps they will open a new way of working, or implementing this additional task would have caught the failure before it reached production.
+Retrospectives often output a list of tasks or additional processes that your team needs to implement. The tasks vary, perhaps they will open a new way of working, or implementing this additional task would have caught the failure before it reached production.
 
 Let's be honest though: most actions on a long list are often left undone. This can be down to a couple of reasons, but most likely because the action was neither urgent nor important. The team meets at the next retro, we sit down and either discuss how we failed to fully implement a new idea or (possibly even worse) don't revisit previous actions at all.
 

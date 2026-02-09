@@ -8,11 +8,11 @@ excerpt: "One ingredient challenge is a month long challenge where you only eat 
 
 One Ingredient Challenge is a month-long challenge where you only eat foods containing a single ingredient.
 
-This means any food items with exactly one ingredient on the package are fine; any with an ingredients list longer than one are disallowed. The challenge aims to make me more conscious of the food I eat. This already threw up a surprise: one of my fajita mix's main ingredients is [Maltodextrin][maltodextrin], a thickener — it's not even a spice!
+This means any food items with exactly one ingredient on the package are fine; any with an ingredients list longer than one are disallowed. The challenge aims to make me more conscious of the food I eat. This already threw up a surprise: one of my fajita mix's main ingredients is [Maltodextrin][maltodextrin], a thickener. It's not even a spice!
 
 I am allowed to process food myself. For example, I can't buy bread from the shop but can make it at home, as long as all the ingredients that go into the item are single foods I can hold in my hand.
 
-Since I don't fancy not cleaning my teeth, I'm going to have an exception for toothpaste and mouthwash (and medicine). Not that I eat them — just including this for completeness.
+Since I don't fancy not cleaning my teeth, I'm going to have an exception for toothpaste and mouthwash (and medicine). Not that I eat them,  just including this for completeness.
 
 This blog post will chart my progress with what I'm eating. I'm no chef and will keep things simple. I won't include drinks, which will be water, tea and coffee.
 
@@ -326,7 +326,7 @@ This blog post will chart my progress with what I'm eating. I'm no chef and will
   </div>
 </div>
 
-**Thoughts:** Well, looks like my body was balancing out yesterday. I had never searched for what 'easy peelers' are; it turns out they are a cross-breed of satsumas and clementines that are easy to peel — another way that humans shape the world. I've heard there used to be hundreds of types of apple that, for various reasons, are not as easy to farm or as tasty, so you don't see them anymore in the supermarket.
+**Thoughts:** Well, looks like my body was balancing out yesterday. I had never searched for what 'easy peelers' are; it turns out they are a cross-breed of satsumas and clementines that are easy to peel, another way that humans shape the world. I've heard there used to be hundreds of types of apple that, for various reasons, are not as easy to farm or as tasty, so you don't see them anymore in the supermarket.
 
 ##### 11th Jul
 

@@ -34,7 +34,7 @@ It's pretty common for askers to not read a wiki, and I've been guilty of this m
 
 - Long form documents take a large amount of time to parse, and internalise before working out if it's relevant to your task. This means it tends to have a large barrier to entry.
 - Often pages don't answer your specific question. The page covers that general area but not the specific knowledge needed. After this happens a few times, people are less likely to check the wiki, as they assume the knowledge isn't there.
-- Searching is difficult—pages are often written without considering the questions askers would ask. When askers search, they may use different terms than those in the page.
+- Searching is difficult, pages are often written without considering the questions askers would ask. When askers search, they may use different terms than those in the page.
 - Often pages contain lots of irrelevant facts that distract from the task at hand.
 - Pages can be out of date, describing process that is no longer correct.
 - The page can change after you've read it (you can receive notifications of changes, but these often become overwhelming).

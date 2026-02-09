@@ -7,9 +7,9 @@ categories: daily tail costs estimating
 
 Are you missing the expensive hidden costs in your story estimates?
 
-I have been reading ‘No Estimates’ by Vasco Duarte recently and came across a concept that has been in my head for a while, but I have been unable to put into words. Originally proposed by J.B. Rainsberger, this concept is called accidental complication—complication that creeps into our work due to organizational structures.
+I have been reading ‘No Estimates’ by Vasco Duarte recently and came across a concept that has been in my head for a while, but I have been unable to put into words. Originally proposed by J.B. Rainsberger, this concept is called accidental complication that creeps into our work due to organizational structures.
 
-Vasco shares an email from Troy Magennis which says that people estimate as if they're in a perfect world, but as we know, the real world is different. Work gets blocked for multiple reasons—like holidays or team members working on other tasks. He also says that we should be thinking about the entire system not just the perfect development time.
+Vasco shares an email from Troy Magennis which says that people estimate as if they're in a perfect world, but as we know, the real world is different. Work gets blocked for multiple reasons (like holidays or team members working on other tasks). He also says that we should be thinking about the entire system not just the perfect development time.
 
 This is important if we start to count “man-hours” on a story. Where “man-hours” means the time spent on a ticket by all humans, if we have 8 people working on it for an hour that is 8 “man-hours”. If we have one person working for 8 hours that is also 8 “man-hours”.
 

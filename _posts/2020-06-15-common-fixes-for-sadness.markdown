@@ -31,7 +31,7 @@ Serotonin and Oxytocin are the other two parts of the happiness trifecta. Oxytoc
 
 These hormones can be boosted by spending time with people you love and building relationships and trust<sup>[[source]][oxytocin1]</sup>.
 
-You can also boost your levels by helping others. If you see someone struggling, help them out—it may be just what you need to boost your mood<sup>[[source]][oxytocin2]</sup>.
+You can also boost your levels by helping others. If you see someone struggling, help them out, it may be just what you need to boost your mood<sup>[[source]][oxytocin2]</sup>.
 
 ### Endorphins
 

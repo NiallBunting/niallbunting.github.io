@@ -11,7 +11,7 @@ This page offers a download of a Microsoft Windows-compatible Dvorak keyboard la
 
 The download file is built following the instructions at [tarind.com][tarind].
 
-I've shared this keyboard layout to save you the effort of setting up the Dvorak keyboard on each new Windows machine—no need to download the keyboard creation tool separately.
+I've shared this keyboard layout to save you the effort of setting up the Dvorak keyboard on each new Windows machine. No need to download the keyboard creation tool separately.
 
 **[Download][download]**
 
