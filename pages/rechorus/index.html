@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechorus - Chorusing that repeats back</title>
+    <style>
+        body { background: #0b0b0b; color: #eee; font-family: 'Inter', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { background: #151515; padding: 25px; border-radius: 12px; width: 95%; max-width: 950px; border: 1px solid #222; }
+        .canvas-container { position: relative; width: 100%; height: 320px; background: #000; border-radius: 8px; overflow: hidden; margin: 20px 0; border: 1px solid #333; }
+        canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .control-group { background: #1e1e1e; padding: 15px; border-radius: 8px; border: 1px solid #282828; }
+        label { display: block; font-size: 10px; text-transform: uppercase; color: #777; margin-bottom: 8px; font-weight: 800; letter-spacing: 1px; }
+        input[type="range"] { width: 100%; accent-color: #00ff88; cursor: pointer; margin-bottom: 5px; }
+        .val { float: right; color: #00ff88; font-family: monospace; }
+        .status { text-align: center; color: #00ff88; font-size: 11px; margin-top: 15px; font-family: monospace; text-transform: uppercase; letter-spacing: 2px; }
+        .hint { font-size: 9px; color: #555; margin-top: 5px; display: block; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="margin-top:0">Rechorus <span style="color:#00ff88">- Chorusing that repeats back</span></h1>
+        <input type="file" id="audioFile" accept="audio/mp3" style="margin-bottom:10px;">
+
+        <div class="canvas-container">
+            <canvas id="staticCanvas"></canvas>
+            <canvas id="recCanvas"></canvas>
+            <canvas id="liveCanvas"></canvas>
+            <canvas id="playheadCanvas"></canvas>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>MP3 Volume <span class="val" id="mVolL">100%</span></label>
+                <input type="range" id="mp3Vol" min="0" max="1.5" step="0.05" value="1">
+                
+                <label style="margin-top:12px">Rec Volume <span class="val" id="rVolL">100%</span></label>
+                <input type="range" id="recVol" min="0" max="2" step="0.1" value="1">
+
+                <label style="margin-top:12px">Monitor (Green) <span class="val" id="monVolL">0%</span></label>
+                <input type="range" id="monitorVol" min="0" max="1" step="0.05" value="0">
+                
+                <label style="margin-top:12px">Loop Delay <span class="val" id="delL">600ms</span></label>
+                <input type="range" id="loopDelay" min="0" max="3000" step="50" value="600">
+            </div>
+            
+            <div class="control-group">
+                <label style="color:#00ccff">Blue Sync (Recorded) <span class="val" id="blueOffL">0ms</span></label>
+                <input type="range" id="blueOffset" min="-300" max="300" step="1" value="0">
+
+                <label style="color:#00ff88; margin-top:15px">Green Sync (Live) <span class="val" id="greenOffL">0ms</span></label>
+                <input type="range" id="greenOffset" min="-300" max="300" step="1" value="0">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top:20px;">
+                    <div>
+                        <label>Grey Height <span class="val" id="sScaleL">1.0x</span></label>
+                        <input type="range" id="staticScale" min="0.1" max="4" step="0.1" value="1">
+                    </div>
+                    <div>
+                        <label>Blue Height <span class="val" id="rScaleL">1.0x</span></label>
+                        <input type="range" id="recScale" min="0.1" max="4" step="0.1" value="1">
+                    </div>
+                    <div>
+                        <label>Blue Y-Pos <span class="val" id="rVOffL">0px</span></label>
+                        <input type="range" id="recVOffset" min="-120" max="120" step="1" value="0">
+                    </div>
+                    <div>
+                        <label>Green Y-Pos <span class="val" id="gVOffL">0px</span></label>
+                        <input type="range" id="liveVOffset" min="-120" max="120" step="1" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="status" id="status">Ready</div>
+    </div>
+
+<script>
+    const canvasIds = ['static', 'rec', 'live', 'playhead'];
+    const ctxs = {};
+    const canvases = {};
+
+    canvasIds.forEach(id => {
+        const el = document.getElementById(id + 'Canvas');
+        canvases[id] = el;
+        ctxs[id] = el.getContext('2d');
+    });
+
+    let audioCtx, audioBuffer, lastRecBuffer, stream;
+    let micAnalyser, monitorGain;
+    let isPlaying = false;
+    let recordingArray;
+    let recordingIndex = 0;
+
+    async function initMic() {
+        stream = await navigator.mediaDevices.getUserMedia({ 
+            audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } 
+        });
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        
+        const micSource = audioCtx.createMediaStreamSource(stream);
+        micAnalyser = audioCtx.createAnalyser();
+        monitorGain = audioCtx.createGain();
+        monitorGain.gain.value = 0;
+        
+        micSource.connect(micAnalyser);
+        micSource.connect(monitorGain).connect(audioCtx.destination);
+    }
+
+    document.getElementById('audioFile').onchange = async (e) => {
+        if (!stream) await initMic();
+        audioBuffer = await audioCtx.decodeAudioData(await e.target.files[0].arrayBuffer());
+        resize();
+        refreshWaveforms();
+        if(!isPlaying) startLoop();
+    };
+
+    function resize() {
+        Object.values(canvases).forEach(c => {
+            c.width = c.offsetWidth;
+            c.height = c.offsetHeight;
+        });
+    }
+
+    function drawWaveform(buffer, ctx, color, opacity, vScale, vOff = 0, hOffMs = 0) {
+        ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        if (!buffer) return;
+
+        const data = buffer.getChannelData(0);
+        const duration = audioBuffer.duration;
+        const hOffPixels = (hOffMs / 1000) * (ctx.canvas.width / duration);
+        const step = Math.ceil(data.length / ctx.canvas.width);
+        const amp = (ctx.canvas.height / 2) * vScale;
+        
+        ctx.globalAlpha = opacity;
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+
+        for(let i=0; i < ctx.canvas.width; i++) {
+            const bufferIndex = Math.floor(((i - hOffPixels) / ctx.canvas.width) * data.length);
+            if (bufferIndex >= 0 && bufferIndex < data.length) {
+                let min = 1, max = -1;
+                for(let j=0; j<step; j++) {
+                    const datum = data[bufferIndex + j] || 0;
+                    if (datum < min) min = datum;
+                    if (datum > max) max = datum;
+                }
+                ctx.moveTo(i, (ctx.canvas.height/2) + vOff + (min * amp));
+                ctx.lineTo(i, (ctx.canvas.height/2) + vOff + (max * amp));
+            }
+        }
+        ctx.stroke();
+    }
+
+    function refreshWaveforms() {
+        const sScale = parseFloat(document.getElementById('staticScale').value);
+        const rScale = parseFloat(document.getElementById('recScale').value);
+        const bHOff = parseFloat(document.getElementById('blueOffset').value);
+        const rVOff = parseInt(document.getElementById('recVOffset').value);
+        
+        drawWaveform(audioBuffer, ctxs.static, '#555', 1, sScale, 0, 0);
+        if (lastRecBuffer) {
+            drawWaveform(lastRecBuffer, ctxs.rec, '#00ccff', 0.6, rScale, rVOff, bHOff);
+        }
+    }
+
+    function startLoop() {
+        isPlaying = true;
+        document.getElementById('status').textContent = "• Recording •";
+        const duration = audioBuffer.duration;
+        
+        // Prepare Sample-Accurate Buffer
+        recordingArray = new Float32Array(audioBuffer.length);
+        recordingIndex = 0;
+
+        const startTime = audioCtx.currentTime + 0.1;
+
+        const processor = audioCtx.createScriptProcessor(4096, 1, 1);
+        const micSource = audioCtx.createMediaStreamSource(stream);
+        
+        processor.onaudioprocess = (e) => {
+            if (!isPlaying) return;
+            const input = e.inputBuffer.getChannelData(0);
+            for (let i = 0; i < input.length; i++) {
+                if (recordingIndex < recordingArray.length) {
+                    recordingArray[recordingIndex++] = input[i];
+                }
+            }
+        };
+
+        micSource.connect(processor);
+        processor.connect(audioCtx.destination); // Audio Heartbeat
+
+        const mainSource = audioCtx.createBufferSource();
+        const mainGain = audioCtx.createGain();
+        mainSource.buffer = audioBuffer;
+        mainGain.gain.value = document.getElementById('mp3Vol').value;
+        mainSource.connect(mainGain).connect(audioCtx.destination);
+
+        if (lastRecBuffer) {
+            const recSource = audioCtx.createBufferSource();
+            const recGain = audioCtx.createGain();
+            recSource.buffer = lastRecBuffer;
+            recGain.gain.value = document.getElementById('recVol').value;
+            const blueOff = parseFloat(document.getElementById('blueOffset').value) / 1000;
+            recSource.connect(recGain).connect(audioCtx.destination);
+            recSource.start(startTime + Math.max(0, blueOff), Math.max(0, -blueOff));
+        }
+
+        const greenOff = parseFloat(document.getElementById('greenOffset').value) / 1000;
+        mainSource.start(startTime + Math.max(0, greenOff), Math.max(0, -greenOff));
+
+        function frame() {
+            if (!isPlaying) return;
+            const elapsed = audioCtx.currentTime - startTime;
+            const progress = elapsed / duration;
+            if (progress >= 1) return;
+
+            const x = progress * canvases.static.width;
+            const gVOff = parseInt(document.getElementById('liveVOffset').value);
+
+            ctxs.playhead.clearRect(0, 0, canvases.playhead.width, canvases.playhead.height);
+            ctxs.playhead.strokeStyle = '#ff3333';
+            ctxs.playhead.beginPath();
+            ctxs.playhead.moveTo(x, 0); ctxs.playhead.lineTo(x, canvases.playhead.height);
+            ctxs.playhead.stroke();
+
+            const dataArray = new Uint8Array(micAnalyser.frequencyBinCount);
+            micAnalyser.getByteTimeDomainData(dataArray);
+            ctxs.live.clearRect(x, 0, 15, canvases.live.height); 
+            ctxs.live.fillStyle = '#00ff88';
+            let sum = 0;
+            for(let i=0; i<dataArray.length; i++) sum += Math.abs(dataArray[i] - 128);
+            let s = (sum / dataArray.length) * 8; 
+            ctxs.live.fillRect(x - 1, (canvases.live.height/2) + gVOff - s, 2, s*2);
+
+            requestAnimationFrame(frame);
+        }
+        
+        ctxs.live.clearRect(0, 0, canvases.live.width, canvases.live.height);
+        frame();
+
+        mainSource.onended = () => {
+            isPlaying = false;
+            processor.disconnect();
+            micSource.disconnect();
+            
+            // Lock recording into Blue buffer
+            lastRecBuffer = audioCtx.createBuffer(1, recordingArray.length, audioCtx.sampleRate);
+            lastRecBuffer.getChannelData(0).set(recordingArray);
+            
+            refreshWaveforms();
+            document.getElementById('status').textContent = "Syncing...";
+            setTimeout(startLoop, document.getElementById('loopDelay').value);
+        };
+    }
+
+    const updateLabel = (id, suffix) => e => {
+        document.getElementById(id).textContent = e.target.value + suffix;
+        if (monitorGain && id === 'monVolL') monitorGain.gain.value = e.target.value;
+        refreshWaveforms();
+    };
+
+    document.getElementById('staticScale').oninput = updateLabel('sScaleL', 'x');
+    document.getElementById('recScale').oninput = updateLabel('rScaleL', 'x');
+    document.getElementById('blueOffset').oninput = updateLabel('blueOffL', 'ms');
+    document.getElementById('greenOffset').oninput = updateLabel('greenOffL', 'ms');
+    document.getElementById('mp3Vol').oninput = updateLabel('mVolL', '%');
+    document.getElementById('recVol').oninput = updateLabel('rVolL', '%');
+    document.getElementById('monitorVol').oninput = updateLabel('monVolL', '%');
+    document.getElementById('loopDelay').oninput = updateLabel('delL', 'ms');
+    document.getElementById('recVOffset').oninput = updateLabel('rVOffL', 'px');
+    document.getElementById('liveVOffset').oninput = updateLabel('gVOffL', 'px');
+
+    window.onresize = () => { resize(); refreshWaveforms(); };
+</script>
+</body>
+</html>
