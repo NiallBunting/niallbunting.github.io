@@ -10,25 +10,42 @@ permalink: /rechorus/
     <style>
         body { background: #0b0b0b; color: #eee; font-family: 'Inter', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; }
         .container { background: #151515; padding: 25px; border-radius: 12px; width: 95%; max-width: 950px; border: 1px solid #222; }
-        .canvas-container { position: relative; width: 100%; height: 320px; background: #000; border-radius: 8px; overflow: hidden; margin: 20px 0; border: 1px solid #333; }
+        .canvas-container { position: relative; width: 100%; height: 320px; background: #000; border-radius: 8px; overflow: hidden; margin: 20px 0; border: 1px solid #333; cursor: crosshair; }
         canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
         .control-group { background: #1e1e1e; padding: 15px; border-radius: 8px; border: 1px solid #282828; }
         label { display: block; font-size: 10px; text-transform: uppercase; color: #777; margin-bottom: 8px; font-weight: 800; letter-spacing: 1px; }
         input[type="range"] { width: 100%; accent-color: #00ff88; cursor: pointer; margin-bottom: 5px; }
         .val { float: right; color: #00ff88; font-family: monospace; }
+        .btn-row { display: flex; gap: 10px; margin-bottom: 20px; }
+        button { flex: 1; padding: 12px; border: none; border-radius: 6px; font-weight: 800; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.2s; }
+        .btn-load { background: #333; color: #fff; }
+        .btn-play { background: #00ff88; color: #000; }
+        .btn-loop-stop { background: #222; color: #fff; border: 1px solid #444; }
+        .btn-loop-stop.active { background: #ff8800; border-color: #ff8800; color: #000; }
+        button:hover { opacity: 0.8; }
         .status { text-align: center; color: #00ff88; font-size: 11px; margin-top: 15px; font-family: monospace; text-transform: uppercase; letter-spacing: 2px; }
-        .hint { font-size: 9px; color: #555; margin-top: 5px; display: block; }
+        
+        .user-guide { color: #999; font-size: 13px; line-height: 1.6; margin-top: 30px; border-top: 1px solid #222; padding-top: 20px; }
+        .guide-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 600px) { .guide-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1 style="margin-top:0">Rechorus <span style="color:#00ff88">- Chorusing that repeats back</span></h1>
-        <input type="file" id="audioFile" accept="audio/mp3" style="margin-bottom:10px;">
+        
+        <div class="btn-row">
+            <input type="file" id="audioFile" accept="audio/mp3" style="display:none">
+            <button class="btn-load" onclick="document.getElementById('audioFile').click()">Load MP3</button>
+            <button class="btn-play" id="playBtn">Play / Stop (Space)</button>
+            <button class="btn-loop-stop" id="loopStopBtn">Stop After Loop (R)</button>
+        </div>
 
-        <div class="canvas-container">
+        <div class="canvas-container" id="canvasContainer">
             <canvas id="staticCanvas"></canvas>
+            <canvas id="selectionCanvas"></canvas>
             <canvas id="recCanvas"></canvas>
             <canvas id="liveCanvas"></canvas>
             <canvas id="playheadCanvas"></canvas>
@@ -36,77 +53,125 @@ permalink: /rechorus/
 
         <div class="controls">
             <div class="control-group">
-                <label>MP3 Volume <span class="val" id="mVolL">100%</span></label>
+                <label>MP3 Vol <span class="val" id="mVolL">100%</span></label>
                 <input type="range" id="mp3Vol" min="0" max="1.5" step="0.05" value="1">
                 
-                <label style="margin-top:12px">Rec Volume <span class="val" id="rVolL">100%</span></label>
+                <label>Rec Vol <span class="val" id="rVolL">100%</span></label>
                 <input type="range" id="recVol" min="0" max="2" step="0.1" value="1">
 
-                <label style="margin-top:12px">Monitor (Green) <span class="val" id="monVolL">0%</span></label>
+                <label>Monitor <span class="val" id="monVolL">0%</span></label>
                 <input type="range" id="monitorVol" min="0" max="1" step="0.05" value="0">
                 
-                <label style="margin-top:12px">Loop Delay <span class="val" id="delL">600ms</span></label>
+                <label>Speed <span class="val" id="speedL">1.0x</span></label>
+                <input type="range" id="speed" min="0.5" max="2" step="0.05" value="1">
+
+                <label>Loop Delay <span class="val" id="delL">600ms</span></label>
                 <input type="range" id="loopDelay" min="0" max="3000" step="50" value="600">
             </div>
             
             <div class="control-group">
-                <label style="color:#00ccff">Blue Sync (Recorded) <span class="val" id="blueOffL">0ms</span></label>
+                <label style="color:#00ccff">Blue Sync <span class="val" id="blueOffL">0ms</span></label>
                 <input type="range" id="blueOffset" min="-300" max="300" step="1" value="0">
 
-                <label style="color:#00ff88; margin-top:15px">Green Sync (Live) <span class="val" id="greenOffL">0ms</span></label>
+                <label style="color:#00ff88">Green Sync <span class="val" id="greenOffL">0ms</span></label>
                 <input type="range" id="greenOffset" min="-300" max="300" step="1" value="0">
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top:20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top:10px;">
                     <div>
-                        <label>Grey Height <span class="val" id="sScaleL">1.0x</span></label>
+                        <label>Grey H <span class="val" id="sScaleL">1.0x</span></label>
                         <input type="range" id="staticScale" min="0.1" max="4" step="0.1" value="1">
                     </div>
                     <div>
-                        <label>Blue Height <span class="val" id="rScaleL">1.0x</span></label>
+                        <label>Blue H <span class="val" id="rScaleL">1.0x</span></label>
                         <input type="range" id="recScale" min="0.1" max="4" step="0.1" value="1">
                     </div>
                     <div>
-                        <label>Blue Y-Pos <span class="val" id="rVOffL">0px</span></label>
+                        <label>Blue Y <span class="val" id="rVOffL">0px</span></label>
                         <input type="range" id="recVOffset" min="-120" max="120" step="1" value="0">
                     </div>
                     <div>
-                        <label>Green Y-Pos <span class="val" id="gVOffL">0px</span></label>
+                        <label>Green Y <span class="val" id="gVOffL">0px</span></label>
                         <input type="range" id="liveVOffset" min="-120" max="120" step="1" value="0">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="status" id="status">Ready</div>
+
+        <div class="status" id="status">Ready - Select a region to start.</div>
+
+        <div class="user-guide">
+            <h3 style="color: #00ff88; text-transform: uppercase; font-size: 14px; margin-bottom: 12px; letter-spacing: 1px;">How to use Rechorus</h3>
+            <div class="guide-grid">
+                <div>
+                    <strong style="color: #eee;">1. Setup</strong>
+                    <ul style="padding-left: 18px; margin: 8px 0;">
+                        <li>Load an MP3 backing track.</li>
+                        <li>Wear <b>headphones</b> to prevent feedback!</li>
+                        <li>Turn up <b>Monitor</b> to hear yourself in real-time.</li>
+                        <li>Align the Green and Blue delays by playing back the audio into the microphone.</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong style="color: #eee;">2. Control</strong>
+                    <ul style="padding-left: 18px; margin: 8px 0;">
+                        <li><b>Drag</b> on waveform to loop a specific section.</li>
+                        <li><b>Double-click</b> waveform to clear selection.</li>
+                        <li><b>Blue Sync:</b> Adjust if your recorded take sounds late/early.</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top: 15px; background: #1a1a1a; padding: 12px; border-radius: 6px; border-left: 3px solid #ff8800; font-size: 12px;">
+                <b style="color:#eee">Keyboard Shortcuts:</b> [Space] to Play/Stop. [R] to Stop After Loop finishes.
+            </div>
+            <div style="padding-top: 12px;">
+                Built using AI.
+            </div>
+        </div>
     </div>
 
 <script>
-    const canvasIds = ['static', 'rec', 'live', 'playhead'];
-    const ctxs = {};
-    const canvases = {};
-
+    const canvasIds = ['static', 'rec', 'live', 'playhead', 'selection'];
+    const ctxs = {}; const canvases = {};
     canvasIds.forEach(id => {
         const el = document.getElementById(id + 'Canvas');
-        canvases[id] = el;
-        ctxs[id] = el.getContext('2d');
+        canvases[id] = el; ctxs[id] = el.getContext('2d');
     });
 
-    let audioCtx, audioBuffer, lastRecBuffer, stream;
-    let micAnalyser, monitorGain;
-    let isPlaying = false;
-    let recordingArray;
-    let recordingIndex = 0;
+    let audioCtx, audioBuffer, lastRecBuffer, stream, micSource, monitorGain, processor, micAnalyser;
+    let isPlaying = false, stopAfterLoop = false, recordingArray, recordingIndex = 0;
+    let selStart = 0, selEnd = 1;
+
+    // Selection Logic
+    let isDragging = false;
+    const container = document.getElementById('canvasContainer');
+    container.onmousedown = (e) => { isDragging = true; selStart = e.offsetX / container.offsetWidth; selEnd = selStart; drawSelection(); };
+    window.onmousemove = (e) => {
+        if (!isDragging) return;
+        const rect = container.getBoundingClientRect();
+        selEnd = Math.max(0, Math.min(1, (e.clientX - rect.left) / container.offsetWidth));
+        drawSelection();
+    };
+    window.onmouseup = () => {
+        if (!isDragging) return; isDragging = false;
+        if (Math.abs(selStart - selEnd) < 0.01) { selStart = 0; selEnd = 1; }
+        else if (selStart > selEnd) { [selStart, selEnd] = [selEnd, selStart]; }
+        drawSelection(); refreshWaveforms();
+    };
+
+    function drawSelection() {
+        const ctx = ctxs.selection; ctx.clearRect(0, 0, canvases.selection.width, canvases.selection.height);
+        if (selStart === 0 && selEnd === 1) return;
+        ctx.fillStyle = 'rgba(0, 255, 136, 0.15)';
+        ctx.fillRect(selStart * canvases.selection.width, 0, (selEnd - selStart) * canvases.selection.width, canvases.selection.height);
+    }
 
     async function initMic() {
-        stream = await navigator.mediaDevices.getUserMedia({ 
-            audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } 
-        });
+        stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
         audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        
-        const micSource = audioCtx.createMediaStreamSource(stream);
+        micSource = audioCtx.createMediaStreamSource(stream);
         micAnalyser = audioCtx.createAnalyser();
-        monitorGain = audioCtx.createGain();
-        monitorGain.gain.value = 0;
-        
+        monitorGain = audioCtx.createGain(); 
+        monitorGain.gain.value = document.getElementById('monitorVol').value;
         micSource.connect(micAnalyser);
         micSource.connect(monitorGain).connect(audioCtx.destination);
     }
@@ -114,41 +179,25 @@ permalink: /rechorus/
     document.getElementById('audioFile').onchange = async (e) => {
         if (!stream) await initMic();
         audioBuffer = await audioCtx.decodeAudioData(await e.target.files[0].arrayBuffer());
-        resize();
-        refreshWaveforms();
-        if(!isPlaying) startLoop();
+        resize(); refreshWaveforms();
     };
-
-    function resize() {
-        Object.values(canvases).forEach(c => {
-            c.width = c.offsetWidth;
-            c.height = c.offsetHeight;
-        });
-    }
 
     function drawWaveform(buffer, ctx, color, opacity, vScale, vOff = 0, hOffMs = 0) {
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
         if (!buffer) return;
-
         const data = buffer.getChannelData(0);
         const duration = audioBuffer.duration;
         const hOffPixels = (hOffMs / 1000) * (ctx.canvas.width / duration);
         const step = Math.ceil(data.length / ctx.canvas.width);
         const amp = (ctx.canvas.height / 2) * vScale;
-        
-        ctx.globalAlpha = opacity;
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-
+        ctx.globalAlpha = opacity; ctx.strokeStyle = color; ctx.beginPath();
         for(let i=0; i < ctx.canvas.width; i++) {
             const bufferIndex = Math.floor(((i - hOffPixels) / ctx.canvas.width) * data.length);
             if (bufferIndex >= 0 && bufferIndex < data.length) {
                 let min = 1, max = -1;
                 for(let j=0; j<step; j++) {
-                    const datum = data[bufferIndex + j] || 0;
-                    if (datum < min) min = datum;
-                    if (datum > max) max = datum;
+                    const d = data[bufferIndex + j] || 0;
+                    if (d < min) min = d; if (d > max) max = d;
                 }
                 ctx.moveTo(i, (ctx.canvas.height/2) + vOff + (min * amp));
                 ctx.lineTo(i, (ctx.canvas.height/2) + vOff + (max * amp));
@@ -158,126 +207,142 @@ permalink: /rechorus/
     }
 
     function refreshWaveforms() {
-        const sScale = parseFloat(document.getElementById('staticScale').value);
-        const rScale = parseFloat(document.getElementById('recScale').value);
-        const bHOff = parseFloat(document.getElementById('blueOffset').value);
-        const rVOff = parseInt(document.getElementById('recVOffset').value);
-        
-        drawWaveform(audioBuffer, ctxs.static, '#555', 1, sScale, 0, 0);
+        drawWaveform(audioBuffer, ctxs.static, '#555', 1, parseFloat(document.getElementById('staticScale').value), 0, 0);
         if (lastRecBuffer) {
-            drawWaveform(lastRecBuffer, ctxs.rec, '#00ccff', 0.6, rScale, rVOff, bHOff);
+            const bOff = parseFloat(document.getElementById('blueOffset').value);
+            const rVOff = parseInt(document.getElementById('recVOffset').value);
+            const rScale = parseFloat(document.getElementById('recScale').value);
+            drawWaveform(lastRecBuffer, ctxs.rec, '#00ccff', 0.6, rScale, rVOff, bOff);
         }
     }
 
+    let currentMain, currentRec;
+
     function startLoop() {
+        if (!audioBuffer) return;
         isPlaying = true;
         document.getElementById('status').textContent = "• Recording •";
-        const duration = audioBuffer.duration;
-        
-        // Prepare Sample-Accurate Buffer
-        recordingArray = new Float32Array(audioBuffer.length);
+
+        const rate = parseFloat(document.getElementById('speed').value);
+        const startT = selStart * audioBuffer.duration;
+        const endT = selEnd * audioBuffer.duration;
+        const loopDur = endT - startT;
+
+        recordingArray = new Float32Array(Math.floor(loopDur * audioCtx.sampleRate));
         recordingIndex = 0;
 
-        const startTime = audioCtx.currentTime + 0.1;
-
-        const processor = audioCtx.createScriptProcessor(4096, 1, 1);
-        const micSource = audioCtx.createMediaStreamSource(stream);
-        
+        const now = audioCtx.currentTime + 0.05;
+        processor = audioCtx.createScriptProcessor(4096, 1, 1);
         processor.onaudioprocess = (e) => {
             if (!isPlaying) return;
             const input = e.inputBuffer.getChannelData(0);
             for (let i = 0; i < input.length; i++) {
-                if (recordingIndex < recordingArray.length) {
-                    recordingArray[recordingIndex++] = input[i];
-                }
+                if (recordingIndex < recordingArray.length) recordingArray[recordingIndex++] = input[i];
             }
         };
-
         micSource.connect(processor);
-        processor.connect(audioCtx.destination); // Audio Heartbeat
+        processor.connect(audioCtx.destination);
 
-        const mainSource = audioCtx.createBufferSource();
-        const mainGain = audioCtx.createGain();
-        mainSource.buffer = audioBuffer;
-        mainGain.gain.value = document.getElementById('mp3Vol').value;
-        mainSource.connect(mainGain).connect(audioCtx.destination);
+        currentMain = audioCtx.createBufferSource();
+        currentMain.buffer = audioBuffer;
+        currentMain.playbackRate.value = rate;
+        const mG = audioCtx.createGain(); mG.gain.value = document.getElementById('mp3Vol').value;
+        currentMain.connect(mG).connect(audioCtx.destination);
 
         if (lastRecBuffer) {
-            const recSource = audioCtx.createBufferSource();
-            const recGain = audioCtx.createGain();
-            recSource.buffer = lastRecBuffer;
-            recGain.gain.value = document.getElementById('recVol').value;
-            const blueOff = parseFloat(document.getElementById('blueOffset').value) / 1000;
-            recSource.connect(recGain).connect(audioCtx.destination);
-            recSource.start(startTime + Math.max(0, blueOff), Math.max(0, -blueOff));
+            currentRec = audioCtx.createBufferSource();
+            currentRec.buffer = lastRecBuffer;
+            currentRec.playbackRate.value = rate;
+            const rG = audioCtx.createGain(); rG.gain.value = document.getElementById('recVol').value;
+            currentRec.connect(rG).connect(audioCtx.destination);
+            const bOff = (parseFloat(document.getElementById('blueOffset').value)/1000)/rate;
+            currentRec.start(now + Math.max(0, bOff), Math.max(0, -bOff), loopDur/rate);
         }
 
-        const greenOff = parseFloat(document.getElementById('greenOffset').value) / 1000;
-        mainSource.start(startTime + Math.max(0, greenOff), Math.max(0, -greenOff));
+        const gOff = (parseFloat(document.getElementById('greenOffset').value)/1000)/rate;
+        currentMain.start(now + Math.max(0, gOff), startT + Math.max(0, -gOff), loopDur/rate);
 
         function frame() {
             if (!isPlaying) return;
-            const elapsed = audioCtx.currentTime - startTime;
-            const progress = elapsed / duration;
-            if (progress >= 1) return;
-
-            const x = progress * canvases.static.width;
-            const gVOff = parseInt(document.getElementById('liveVOffset').value);
-
+            const elapsed = (audioCtx.currentTime - now) * rate;
+            const prog = (startT + elapsed) / audioBuffer.duration;
+            const x = prog * canvases.static.width;
+            
             ctxs.playhead.clearRect(0, 0, canvases.playhead.width, canvases.playhead.height);
-            ctxs.playhead.strokeStyle = '#ff3333';
-            ctxs.playhead.beginPath();
-            ctxs.playhead.moveTo(x, 0); ctxs.playhead.lineTo(x, canvases.playhead.height);
-            ctxs.playhead.stroke();
-
-            const dataArray = new Uint8Array(micAnalyser.frequencyBinCount);
-            micAnalyser.getByteTimeDomainData(dataArray);
+            ctxs.playhead.strokeStyle = '#ff3333'; ctxs.playhead.lineWidth = 2;
+            ctxs.playhead.beginPath(); ctxs.playhead.moveTo(x, 0); ctxs.playhead.lineTo(x, canvases.playhead.height); ctxs.playhead.stroke();
+            
+            const gV = parseInt(document.getElementById('liveVOffset').value);
+            const d = new Uint8Array(micAnalyser.frequencyBinCount); 
+            micAnalyser.getByteTimeDomainData(d);
             ctxs.live.clearRect(x, 0, 15, canvases.live.height); 
             ctxs.live.fillStyle = '#00ff88';
-            let sum = 0;
-            for(let i=0; i<dataArray.length; i++) sum += Math.abs(dataArray[i] - 128);
-            let s = (sum / dataArray.length) * 8; 
-            ctxs.live.fillRect(x - 1, (canvases.live.height/2) + gVOff - s, 2, s*2);
-
-            requestAnimationFrame(frame);
+            let sum = 0; for(let i=0; i<d.length; i++) sum += Math.abs(d[i]-128);
+            let s = (sum/d.length)*15; // Enhanced visual feedback
+            ctxs.live.fillRect(x-1, (canvases.live.height/2)+gV-s, 2, s*2);
+            
+            if (elapsed < loopDur) requestAnimationFrame(frame);
         }
-        
         ctxs.live.clearRect(0, 0, canvases.live.width, canvases.live.height);
         frame();
 
-        mainSource.onended = () => {
-            isPlaying = false;
+        currentMain.onended = () => {
             processor.disconnect();
-            micSource.disconnect();
-            
-            // Lock recording into Blue buffer
+            if (!isPlaying) return;
             lastRecBuffer = audioCtx.createBuffer(1, recordingArray.length, audioCtx.sampleRate);
             lastRecBuffer.getChannelData(0).set(recordingArray);
-            
             refreshWaveforms();
-            document.getElementById('status').textContent = "Syncing...";
-            setTimeout(startLoop, document.getElementById('loopDelay').value);
+            if (stopAfterLoop) {
+                isPlaying = false; stopAfterLoop = false;
+                document.getElementById('loopStopBtn').classList.remove('active');
+                document.getElementById('status').textContent = "Loop Stopped.";
+            } else {
+                setTimeout(startLoop, document.getElementById('loopDelay').value / rate);
+            }
         };
     }
 
-    const updateLabel = (id, suffix) => e => {
-        document.getElementById(id).textContent = e.target.value + suffix;
-        if (monitorGain && id === 'monVolL') monitorGain.gain.value = e.target.value;
+    function stopLoop() {
+        isPlaying = false; stopAfterLoop = false;
+        document.getElementById('loopStopBtn').classList.remove('active');
+        if (currentMain) try { currentMain.stop(); } catch(e){}
+        if (currentRec) try { currentRec.stop(); } catch(e){}
+        if (processor) processor.disconnect();
+        ctxs.playhead.clearRect(0, 0, canvases.playhead.width, canvases.playhead.height);
+        document.getElementById('status').textContent = "Stopped.";
+    }
+
+    document.getElementById('playBtn').onclick = () => { isPlaying ? stopLoop() : startLoop(); };
+    document.getElementById('loopStopBtn').onclick = () => { stopAfterLoop = !stopAfterLoop; document.getElementById('loopStopBtn').classList.toggle('active', stopAfterLoop); };
+
+    window.onkeydown = (e) => {
+        if (e.code === 'Space') { e.preventDefault(); document.getElementById('playBtn').click(); }
+        if (e.key.toLowerCase() === 'r') document.getElementById('loopStopBtn').click();
+    };
+
+    // Label Update Mapping
+    const updateLabel = (id, suffix, isPercent = false) => e => {
+        let val = e.target.value;
+        if (isPercent) val = Math.round(val * 100);
+        document.getElementById(id).textContent = val + suffix;
+        if (id === 'monVolL') monitorGain.gain.value = e.target.value;
         refreshWaveforms();
     };
 
+    document.getElementById('mp3Vol').oninput = updateLabel('mVolL', '%', true);
+    document.getElementById('recVol').oninput = updateLabel('rVolL', '%', true);
+    document.getElementById('monitorVol').oninput = updateLabel('monVolL', '%', true);
+    document.getElementById('speed').oninput = updateLabel('speedL', 'x');
+    document.getElementById('loopDelay').oninput = updateLabel('delL', 'ms');
     document.getElementById('staticScale').oninput = updateLabel('sScaleL', 'x');
     document.getElementById('recScale').oninput = updateLabel('rScaleL', 'x');
     document.getElementById('blueOffset').oninput = updateLabel('blueOffL', 'ms');
     document.getElementById('greenOffset').oninput = updateLabel('greenOffL', 'ms');
-    document.getElementById('mp3Vol').oninput = updateLabel('mVolL', '%');
-    document.getElementById('recVol').oninput = updateLabel('rVolL', '%');
-    document.getElementById('monitorVol').oninput = updateLabel('monVolL', '%');
-    document.getElementById('loopDelay').oninput = updateLabel('delL', 'ms');
     document.getElementById('recVOffset').oninput = updateLabel('rVOffL', 'px');
     document.getElementById('liveVOffset').oninput = updateLabel('gVOffL', 'px');
 
-    window.onresize = () => { resize(); refreshWaveforms(); };
+    function resize() { Object.values(canvases).forEach(c => { c.width = c.offsetWidth; c.height = c.offsetHeight; }); }
+    window.onresize = () => { resize(); refreshWaveforms(); drawSelection(); };
 </script>
 </body>
 </html>
