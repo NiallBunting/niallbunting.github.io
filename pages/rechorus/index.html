@@ -277,7 +277,7 @@ permalink: /rechorus/
             const d = new Uint8Array(micAnalyser.frequencyBinCount); 
             micAnalyser.getByteTimeDomainData(d);
             ctxs.live.clearRect(x, 0, 15, canvases.live.height); 
-            ctxs.live.fillStyle = '#00ff88';
+            ctxs.live.fillStyle = 'rgba(0, 255, 136, 0.2)';
             let sum = 0; for(let i=0; i<d.length; i++) sum += Math.abs(d[i]-128);
             let s = (sum/d.length)*15; // Enhanced visual feedback
             ctxs.live.fillRect(x-1, (canvases.live.height/2)+gV-s, 2, s*2);
